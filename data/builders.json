@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-17T14:38:42.750742",
-    "totalBuilders": 10,
+    "lastUpdated": "2026-02-17T14:39:15.528156",
+    "totalBuilders": 8,
     "totalProjectsAtRisk": 20,
     "totalValueAtRisk": 396236300,
     "avgDaysInsolvent": 249
@@ -997,111 +997,6 @@
         ],
         "confidence": "high",
         "gaps": "ABN/ACN not yet populated. No developer/lender contacts."
-      }
-    },
-    {
-      "id": "tasmanian-builder",
-      "name": "Tasmanian builder",
-      "abn": null,
-      "acn": null,
-      "state": null,
-      "status": "new",
-      "insolvency": {
-        "administrationDate": "2026-02-17",
-        "administrator": null,
-        "administrationType": null,
-        "estimatedInsolvencyStart": null,
-        "daysInsolventTrading": null,
-        "creditorsMeetingDate": null
-      },
-      "summary": {
-        "totalProjectsAtRisk": 0,
-        "totalValueAtRisk": 0,
-        "totalDevelopersAffected": 0,
-        "totalLendersAffected": 0,
-        "narrative": "Recently identified \u2014 automated monitoring detected potential insolvency. Research pipeline initiated. Source: Tasmanian builder collapses with $1.7M debts, unfinished homes | The Advocate | Burnie, TAS"
-      },
-      "projects": [],
-      "timeline": [
-        {
-          "date": "2026-02-17",
-          "event": "Detected by IPEX monitoring system",
-          "type": "detection"
-        }
-      ],
-      "research": {
-        "lastUpdated": "2026-02-17T14:38:41.641310",
-        "researchedBy": "IPEX Monitoring Engine (automated)",
-        "confidence": "low",
-        "dataSources": [
-          "Brave Search",
-          "https://www.theadvocate.com.au/story/9163752/tasmanian-builder-collapses-with-17m-debts-unfinished-homes/"
-        ],
-        "gaps": "Pending administrator report, ABN verification, project research",
-        "sourceArticles": [
-          {
-            "title": "Tasmanian builders to be held more accountable under new laws | The Examiner | Launceston, TAS",
-            "url": "https://www.examiner.com.au/story/9159333/tasmanian-builders-to-be-held-more-accountable-under-new-laws/",
-            "snippet": "Master Builders Tasmania chief executive Jenna Cairney said while Tasmania&#x27;s building industry was made up of exceptional builders, there were a bad few that ruined it for everybody else. &quot;Illegal phoenixing hurts Tasmanians who want to build their dream and also drags our industry down as a whole - it&#x27;s got to end,&quot; she said. &quot;These laws must be targeted, proportionate and fair. &quot;We do not want to see a wholesale copy and paste of interstate models.&quot; Labor&#x27;s building and construction spokesman Shane Broad said he first raised the issue of phoenixing and builder insolvency with former minister Michael Ferguson at a budget estimates hearing three years ago."
-          },
-          {
-            "title": "Tasmanian builder in court for allegedly doing unlicenced work | The Examiner | Launceston, TAS",
-            "url": "https://www.examiner.com.au/story/9155628/tasmanian-builder-in-court-for-allegedly-doing-unlicenced-work/",
-            "snippet": "A man has fronted the Launceston Magistrates Court for allegedly undertaking unlicenced construction work. Pictures by Craig George, stock image \u00b7 These included a count each of entering into a residential building work contract without required contents, demanding or receiving a deposit of more than 5 per cent, carrying on business as a contractor without a contractor&#x27;s licence, and wrongly accepting payment."
-          },
-          {
-            "title": "Tasmanian builder collapses with $1.7M debts, unfinished homes | The Advocate | Burnie, TAS",
-            "url": "https://www.theadvocate.com.au/story/9163752/tasmanian-builder-collapses-with-17m-debts-unfinished-homes/",
-            "snippet": "Tasmanian builder <strong>LJones Construction</strong> collapses, leaving 12 families in limbo with $1.7M debt. Solutions sought with consumer protection."
-          },
-          {
-            "title": "Tasmanian builders to be held more accountable under new laws | The Advocate | Burnie, TAS",
-            "url": "https://www.theadvocate.com.au/story/9159333/tasmanian-builders-to-be-held-more-accountable-under-new-laws/",
-            "snippet": "Master Builders Tasmania chief executive Jenna Cairney said while Tasmania&#x27;s building industry was made up of exceptional builders, there were a bad few that ruined it for everybody else. &quot;Illegal phoenixing hurts Tasmanians who want to build their dream and also drags our industry down as a whole - it&#x27;s got to end,&quot; she said. &quot;These laws must be targeted, proportionate and fair. &quot;We do not want to see a wholesale copy and paste of interstate models.&quot; Labor&#x27;s building and construction spokesman Shane Broad said he first raised the issue of phoenixing and builder insolvency with former minister Michael Ferguson at a budget estimates hearing three years ago."
-          }
-        ]
-      }
-    },
-    {
-      "id": "major-sydney-construction-firm",
-      "name": "Major Sydney construction firm",
-      "abn": null,
-      "acn": null,
-      "state": null,
-      "status": "new",
-      "insolvency": {
-        "administrationDate": "2026-02-17",
-        "administrator": null,
-        "administrationType": null,
-        "estimatedInsolvencyStart": null,
-        "daysInsolventTrading": null,
-        "creditorsMeetingDate": null
-      },
-      "summary": {
-        "totalProjectsAtRisk": 0,
-        "totalValueAtRisk": 0,
-        "totalDevelopersAffected": 0,
-        "totalLendersAffected": 0,
-        "narrative": "Recently identified \u2014 automated monitoring detected potential insolvency. Research pipeline initiated. Source: Major Sydney construction firm collapses after almost 50 years"
-      },
-      "projects": [],
-      "timeline": [
-        {
-          "date": "2026-02-17",
-          "event": "Detected by IPEX monitoring system",
-          "type": "detection"
-        }
-      ],
-      "research": {
-        "lastUpdated": "2026-02-17T14:38:42.750541",
-        "researchedBy": "IPEX Monitoring Engine (automated)",
-        "confidence": "low",
-        "dataSources": [
-          "Brave Search",
-          "https://archive.is/r0S2Y"
-        ],
-        "gaps": "Pending administrator report, ABN verification, project research",
-        "sourceArticles": []
       }
     }
   ]
