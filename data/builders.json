@@ -1,10 +1,10 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-17T15:20:20.265438",
-    "totalBuilders": 8,
-    "totalProjectsAtRisk": 18,
-    "totalValueAtRisk": 390385300,
-    "avgDaysInsolvent": 241,
+    "lastUpdated": "2026-02-17T15:39:00+11:00",
+    "totalBuilders": 16,
+    "totalProjectsAtRisk": 106,
+    "totalValueAtRisk": 5396236300,
+    "avgDaysInsolvent": 229,
     "windowTotals": {
       "preInsolvency": {
         "count": 8,
@@ -2482,6 +2482,970 @@
         "preAdministration": {
           "count": 2,
           "value": 24326300
+        }
+      }
+    },
+    {
+      "id": "smxl",
+      "name": "SMXL",
+      "abn": null,
+      "acn": null,
+      "entityType": "Unknown",
+      "state": "Unknown",
+      "status": "research-pending",
+      "insolvency": {
+        "type": "Unknown",
+        "administrationDate": null,
+        "administrator": null,
+        "estimatedInsolvencyStart": null,
+        "daysInsolventTrading": null,
+        "source": null,
+        "creditorsMeetingDate": null,
+        "outcome": null
+      },
+      "summary": {
+        "totalProjectsAtRisk": null,
+        "totalValueAtRisk": null,
+        "totalDevelopersAffected": null,
+        "totalLendersAffected": null,
+        "narrative": "SMXL \u2014 research pending. Could not find this company online. Exact name and details to be confirmed."
+      },
+      "projects": [],
+      "contacts": [],
+      "timeline": [],
+      "research": {
+        "lastUpdated": "2026-02-17T15:39:00+11:00",
+        "researchedBy": "Jarvis (automated)",
+        "dataSources": [],
+        "confidence": "none",
+        "gaps": "Company not found online. Name, ABN, ACN, state, insolvency details all unknown. Requires manual research."
+      },
+      "windowStats": {
+        "preInsolvency": {
+          "count": 0,
+          "value": 0
+        },
+        "insolventTrading": {
+          "count": 0,
+          "value": 0
+        },
+        "preAdministration": {
+          "count": 0,
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "australex-group",
+      "name": "Australex Group Pty Ltd",
+      "abn": "83162738043",
+      "acn": "162738043",
+      "entityType": "Australian Private Company",
+      "state": "NSW",
+      "status": "research-pending",
+      "insolvency": {
+        "type": "Creditors' Voluntary Liquidation",
+        "administrationDate": "2023-08-18",
+        "administrator": null,
+        "estimatedInsolvencyStart": null,
+        "daysInsolventTrading": null,
+        "source": "ASIC",
+        "creditorsMeetingDate": null,
+        "outcome": "Liquidation"
+      },
+      "summary": {
+        "totalProjectsAtRisk": null,
+        "totalValueAtRisk": null,
+        "totalDevelopersAffected": null,
+        "totalLendersAffected": null,
+        "narrative": "Australex Group Pty Ltd entered Creditors' Voluntary Liquidation on 18 August 2023. Related entity Australex Construction Pty Ltd (ACN 161924965) was proposed for deregistration in June 2023. Very little public information available."
+      },
+      "projects": [],
+      "contacts": [],
+      "timeline": [
+        {
+          "date": "2023-06-01",
+          "event": "Australex Construction Pty Ltd (ACN 161924965) proposed for deregistration",
+          "type": "related"
+        },
+        {
+          "date": "2023-08-18",
+          "event": "Entered Creditors' Voluntary Liquidation",
+          "type": "administration"
+        }
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T15:39:00+11:00",
+        "researchedBy": "Jarvis (automated)",
+        "dataSources": [
+          "ASIC",
+          "ABR"
+        ],
+        "confidence": "low",
+        "gaps": "Very little public info. No projects identified. No administrator details. Related entity: Australex Construction Pty Ltd (ACN 161924965)."
+      },
+      "context": {
+        "relatedEntities": [
+          {
+            "name": "Australex Construction Pty Ltd",
+            "acn": "161924965",
+            "status": "Proposed deregistration June 2023"
+          }
+        ]
+      },
+      "windowStats": {
+        "preInsolvency": {
+          "count": 0,
+          "value": 0
+        },
+        "insolventTrading": {
+          "count": 0,
+          "value": 0
+        },
+        "preAdministration": {
+          "count": 0,
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "probuild-constructions",
+      "name": "Probuild Constructions (Aust) Pty Ltd",
+      "abn": "93095250945",
+      "acn": "095250945",
+      "entityType": "Australian Private Company",
+      "state": "Multi-state (VIC, NSW, QLD, WA)",
+      "status": "complete",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2022-02-23",
+        "administrator": "Deloitte",
+        "estimatedInsolvencyStart": null,
+        "daysInsolventTrading": null,
+        "source": "ASIC / News",
+        "creditorsMeetingDate": null,
+        "outcome": "Liquidation",
+        "creditorCount": 2300,
+        "totalDebts": null
+      },
+      "summary": {
+        "totalProjectsAtRisk": null,
+        "totalValueAtRisk": 5000000000,
+        "totalDevelopersAffected": null,
+        "totalLendersAffected": null,
+        "narrative": "Probuild Constructions, one of Australia's largest builders, collapsed on 23 February 2022 after South African parent WBHO withdrew support.  billion in ongoing projects at collapse. 2,300 creditors, workers owed M. FIRB had blocked a M sale to China State Construction Engineering Corp in January 2021. Roberts Co later acquired Probuild's VIC operations for . One of the most significant construction collapses in Australian history."
+      },
+      "projects": [
+        {
+          "id": "pb-001",
+          "projectName": "The Ribbon, Darling Harbour",
+          "address": "Darling Harbour, Sydney NSW",
+          "developer": null,
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": "Mixed-use development including Sofitel hotel"
+        },
+        {
+          "id": "pb-002",
+          "projectName": "Greenland Centre",
+          "address": "Bathurst St, Sydney NSW",
+          "developer": "Greenland Group",
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": "Sydney's tallest residential tower"
+        },
+        {
+          "id": "pb-003",
+          "projectName": "443 Queen Street",
+          "address": "443 Queen St, Brisbane QLD",
+          "developer": null,
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "pb-004",
+          "projectName": "Victoria Police HQ Fitout",
+          "address": "Melbourne VIC",
+          "developer": "Victoria Police",
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "pb-005",
+          "projectName": "Aurora Melbourne Central",
+          "address": "La Trobe St, Melbourne VIC",
+          "developer": null,
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "pb-006",
+          "projectName": "Ritz Carlton, Elizabeth Quay",
+          "address": "Elizabeth Quay, Perth WA",
+          "developer": null,
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "pb-007",
+          "projectName": "The Star Gold Coast",
+          "address": "Broadbeach, Gold Coast QLD",
+          "developer": "Star Entertainment Group",
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "pb-008",
+          "projectName": "Queen and Collins",
+          "address": "Queen St & Collins St, Melbourne VIC",
+          "developer": null,
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "pb-009",
+          "projectName": "UNO Melbourne",
+          "address": "Melbourne VIC",
+          "developer": null,
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "pb-010",
+          "projectName": "Elizabeth St North Stage 2",
+          "address": "Elizabeth St, Melbourne VIC",
+          "developer": null,
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "pb-011",
+          "projectName": "CSL Fitout",
+          "address": "Melbourne VIC",
+          "developer": "CSL Limited",
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "pb-012",
+          "projectName": "500 Bourke Street",
+          "address": "500 Bourke St, Melbourne VIC",
+          "developer": null,
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "pb-013",
+          "projectName": "502 Albert Street",
+          "address": "502 Albert St, Melbourne VIC",
+          "developer": null,
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        }
+      ],
+      "contacts": [],
+      "timeline": [
+        {
+          "date": "2021-01-01",
+          "event": "FIRB blocks $300M sale to China State Construction Engineering Corp",
+          "type": "regulatory"
+        },
+        {
+          "date": "2022-02-22",
+          "event": "WBHO (South African parent) withdraws financial support",
+          "type": "insolvency"
+        },
+        {
+          "date": "2022-02-23",
+          "event": "Entered voluntary administration. Deloitte appointed.",
+          "type": "administration"
+        },
+        {
+          "date": "2022-06-01",
+          "event": "Roberts Co acquires Probuild's VIC operations for $1",
+          "type": "acquisition"
+        }
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T15:39:00+11:00",
+        "researchedBy": "Jarvis (automated)",
+        "dataSources": [
+          "ASIC",
+          "News",
+          "ABR"
+        ],
+        "confidence": "high",
+        "gaps": "Project values not yet researched individually. Insolvent trading period not determined. Full creditor breakdown not available."
+      },
+      "context": {
+        "parent": "WBHO Australia Group (South African-owned)",
+        "workersOwed": 14000000,
+        "ongoingProjectsValue": 5000000000,
+        "industryContext": "One of the largest construction collapses in Australian history. FIRB blocked sale to CSCEC in Jan 2021. Roberts Co later bought VIC operations for $1."
+      },
+      "windowStats": {
+        "preInsolvency": {
+          "count": 0,
+          "value": 0
+        },
+        "insolventTrading": {
+          "count": 0,
+          "value": 0
+        },
+        "preAdministration": {
+          "count": 0,
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "element-five",
+      "name": "Element Five (Aust) Pty Ltd",
+      "abn": "73623557102",
+      "acn": "623557102",
+      "entityType": "Australian Private Company",
+      "state": "VIC",
+      "status": "new",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2025-03-13",
+        "administrator": "Grant Thornton",
+        "estimatedInsolvencyStart": null,
+        "daysInsolventTrading": null,
+        "source": "ASIC / News",
+        "creditorsMeetingDate": "2025-03-24",
+        "outcome": null
+      },
+      "summary": {
+        "totalProjectsAtRisk": null,
+        "totalValueAtRisk": null,
+        "totalDevelopersAffected": null,
+        "totalLendersAffected": null,
+        "narrative": "Element Five (Aust) Pty Ltd, a boutique multi-residential builder in Melbourne, entered voluntary administration on 13 March 2025. Grant Thornton appointed as administrator. First creditors meeting scheduled for approximately 24 March 2025. Website (elementfive.com.au) still live at time of research."
+      },
+      "projects": [],
+      "contacts": [],
+      "timeline": [
+        {
+          "date": "2025-03-13",
+          "event": "Entered voluntary administration. Grant Thornton appointed.",
+          "type": "administration"
+        },
+        {
+          "date": "2025-03-24",
+          "event": "First creditors meeting (approximate)",
+          "type": "legal"
+        }
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T15:39:00+11:00",
+        "researchedBy": "Jarvis (automated)",
+        "dataSources": [
+          "ASIC",
+          "ABR",
+          "LinkedIn"
+        ],
+        "confidence": "low",
+        "gaps": "Projects not yet identified. Insolvent trading period unknown. Creditor count and total debts unknown. Administrator report not yet available."
+      },
+      "context": {
+        "description": "Boutique builder in Melbourne \u2014 \"first choice for all developers\" (LinkedIn)",
+        "website": "elementfive.com.au",
+        "sectors": [
+          "Multi-residential"
+        ]
+      },
+      "windowStats": {
+        "preInsolvency": {
+          "count": 0,
+          "value": 0
+        },
+        "insolventTrading": {
+          "count": 0,
+          "value": 0
+        },
+        "preAdministration": {
+          "count": 0,
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "roberts-co",
+      "name": "Roberts Co (VIC) Pty Ltd",
+      "abn": null,
+      "acn": null,
+      "entityType": "Australian Private Company",
+      "state": "VIC",
+      "status": "complete",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2025-03-14",
+        "administrator": "McGrathNicol (Jason Ireland, Matthew Caddy)",
+        "estimatedInsolvencyStart": "2024-12-01",
+        "daysInsolventTrading": 103,
+        "source": "McGrathNicol / News",
+        "creditorsMeetingDate": null,
+        "outcome": null,
+        "insolvencyPeriodDays": 103
+      },
+      "summary": {
+        "totalProjectsAtRisk": 8,
+        "totalValueAtRisk": null,
+        "totalDevelopersAffected": 3,
+        "totalLendersAffected": null,
+        "narrative": "Roberts Co (VIC) Pty Ltd, owned by Multiplex heir Andrew Roberts, entered voluntary administration on 14 March 2025. McGrathNicol appointed. Losses exceeded M \u2014 the Craigieburn Amazon project alone lost .1M. Potential insolvent trading since December 2024. 8 active projects at collapse, 18 more in warranty. Roberts Co acquired Probuild's VIC operations for  in 2022. NSW arm sold to UAE's Arada. CEO: Emma Shipley."
+      },
+      "projects": [
+        {
+          "id": "rc-001",
+          "projectName": "Amazon Warehouse Craigieburn",
+          "address": "Craigieburn VIC",
+          "developer": "ESR (for Amazon)",
+          "estimatedValue": 400000000,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": "Australia's largest automated warehouse \u2014 size of 11 MCGs. Lost .1M on this project alone."
+        },
+        {
+          "id": "rc-002",
+          "projectName": "Build-to-Rent Footscray",
+          "address": "Footscray VIC",
+          "developer": "Investa & Oxford Properties",
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": "702 units"
+        },
+        {
+          "id": "rc-003",
+          "projectName": "Golden Age Strata Office",
+          "address": "Little Collins St, Melbourne VIC",
+          "developer": "Golden Age",
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": "28-level tower"
+        }
+      ],
+      "contacts": [],
+      "timeline": [
+        {
+          "date": "2022-06-01",
+          "event": "Acquired Probuild's VIC operations for ",
+          "type": "acquisition"
+        },
+        {
+          "date": "2024-12-01",
+          "event": "Potential insolvent trading start (per McGrathNicol)",
+          "type": "insolvency"
+        },
+        {
+          "date": "2025-03-14",
+          "event": "Entered voluntary administration. McGrathNicol appointed.",
+          "type": "administration"
+        }
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T15:39:00+11:00",
+        "researchedBy": "Jarvis (automated)",
+        "dataSources": [
+          "ASIC",
+          "News",
+          "McGrathNicol"
+        ],
+        "confidence": "high",
+        "gaps": "ABN/ACN not yet confirmed. 5 of 8 active projects not yet identified. 18 warranty projects not detailed. Full creditor count and total debts not confirmed."
+      },
+      "context": {
+        "parent": "Roberts Co (owned by Multiplex heir Andrew Roberts)",
+        "ceo": "Emma Shipley",
+        "losses": 60000000,
+        "activeProjectsAtCollapse": 8,
+        "warrantyProjects": 18,
+        "nswArmSoldTo": "UAE's Arada",
+        "acquiredProbuildVIC": true,
+        "industryContext": "Took over Probuild VIC operations in 2022 for . Another major collapse in the Probuild lineage."
+      },
+      "windowStats": {
+        "preInsolvency": {
+          "count": 0,
+          "value": 0
+        },
+        "insolventTrading": {
+          "count": 0,
+          "value": 0
+        },
+        "preAdministration": {
+          "count": 0,
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "quasar-constructions",
+      "name": "Quasar Constructions Pty Ltd",
+      "abn": "86069663403",
+      "acn": "069663403",
+      "entityType": "Australian Private Company",
+      "state": "NSW",
+      "status": "complete",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2024-09-24",
+        "administrator": null,
+        "estimatedInsolvencyStart": null,
+        "daysInsolventTrading": null,
+        "source": "ASIC / News",
+        "creditorsMeetingDate": "2024-10-01",
+        "outcome": "Liquidation (December 2024)",
+        "creditorCount": 600,
+        "totalDebts": 60000000
+      },
+      "summary": {
+        "totalProjectsAtRisk": 10,
+        "totalValueAtRisk": null,
+        "totalDevelopersAffected": null,
+        "totalLendersAffected": null,
+        "narrative": "Quasar Constructions entered voluntary administration around 24 September 2024, with first creditors meeting on 1 October 2024. Entered liquidation December 2024. 10 projects at collapse across Sydney and Illawarra. 600 creditors owed M against only M in assets. 3 projects abandoned, 3 under review, 4 in legal disputes. Key projects included Western Sydney International Airport works and Calderwood Shopping Village (M)."
+      },
+      "projects": [
+        {
+          "id": "qs-001",
+          "projectName": "Western Sydney International Airport \u2014 Maintenance Centre",
+          "address": "Badgerys Creek, Sydney NSW",
+          "developer": "Aerowest (primary contractor)",
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction (>90% complete)",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": "Part of WSI airport works. >90% complete at collapse."
+        },
+        {
+          "id": "qs-002",
+          "projectName": "Western Sydney International Airport \u2014 Operations Control Centre",
+          "address": "Badgerys Creek, Sydney NSW",
+          "developer": "Aerowest (primary contractor)",
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction (>90% complete)",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "qs-003",
+          "projectName": "Western Sydney International Airport \u2014 Waste Facility",
+          "address": "Badgerys Creek, Sydney NSW",
+          "developer": "Aerowest (primary contractor)",
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction (>90% complete)",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "qs-004",
+          "projectName": "Western Sydney International Airport \u2014 Main Access Gatehouse",
+          "address": "Badgerys Creek, Sydney NSW",
+          "developer": "Aerowest (primary contractor)",
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction (>90% complete)",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "qs-005",
+          "projectName": "Calderwood Shopping Village",
+          "address": "Calderwood, Shellharbour NSW",
+          "developer": "Revelop Group",
+          "estimatedValue": 50000000,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": "M project"
+        }
+      ],
+      "contacts": [],
+      "timeline": [
+        {
+          "date": "2024-09-24",
+          "event": "Entered voluntary administration (approximate)",
+          "type": "administration"
+        },
+        {
+          "date": "2024-10-01",
+          "event": "First creditors meeting",
+          "type": "legal"
+        },
+        {
+          "date": "2024-12-01",
+          "event": "Entered liquidation",
+          "type": "liquidation"
+        }
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T15:39:00+11:00",
+        "researchedBy": "Jarvis (automated)",
+        "dataSources": [
+          "ASIC",
+          "News",
+          "ABR"
+        ],
+        "confidence": "medium",
+        "gaps": "Director surname \"Crawford\" \u2014 full name not confirmed. 5 of 10 projects not yet identified. Insolvent trading period not determined. Project values mostly unknown."
+      },
+      "context": {
+        "director": "Crawford",
+        "regions": [
+          "Sydney",
+          "Illawarra"
+        ],
+        "projectStatus": {
+          "abandoned": 3,
+          "underReview": 3,
+          "legalDisputes": 4
+        },
+        "assets": 6000000,
+        "blameFactors": [
+          "Increased costs",
+          "Skilled labour shortages",
+          "Weather",
+          "COVID effects",
+          "Disputes and delays"
+        ]
+      },
+      "windowStats": {
+        "preInsolvency": {
+          "count": 0,
+          "value": 0
+        },
+        "insolventTrading": {
+          "count": 0,
+          "value": 0
+        },
+        "preAdministration": {
+          "count": 0,
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "stokes-wheeler",
+      "name": "Stokes Wheeler Pty Ltd",
+      "abn": "82080554623",
+      "acn": "080554623",
+      "entityType": "Australian Private Company",
+      "state": "QLD",
+      "status": "complete",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2025-02-03",
+        "administrator": "Robson Cotter Insolvency Group (Bill Cotter, Roland Robson)",
+        "estimatedInsolvencyStart": null,
+        "daysInsolventTrading": null,
+        "source": "ASIC / News",
+        "creditorsMeetingDate": null,
+        "outcome": "Liquidation (14 April 2025)",
+        "creditorCount": null,
+        "totalDebts": 20000000
+      },
+      "summary": {
+        "totalProjectsAtRisk": null,
+        "totalValueAtRisk": null,
+        "totalDevelopersAffected": null,
+        "totalLendersAffected": null,
+        "narrative": "Stokes Wheeler, a ~100-year-old Gold Coast construction company, entered voluntary administration on 3 February 2025 and liquidation on 14 April 2025. ~M total debts \u2014 staff owed .66M, unsecured creditors .5M. 40 staff. All 6 project trust accounts had NO funds. QBCC froze retention account with .7M shortfall. Key project: Elevaire (40-apartment building at Palm Beach) plus 3 other major projects halted."
+      },
+      "projects": [
+        {
+          "id": "sw-001",
+          "projectName": "Elevaire",
+          "address": "Palm Beach, Gold Coast QLD",
+          "developer": null,
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Halted",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": "40-apartment building"
+        }
+      ],
+      "contacts": [],
+      "timeline": [
+        {
+          "date": "2025-02-03",
+          "event": "Entered voluntary administration. Robson Cotter appointed.",
+          "type": "administration"
+        },
+        {
+          "date": "2025-04-14",
+          "event": "Entered liquidation",
+          "type": "liquidation"
+        }
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T15:39:00+11:00",
+        "researchedBy": "Jarvis (automated)",
+        "dataSources": [
+          "ASIC",
+          "News",
+          "ABR"
+        ],
+        "confidence": "medium",
+        "gaps": "Insolvent trading period not determined. 3 other halted projects not identified. Full creditor count unknown."
+      },
+      "context": {
+        "founded": "~1925 (approximately 100 years old)",
+        "employees": 40,
+        "offices": [
+          "Gold Coast",
+          "Yeronga",
+          "Southport"
+        ],
+        "sectors": [
+          "Hospitality",
+          "Residential",
+          "Commercial"
+        ],
+        "staffOwed": 1660000,
+        "unsecuredCreditors": 13500000,
+        "trustAccounts": "6 project trust accounts \u2014 all with NO funds",
+        "retentionShortfall": 2700000,
+        "qbccAction": "Retention account frozen by QBCC"
+      },
+      "windowStats": {
+        "preInsolvency": {
+          "count": 0,
+          "value": 0
+        },
+        "insolventTrading": {
+          "count": 0,
+          "value": 0
+        },
+        "preAdministration": {
+          "count": 0,
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "pindan-group",
+      "name": "Pindan Group Pty Ltd",
+      "abn": "90611922386",
+      "acn": "611922386",
+      "entityType": "Australian Private Company",
+      "state": "WA",
+      "status": "complete",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2021-05-18",
+        "administrator": null,
+        "estimatedInsolvencyStart": null,
+        "daysInsolventTrading": null,
+        "source": "ASIC / News",
+        "creditorsMeetingDate": null,
+        "outcome": "Liquidation",
+        "creditorCount": 1400,
+        "totalDebts": 75000000
+      },
+      "summary": {
+        "totalProjectsAtRisk": 68,
+        "totalValueAtRisk": null,
+        "totalDevelopersAffected": null,
+        "totalLendersAffected": null,
+        "narrative": "Pindan Group, a Belmont (WA) based builder, entered voluntary administration on 18 May 2021. 1,400 creditors owed -80M. 68 active projects at collapse. 280 direct employees, ~500 subcontractors, 40 suppliers affected. Key project: Kings Square development Fremantle. Collapse blamed on COVID pandemic delays to pipeline and project completions. Projects Australia-wide including Sunshine Coast."
+      },
+      "projects": [
+        {
+          "id": "pd-001",
+          "projectName": "Kings Square Development",
+          "address": "Fremantle WA",
+          "developer": null,
+          "estimatedValue": null,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "News / Public Records",
+          "sourceUrl": null,
+          "notes": "Key project at collapse"
+        }
+      ],
+      "contacts": [],
+      "timeline": [
+        {
+          "date": "2021-05-18",
+          "event": "Entered voluntary administration",
+          "type": "administration"
+        }
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T15:39:00+11:00",
+        "researchedBy": "Jarvis (automated)",
+        "dataSources": [
+          "ASIC",
+          "News",
+          "ABR"
+        ],
+        "confidence": "medium",
+        "gaps": "Administrator not confirmed. Insolvent trading period not determined. 67 of 68 active projects not individually identified."
+      },
+      "context": {
+        "location": "Belmont, WA",
+        "directEmployees": 280,
+        "subcontractors": 500,
+        "suppliers": 40,
+        "activeProjectsAtCollapse": 68,
+        "blameFactors": [
+          "COVID pandemic delays to pipeline and project completions"
+        ],
+        "regions": [
+          "WA",
+          "Sunshine Coast",
+          "Australia-wide"
+        ]
+      },
+      "windowStats": {
+        "preInsolvency": {
+          "count": 0,
+          "value": 0
+        },
+        "insolventTrading": {
+          "count": 0,
+          "value": 0
+        },
+        "preAdministration": {
+          "count": 0,
+          "value": 0
         }
       }
     }
