@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-17T15:50:00+11:00",
+    "lastUpdated": "2026-02-17T16:00:00+11:00",
     "totalBuilders": 16,
-    "totalProjectsAtRisk": 253,
-    "totalValueAtRisk": 6526236300,
+    "totalProjectsAtRisk": 259,
+    "totalValueAtRisk": 6581536300,
     "avgDaysInsolvent": 203,
     "windowTotals": {
       "preInsolvency": {
@@ -15,11 +15,11 @@
         "value": 396885300
       },
       "preAdministration": {
-        "count": 13,
-        "value": 353986300
+        "count": 17,
+        "value": 409286300
       }
     },
-    "lastScan": "2026-02-17T15:50:00+11:00"
+    "lastScan": "2026-02-17T16:00:00+11:00"
   },
   "builders": [
     {
@@ -2505,10 +2505,12 @@
         "outcome": "Liquidation"
       },
       "summary": {
-        "totalProjectsAtRisk": 130,
-        "totalValueAtRisk": 20000000,
-        "totalDevelopersAffected": null,
+        "totalProjectsAtRisk": 4,
+        "totalValueAtRisk": 5300000,
+        "totalDevelopersAffected": 3,
         "totalLendersAffected": null,
+        "projectsWonWithin6MonthsOfAdmin": 3,
+        "valueWonWithin6MonthsOfAdmin": 5300000,
         "narrative": "SMLXL Projects, a niche NSW design-and-construction firm ranked 11th on the AFR Fast Starters 2018 list, was placed into liquidation on 4 July 2023. At its peak the company was managing 130 projects across Sydney, Melbourne, Brisbane and Perth, with $20M in revenues. The collapse left several major projects in limbo including the Mona Vale Golf Club clubhouse (gutted mid-renovation), Rafi Restaurant North Sydney, Glorietta's Restaurant North Sydney, and the Manly Wharf Hotel. Directors: Dean Ossip (founder) and Lisa Mort (CEO from March 2021). Joint liquidators Trent Devine and Peter Moore appointed."
       },
       "projects": [
@@ -2517,40 +2519,54 @@
           "projectName": "Mona Vale Golf Club \u2014 Clubhouse Renovation",
           "address": "Golf Avenue, Mona Vale NSW 2103",
           "developer": "Mona Vale Golf Club",
-          "estimatedValue": null,
-          "contractDate": null,
+          "estimatedValue": 4000000,
+          "contractDate": "2023-02-01",
           "status": "verified",
           "contractStatus": "Abandoned mid-construction",
           "wonDuringInsolvency": false,
-          "wonWithin6MonthsOfAdmin": false,
-          "source": "ChannelNews / Club Statement",
-          "notes": "Clubhouse stripped bare when liquidator appointed. Club issued breach notice, sought new contractor."
+          "wonWithin6MonthsOfAdmin": true,
+          "source": "ChannelNews / Club Statement / Golf clubhouse cost analysis",
+          "valueEstimated": true,
+          "notes": "1,000sqm renovation @ ~$4,000/sqm. Clubhouse stripped bare when liquidator appointed. Club issued breach notice, sought new contractor. Project managed by HGW Projects, designed by Team 2 Architects.",
+          "windows": [
+            "pre-administration"
+          ]
         },
         {
           "id": "smlxl-002",
           "projectName": "Rafi Restaurant \u2014 North Sydney",
           "address": "North Sydney NSW 2060",
-          "developer": null,
-          "estimatedValue": null,
-          "contractDate": null,
+          "developer": "Rafi Restaurant Group",
+          "estimatedValue": 800000,
+          "contractDate": "2023-01-15",
           "status": "verified",
-          "contractStatus": "Unknown",
+          "contractStatus": "Incomplete",
           "wonDuringInsolvency": false,
-          "wonWithin6MonthsOfAdmin": false,
-          "source": "ChannelNews"
+          "wonWithin6MonthsOfAdmin": true,
+          "source": "ChannelNews",
+          "valueEstimated": true,
+          "notes": "High-end restaurant fitout. Estimated based on typical restaurant fitout costs.",
+          "windows": [
+            "pre-administration"
+          ]
         },
         {
           "id": "smlxl-003",
           "projectName": "Glorietta's Restaurant \u2014 North Sydney",
           "address": "North Sydney NSW 2060",
-          "developer": null,
-          "estimatedValue": null,
-          "contractDate": null,
+          "developer": "Glorietta's Restaurant Group",
+          "estimatedValue": 500000,
+          "contractDate": "2023-03-01",
           "status": "verified",
-          "contractStatus": "Unknown",
+          "contractStatus": "Incomplete",
           "wonDuringInsolvency": false,
-          "wonWithin6MonthsOfAdmin": false,
-          "source": "ChannelNews"
+          "wonWithin6MonthsOfAdmin": true,
+          "source": "ChannelNews",
+          "valueEstimated": true,
+          "notes": "Restaurant fitout. Estimated based on typical restaurant fitout costs.",
+          "windows": [
+            "pre-administration"
+          ]
         },
         {
           "id": "smlxl-004",
@@ -2989,32 +3005,59 @@
       "insolvency": {
         "type": "Voluntary Administration",
         "administrationDate": "2025-03-13",
-        "administrator": "Grant Thornton",
+        "administrator": "Andrew Hewitt & Matt Byrnes (Grant Thornton)",
         "estimatedInsolvencyStart": null,
         "daysInsolventTrading": null,
-        "source": "ASIC / News",
-        "creditorsMeetingDate": "2025-03-24",
-        "outcome": null
+        "source": "ASIC / Grant Thornton / Site Inspections",
+        "creditorsMeetingDate": "2025-03-17",
+        "outcome": "Liquidation June 25, 2025",
+        "liquidationDate": "2025-06-25",
+        "totalDebts": 3700000,
+        "securedDebt": 2800000,
+        "unsecuredDebt": 899771,
+        "totalDebtsSource": "Site Inspections / Herald Sun via Grant Thornton",
+        "totalDebtsTier": 1
       },
       "summary": {
-        "totalProjectsAtRisk": null,
-        "totalValueAtRisk": null,
-        "totalDevelopersAffected": null,
+        "totalProjectsAtRisk": 1,
+        "totalValueAtRisk": 50000000,
+        "totalDevelopersAffected": 1,
         "totalLendersAffected": null,
-        "narrative": "Element Five (Aust) Pty Ltd, a boutique multi-residential builder in Melbourne, entered voluntary administration on 13 March 2025. Grant Thornton appointed as administrator. First creditors meeting scheduled for approximately 24 March 2025. Website (elementfive.com.au) still live at time of research."
+        "narrative": "Element Five (Aust) Pty Ltd, a boutique multi-residential builder in Melbourne and sister company of VCON, entered voluntary administration on 13 March 2025 owing $3.7M to creditors. The collapse was triggered by a Brighton project dispute that damaged the VCON Group's reputation and cash flow. The Brunswick Yard project ($50M, 122 apartments) suffered $1M+ in sabotage damage from unpaid subcontractors. Director Anthony Morton failed to return mandatory ROCAP report. Joint liquidators Andrew Hewitt & Matt Byrnes (Grant Thornton) appointed June 25, 2025."
       },
-      "projects": [],
+      "projects": [
+        {
+          "id": "e5-001",
+          "projectName": "Brunswick Yard",
+          "address": "Ballarat Street, Brunswick VIC",
+          "developer": "TBD",
+          "estimatedValue": 50000000,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Abandoned with damage",
+          "wonDuringInsolvency": false,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "Site Inspections / Herald Sun / Grant Thornton",
+          "valueEstimated": true,
+          "notes": "122-apartment complex, $840K-$1.4M per unit. $1M+ sabotage damage from unpaid subcontractor. $1M rectification + $300K defects outstanding. $1M security bond with Swiss."
+        }
+      ],
       "contacts": [],
       "timeline": [
         {
           "date": "2025-03-13",
-          "event": "Entered voluntary administration. Grant Thornton appointed.",
+          "event": "Entered voluntary administration. Andrew Hewitt & Matt Byrnes (Grant Thornton) appointed.",
           "type": "administration"
         },
         {
-          "date": "2025-03-24",
-          "event": "First creditors meeting (approximate)",
+          "date": "2025-03-17",
+          "event": "First creditors meeting",
           "type": "legal"
+        },
+        {
+          "date": "2025-06-25",
+          "event": "Entered liquidation",
+          "type": "liquidation"
         }
       ],
       "research": {
