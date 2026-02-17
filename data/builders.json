@@ -1,0 +1,511 @@
+{
+  "meta": {
+    "lastUpdated": "2026-02-17T14:30:00+11:00",
+    "totalBuilders": 8,
+    "totalProjectsAtRisk": 20,
+    "totalValueAtRisk": 389536300,
+    "avgDaysInsolvent": 214
+  },
+  "builders": [
+    {
+      "id": "novati-constructions",
+      "name": "Novati Constructions Pty Ltd",
+      "abn": "52000785021",
+      "acn": "000785021",
+      "entityType": "Australian Private Company",
+      "state": "NSW",
+      "status": "new",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2026-02-13",
+        "administrator": "Worrells",
+        "estimatedInsolvencyStart": null,
+        "daysInsolventTrading": null,
+        "source": "ASIC Published Notice / News",
+        "creditorsMeetingDate": "2026-02-18",
+        "outcome": null
+      },
+      "summary": {
+        "totalProjectsAtRisk": null,
+        "totalValueAtRisk": null,
+        "totalDevelopersAffected": null,
+        "totalLendersAffected": null,
+        "narrative": "Novati Constructions, a Sydney-based builder operating since 1971, entered voluntary administration on 13 February 2026. Worrells have been appointed as administrators. Research is underway to identify the insolvent trading period and projects won during that time."
+      },
+      "projects": [],
+      "contacts": [],
+      "timeline": [
+        {"date": "2026-02-13", "event": "Entered voluntary administration. Worrells appointed.", "type": "administration"},
+        {"date": "2026-02-18", "event": "First creditors' meeting scheduled", "type": "legal"}
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T14:00:00+11:00",
+        "researchedBy": "Jarvis (automated)",
+        "dataSources": ["ASIC", "News (API Magazine, Daily Mail, Lawyerly)"],
+        "confidence": "low",
+        "gaps": "Administrator report not yet available. Insolvent trading period unknown. Projects not yet researched. No developer or lender contacts."
+      },
+      "context": {
+        "founded": "1971",
+        "founders": "Peter Novati",
+        "directors": ["Luisa Novati", "Marco Novati"],
+        "notableProjects": ["Dicker Data warehouse (Kurnell)", "Luxury apartments (South Cronulla)", "Manly Civic Club fit-out", "Sargood on Collaroy (MBA Award 2017)"],
+        "industryContext": "1,567 construction companies entered administration during FY25"
+      }
+    },
+    {
+      "id": "lanskey-constructions",
+      "name": "Lanskey Constructions",
+      "abn": null,
+      "acn": null,
+      "entityType": "Australian Private Company",
+      "state": "Multi-state (NSW, QLD, VIC, WA)",
+      "status": "complete",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2022-12-12",
+        "administrator": null,
+        "estimatedInsolvencyStart": "2021-12-01",
+        "daysInsolventTrading": 376,
+        "source": "Administrator Report",
+        "creditorsMeetingDate": null,
+        "outcome": null
+      },
+      "summary": {
+        "totalProjectsAtRisk": 7,
+        "totalValueAtRisk": 86960000,
+        "totalDevelopersAffected": 7,
+        "totalLendersAffected": null,
+        "projectsWonWithin6Months": 19,
+        "valueWonWithin6Months": 141520000,
+        "projectsWonWithin6MonthsOfAdmin": 2,
+        "valueWonWithin6MonthsOfAdmin": 41530000,
+        "narrative": "Lanskey Constructions traded insolvent for over 12 months — the second-longest period in our study. During this time, they won 7 projects worth $87M across 4 states, including government schools and major retail developments. 19 projects totalling $141.5M were won within 6 months of the insolvent trading date."
+      },
+      "projects": [
+        {
+          "id": "lanskey-001",
+          "projectName": "Wattleup East Primary School",
+          "address": "380 Wattleup Rd, Hammond Park WA 6164",
+          "developer": "Department of Education WA",
+          "estimatedValue": 22530000,
+          "contractDate": "2022-09-30",
+          "status": "verified",
+          "contractStatus": "Tendering",
+          "wonDuringInsolvency": true,
+          "wonWithin6MonthsOfAdmin": true,
+          "source": "Paul Reid / IPEX Research",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "lanskey-002",
+          "projectName": "Greendale Village Shopping Centre",
+          "address": "15 Greendale Way, Carindale QLD 4152",
+          "developer": "Woolworths Group Ltd",
+          "estimatedValue": 19000000,
+          "contractDate": "2022-08-19",
+          "status": "verified",
+          "contractStatus": "Tendering",
+          "wonDuringInsolvency": true,
+          "wonWithin6MonthsOfAdmin": true,
+          "source": "Paul Reid / IPEX Research",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "lanskey-003",
+          "projectName": "Rose Bay Apartments",
+          "address": "599-603 Old South Head Rd, Rose Bay NSW 2029",
+          "developer": "Urban DC",
+          "estimatedValue": 16200000,
+          "contractDate": "2022-10-25",
+          "status": "verified",
+          "contractStatus": "Contract Won",
+          "wonDuringInsolvency": true,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "Paul Reid / IPEX Research",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "lanskey-004",
+          "projectName": "Newmarket Rd Development",
+          "address": "131A, 131 & 143 Newmarket Rd, Windsor QLD",
+          "developer": "TBD",
+          "estimatedValue": 10000000,
+          "contractDate": "2022-06-01",
+          "status": "verified",
+          "contractStatus": "TBD",
+          "wonDuringInsolvency": true,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "Paul Reid / IPEX Research",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "lanskey-005",
+          "projectName": "Metroplex Estate",
+          "address": "18 Macgregor Pl, Richlands QLD 4077",
+          "developer": "Clarence Property Group Pty Ltd",
+          "estimatedValue": 10000000,
+          "contractDate": "2022-01-01",
+          "status": "verified",
+          "contractStatus": "Contract Won",
+          "wonDuringInsolvency": true,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "Paul Reid / IPEX Research",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "lanskey-006",
+          "projectName": "Vermont Development",
+          "address": "27-63 Morack Rd, Vermont VIC 3133",
+          "developer": "TBD",
+          "estimatedValue": 6500000,
+          "contractDate": null,
+          "status": "verified",
+          "contractStatus": "Contract Won",
+          "wonDuringInsolvency": true,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "Paul Reid / IPEX Research",
+          "sourceUrl": null,
+          "notes": null
+        },
+        {
+          "id": "lanskey-007",
+          "projectName": "Radich Chase Development",
+          "address": "38 Radich Chase, Wangara WA 6065",
+          "developer": "TBD",
+          "estimatedValue": 2730000,
+          "contractDate": "2022-04-01",
+          "status": "verified",
+          "contractStatus": "Contract Won",
+          "wonDuringInsolvency": true,
+          "wonWithin6MonthsOfAdmin": false,
+          "source": "Paul Reid / IPEX Research",
+          "sourceUrl": null,
+          "notes": null
+        }
+      ],
+      "contacts": [],
+      "timeline": [
+        {"date": "2021-12-01", "event": "Estimated insolvency start (Administrator report)", "type": "insolvency"},
+        {"date": "2022-01-01", "event": "Won Metroplex Estate ($10M) — Clarence Property Group", "type": "project_won"},
+        {"date": "2022-04-01", "event": "Won Radich Chase ($2.7M)", "type": "project_won"},
+        {"date": "2022-06-01", "event": "Won Newmarket Rd ($10M)", "type": "project_won"},
+        {"date": "2022-08-19", "event": "Tendering Greendale Village ($19M) — Woolworths", "type": "project_won"},
+        {"date": "2022-09-30", "event": "Tendering Wattleup East Primary ($22.5M) — Dept Education WA", "type": "project_won"},
+        {"date": "2022-10-25", "event": "Won Rose Bay Apartments ($16.2M) — Urban DC", "type": "project_won"},
+        {"date": "2022-12-12", "event": "Entered administration", "type": "administration"}
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T14:00:00+11:00",
+        "researchedBy": "Paul Reid / MC / James Curtis",
+        "dataSources": ["ASIC", "Administrator Report", "Cordell", "Builder Website"],
+        "confidence": "high",
+        "gaps": "ABN/ACN not yet populated. No developer/lender contacts. Vermont development details incomplete."
+      }
+    },
+    {
+      "id": "lloyd-group",
+      "name": "Lloyd Group",
+      "abn": null,
+      "acn": null,
+      "entityType": "Australian Private Company",
+      "state": "Multi-state (VIC, NSW, QLD)",
+      "status": "complete",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2023-03-31",
+        "administrator": null,
+        "estimatedInsolvencyStart": "2022-09-01",
+        "daysInsolventTrading": 210,
+        "source": "Administrator Report",
+        "creditorsMeetingDate": null,
+        "outcome": null
+      },
+      "summary": {
+        "totalProjectsAtRisk": 8,
+        "totalValueAtRisk": 62980000,
+        "totalDevelopersAffected": 8,
+        "totalLendersAffected": null,
+        "projectsWonWithin6Months": 5,
+        "valueWonWithin6Months": 20902000,
+        "projectsWonWithin6MonthsOfAdmin": 3,
+        "valueWonWithin6MonthsOfAdmin": 48499000,
+        "narrative": "Lloyd Group won 8 projects worth $63M while trading insolvent for 210 days. Schools, universities, fire stations — even government and institutional clients weren't protected by traditional due diligence."
+      },
+      "projects": [
+        {"id": "lloyd-001", "projectName": "Holy Spirit / Mt Carmel / St Francis / Mary Immaculate", "address": "Multiple sites, NSW", "developer": "Catholic Education Office", "estimatedValue": 30000000, "contractDate": "2022-10-01", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": true, "wonWithin6MonthsOfAdmin": true, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "lloyd-002", "projectName": "St Francis College — Edmondson Park (Stage 5-7)", "address": "130-160 Jardine Dr, Edmondson Park NSW 2171", "developer": "Catholic Education Office", "estimatedValue": 10000000, "contractDate": "2022-10-01", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": true, "wonWithin6MonthsOfAdmin": true, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "lloyd-003", "projectName": "Church of Jesus Christ — Mickleham", "address": "1540 Mickleham Rd, Mickleham VIC 3064", "developer": null, "estimatedValue": 8831000, "contractDate": "2023-11-01", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": true, "wonWithin6MonthsOfAdmin": false, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "lloyd-004", "projectName": "Broadmeadows Fire Station", "address": "338 Camp Rd, Broadmeadows VIC 3047", "developer": null, "estimatedValue": 8499000, "contractDate": "2022-10-01", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": true, "wonWithin6MonthsOfAdmin": true, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "lloyd-005", "projectName": "Orara — Dandenong", "address": "100 South Gippsland Hwy, Dandenong South VIC 3175", "developer": "Orora Ltd", "estimatedValue": 3700000, "contractDate": "2022-09-19", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": true, "wonWithin6MonthsOfAdmin": false, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "lloyd-006", "projectName": "UTS CB05 Teaching Spaces", "address": "187 Thomas St, Haymarket NSW 2000", "developer": "University of Technology Sydney", "estimatedValue": 1000000, "contractDate": "2022-09-01", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": true, "wonWithin6MonthsOfAdmin": false, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "lloyd-007", "projectName": "UTS CB02 Informal Learning", "address": "61 Broadway, Ultimo NSW 2007", "developer": "University of Technology Sydney", "estimatedValue": 500000, "contractDate": "2023-06-01", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": true, "wonWithin6MonthsOfAdmin": false, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "lloyd-008", "projectName": "Noosa Pengari Steiner School (K & L)", "address": "86 Nyell Rd, Doonan QLD 4562", "developer": "Noosa Pengari Steiner School", "estimatedValue": 450000, "contractDate": "2022-09-29", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": true, "wonWithin6MonthsOfAdmin": false, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null}
+      ],
+      "contacts": [],
+      "timeline": [
+        {"date": "2022-09-01", "event": "Estimated insolvency start", "type": "insolvency"},
+        {"date": "2022-09-01", "event": "Won UTS CB05 ($1M), Orara Dandenong ($3.7M), Noosa Pengari ($0.45M)", "type": "project_won"},
+        {"date": "2022-10-01", "event": "Won Holy Spirit/Catholic schools ($30M+$10M), Broadmeadows Fire Station ($8.5M)", "type": "project_won"},
+        {"date": "2023-03-31", "event": "Entered administration", "type": "administration"}
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T14:00:00+11:00",
+        "researchedBy": "Paul Reid / MC / James Curtis",
+        "dataSources": ["ASIC", "Administrator Report", "Cordell", "Builder Website"],
+        "confidence": "high",
+        "gaps": "ABN/ACN not yet populated. No developer/lender contacts."
+      }
+    },
+    {
+      "id": "gcb-constructions",
+      "name": "GCB Constructions",
+      "abn": null,
+      "acn": null,
+      "entityType": "Australian Private Company",
+      "state": "QLD",
+      "status": "complete",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2023-07-26",
+        "administrator": null,
+        "estimatedInsolvencyStart": "2023-01-01",
+        "daysInsolventTrading": 205,
+        "source": "Administrator Report",
+        "creditorsMeetingDate": null,
+        "outcome": null
+      },
+      "summary": {
+        "totalProjectsAtRisk": 1,
+        "totalValueAtRisk": 193000000,
+        "totalDevelopersAffected": 1,
+        "totalLendersAffected": null,
+        "projectsWonWithin6Months": 1,
+        "valueWonWithin6Months": 51000000,
+        "projectsWonWithin6MonthsOfAdmin": 1,
+        "valueWonWithin6MonthsOfAdmin": 193000000,
+        "narrative": "GCB won a single $193M project — Canopy House in Kangaroo Point — while trading insolvent. Aria Property Group engaged GCB 4 months after insolvency began. The builder entered administration 3 months later."
+      },
+      "projects": [
+        {"id": "gcb-001", "projectName": "Canopy House", "address": "64 Leopard St, Kangaroo Point QLD", "developer": "Aria Property Group", "estimatedValue": 193000000, "contractDate": "2023-04-01", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": true, "wonWithin6MonthsOfAdmin": true, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "gcb-002", "projectName": "Cote Palm Beach", "address": "3 Thirteenth Ave, Palm Beach QLD", "developer": "Steer Developments", "estimatedValue": 51000000, "contractDate": "2022-10-01", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": false, "wonWithin6MonthsOfAdmin": false, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": "Won within 6 months of insolvent trading date, not during."}
+      ],
+      "contacts": [],
+      "timeline": [
+        {"date": "2023-01-01", "event": "Estimated insolvency start", "type": "insolvency"},
+        {"date": "2023-04-01", "event": "Won Canopy House ($193M) — Aria Property Group", "type": "project_won"},
+        {"date": "2023-07-26", "event": "Entered administration", "type": "administration"}
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T14:00:00+11:00",
+        "researchedBy": "Paul Reid / MC / James Curtis",
+        "dataSources": ["ASIC", "Administrator Report", "Cordell"],
+        "confidence": "high",
+        "gaps": "ABN/ACN not yet populated. No developer/lender contacts."
+      }
+    },
+    {
+      "id": "eq-projects",
+      "name": "EQ Projects",
+      "abn": null,
+      "acn": null,
+      "entityType": "Australian Private Company",
+      "state": "NSW",
+      "status": "complete",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2023-02-03",
+        "administrator": null,
+        "estimatedInsolvencyStart": "2021-12-01",
+        "daysInsolventTrading": 422,
+        "source": "Administrator Report",
+        "creditorsMeetingDate": null,
+        "outcome": null
+      },
+      "summary": {
+        "totalProjectsAtRisk": 1,
+        "totalValueAtRisk": 38580000,
+        "totalDevelopersAffected": 1,
+        "totalLendersAffected": null,
+        "projectsWonWithin6Months": 0,
+        "valueWonWithin6Months": 0,
+        "projectsWonWithin6MonthsOfAdmin": 0,
+        "valueWonWithin6MonthsOfAdmin": 0,
+        "narrative": "EQ Projects traded insolvent for 422 days — the longest period in our study — over 14 months. A $38.6M Warriewood project was secured during this time."
+      },
+      "projects": [
+        {"id": "eq-001", "projectName": "Forest Lodge Warriewood", "address": "8 Forest Rd, Warriewood NSW 2102", "developer": "TBD", "estimatedValue": 38580000, "contractDate": "2022-01-01", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": true, "wonWithin6MonthsOfAdmin": false, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null}
+      ],
+      "contacts": [],
+      "timeline": [
+        {"date": "2021-12-01", "event": "Estimated insolvency start", "type": "insolvency"},
+        {"date": "2022-01-01", "event": "Won Forest Lodge Warriewood ($38.6M)", "type": "project_won"},
+        {"date": "2023-02-03", "event": "Entered administration", "type": "administration"}
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T14:00:00+11:00",
+        "researchedBy": "Paul Reid / MC / James Curtis",
+        "dataSources": ["ASIC", "Administrator Report"],
+        "confidence": "high",
+        "gaps": "ABN/ACN not yet populated. Developer identity unknown (TBD). No contacts."
+      }
+    },
+    {
+      "id": "st-hilliers",
+      "name": "St Hilliers",
+      "abn": null,
+      "acn": null,
+      "entityType": "Australian Private Company",
+      "state": "Multi-state (QLD, NSW, WA)",
+      "status": "complete",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2024-02-04",
+        "administrator": null,
+        "estimatedInsolvencyStart": "2024-02-04",
+        "daysInsolventTrading": 0,
+        "source": "Administrator Report",
+        "creditorsMeetingDate": null,
+        "outcome": null
+      },
+      "summary": {
+        "totalProjectsAtRisk": 0,
+        "totalValueAtRisk": 0,
+        "totalDevelopersAffected": 5,
+        "totalLendersAffected": null,
+        "projectsWonWithin6Months": 5,
+        "valueWonWithin6Months": 62250000,
+        "projectsWonWithin6MonthsOfAdmin": 5,
+        "valueWonWithin6MonthsOfAdmin": 62250000,
+        "narrative": "St Hilliers showed no prior insolvent trading period — administration and insolvency dates were the same day. But $62.3M in projects were won in the 6 months leading up to collapse, including government defence and nuclear science facilities."
+      },
+      "projects": [
+        {"id": "sth-001", "projectName": "Ascot Grove Care Community (ECI)", "address": "52 Hampden St, Ascot QLD 4007", "developer": "Brisbane Racing Club / Opal HealthCare", "estimatedValue": 43800000, "contractDate": "2023-09-14", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": false, "wonWithin6MonthsOfAdmin": true, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "sth-002", "projectName": "Dordaak Kepap", "address": "15 The Broadview, Landsdale WA 6065", "developer": "City of Wanneroo", "estimatedValue": 10450000, "contractDate": "2023-12-14", "status": "verified", "contractStatus": "Tendering", "wonDuringInsolvency": false, "wonWithin6MonthsOfAdmin": true, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "sth-003", "projectName": "ANSTO Calibration Centre (Building 4)", "address": "New Illawarra Rd, Lucas Heights NSW 2234", "developer": "ANSTO", "estimatedValue": 7000000, "contractDate": "2023-12-21", "status": "verified", "contractStatus": "Tendering", "wonDuringInsolvency": false, "wonWithin6MonthsOfAdmin": true, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "sth-004", "projectName": "RAAF Amberley Building 737 Refurbishment", "address": "Southern Amberley Rd, Amberley QLD 4306", "developer": "Department of Defence", "estimatedValue": 1000000, "contractDate": "2023-12-12", "status": "verified", "contractStatus": "Tendering", "wonDuringInsolvency": false, "wonWithin6MonthsOfAdmin": true, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "sth-005", "projectName": "Opal Healthcare — Ascot Grove", "address": "TBD", "developer": "Opal HealthCare", "estimatedValue": null, "contractDate": "2023-09-14", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": false, "wonWithin6MonthsOfAdmin": true, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null}
+      ],
+      "contacts": [],
+      "timeline": [
+        {"date": "2023-09-14", "event": "Won Ascot Grove ($43.8M) — Brisbane Racing Club / Opal", "type": "project_won"},
+        {"date": "2023-12-12", "event": "Tendering RAAF Amberley ($1M) — Dept Defence", "type": "project_won"},
+        {"date": "2023-12-14", "event": "Tendering Dordaak Kepap ($10.5M) — City of Wanneroo", "type": "project_won"},
+        {"date": "2023-12-21", "event": "Tendering ANSTO Calibration ($7M)", "type": "project_won"},
+        {"date": "2024-02-04", "event": "Entered administration (same day as estimated insolvency)", "type": "administration"}
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T14:00:00+11:00",
+        "researchedBy": "Paul Reid / MC / James Curtis",
+        "dataSources": ["ASIC", "Administrator Report", "Cordell"],
+        "confidence": "high",
+        "gaps": "ABN/ACN not yet populated. No developer/lender contacts. Opal Healthcare project value unknown."
+      }
+    },
+    {
+      "id": "stevens-constructions",
+      "name": "Stevens Constructions",
+      "abn": null,
+      "acn": null,
+      "entityType": "Australian Private Company",
+      "state": "NSW",
+      "status": "complete",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2024-05-27",
+        "administrator": null,
+        "estimatedInsolvencyStart": "2023-09-30",
+        "daysInsolventTrading": 237,
+        "source": "Administrator Report (estimate — 530 report does not provide specific date)",
+        "creditorsMeetingDate": null,
+        "outcome": null
+      },
+      "summary": {
+        "totalProjectsAtRisk": 2,
+        "totalValueAtRisk": 10390000,
+        "totalDevelopersAffected": 2,
+        "totalLendersAffected": null,
+        "projectsWonWithin6Months": 2,
+        "valueWonWithin6Months": 13670000,
+        "projectsWonWithin6MonthsOfAdmin": 2,
+        "valueWonWithin6MonthsOfAdmin": 8674000,
+        "narrative": "Stevens Constructions won 2 projects worth $10.4M while trading insolvent for 237 days, including the Newcastle Beach Hotel ($6.7M) just weeks before entering administration."
+      },
+      "projects": [
+        {"id": "stv-001", "projectName": "Newcastle Beach Hotel", "address": "21 Parnell Pl, Newcastle East NSW 2300", "developer": "WINIM Funds Management Pty Ltd", "estimatedValue": 6700000, "contractDate": "2024-05-15", "status": "verified", "contractStatus": "Tendering", "wonDuringInsolvency": true, "wonWithin6MonthsOfAdmin": true, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "stv-002", "projectName": "Wyong Business Units (Stages 2-4)", "address": "4-8 Dulmison Ave, Wyong NSW 2259", "developer": "Gibbens Group Property", "estimatedValue": 3690000, "contractDate": "2023-10-01", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": true, "wonWithin6MonthsOfAdmin": false, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "stv-003", "projectName": "Swift on Hunter", "address": "653 Hunter St, Newcastle NSW 2300", "developer": "Altim Property", "estimatedValue": 9980000, "contractDate": "2024-04-01", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": false, "wonWithin6MonthsOfAdmin": false, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": "Won within 6 months of insolvent trading date."},
+        {"id": "stv-004", "projectName": "Taco Bell — Lisarow Plaza Complex", "address": "4/1 Parsons Rd, Lisarow NSW 2250", "developer": "Yum! Restaurants International", "estimatedValue": 1974000, "contractDate": "2024-10-01", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": false, "wonWithin6MonthsOfAdmin": true, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": "Won within 6 months of administration date."}
+      ],
+      "contacts": [],
+      "timeline": [
+        {"date": "2023-09-30", "event": "Estimated insolvency start", "type": "insolvency"},
+        {"date": "2023-10-01", "event": "Won Wyong Business Units ($3.69M) — Gibbens Group", "type": "project_won"},
+        {"date": "2024-05-15", "event": "Tendering Newcastle Beach Hotel ($6.7M) — WINIM Funds", "type": "project_won"},
+        {"date": "2024-05-27", "event": "Entered administration", "type": "administration"}
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T14:00:00+11:00",
+        "researchedBy": "Paul Reid / MC / James Curtis",
+        "dataSources": ["ASIC", "Administrator Report (530 report)"],
+        "confidence": "medium",
+        "gaps": "ABN/ACN not yet populated. 530 report does not provide specific insolvency date — estimate used. No developer/lender contacts. Note: Paul's Overall Summary spreadsheet has a formula error for Stevens ($3.69M instead of $10.39M for value won after insolvency)."
+      }
+    },
+    {
+      "id": "project-coordination",
+      "name": "Project Coordination",
+      "abn": null,
+      "acn": null,
+      "entityType": "Australian Private Company",
+      "state": "Multi-state (NSW, ACT)",
+      "status": "complete",
+      "insolvency": {
+        "type": "Voluntary Administration",
+        "administrationDate": "2024-03-19",
+        "administrator": null,
+        "estimatedInsolvencyStart": "2024-01-31",
+        "daysInsolventTrading": 49,
+        "source": "Administrator Report",
+        "creditorsMeetingDate": null,
+        "outcome": null,
+        "lastATOPayment": "2023-11-21"
+      },
+      "summary": {
+        "totalProjectsAtRisk": 1,
+        "totalValueAtRisk": 4326300,
+        "totalDevelopersAffected": 1,
+        "totalLendersAffected": null,
+        "projectsWonWithin6Months": 2,
+        "valueWonWithin6Months": 24000000,
+        "projectsWonWithin6MonthsOfAdmin": 0,
+        "valueWonWithin6MonthsOfAdmin": 0,
+        "narrative": "Project Coordination traded insolvent for just 49 days, but still won a $4.3M community housing contract during that period. Their last ATO payment was 4 months before administration — a red flag that traditional due diligence didn't catch."
+      },
+      "projects": [
+        {"id": "pc-001", "projectName": "Banksia Village Broulee", "address": "65-69 Heath St, Broulee NSW 2537", "developer": "Banksia Villages", "estimatedValue": 4326300, "contractDate": "2024-03-04", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": true, "wonWithin6MonthsOfAdmin": false, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": null},
+        {"id": "pc-002", "projectName": "Housing Trust Community — Wollongong", "address": "6-8 Dudley St, Wollongong NSW 2500", "developer": "Illawarra Community Housing Trust", "estimatedValue": 20000000, "contractDate": "2023-12-06", "status": "verified", "contractStatus": "Tendering", "wonDuringInsolvency": false, "wonWithin6MonthsOfAdmin": false, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": "Won within 6 months of insolvent trading date."},
+        {"id": "pc-003", "projectName": "Ovolo Nishi Roofing Works", "address": "25 Edinburgh Ave, Canberra ACT 2601", "developer": "Ovolo Nishi", "estimatedValue": 4000000, "contractDate": "2023-08-01", "status": "verified", "contractStatus": "Contract Won", "wonDuringInsolvency": false, "wonWithin6MonthsOfAdmin": false, "source": "Paul Reid / IPEX Research", "sourceUrl": null, "notes": "Won within 6 months of insolvent trading date."}
+      ],
+      "contacts": [],
+      "timeline": [
+        {"date": "2023-11-21", "event": "Last ATO payment made", "type": "insolvency"},
+        {"date": "2024-01-31", "event": "Estimated insolvency start", "type": "insolvency"},
+        {"date": "2024-03-04", "event": "Won Banksia Village Broulee ($4.3M) — Banksia Villages", "type": "project_won"},
+        {"date": "2024-03-19", "event": "Entered administration", "type": "administration"}
+      ],
+      "research": {
+        "lastUpdated": "2026-02-17T14:00:00+11:00",
+        "researchedBy": "Paul Reid / MC / James Curtis",
+        "dataSources": ["ASIC", "Administrator Report"],
+        "confidence": "high",
+        "gaps": "ABN/ACN not yet populated. No developer/lender contacts."
+      }
+    }
+  ]
+}
