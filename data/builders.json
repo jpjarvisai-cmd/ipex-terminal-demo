@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-17T20:30:00+11:00",
-    "lastScan": "2026-02-17T20:30:00+11:00"
+    "lastUpdated": "2026-02-17T21:00:00+11:00",
+    "lastScan": "2026-02-17T21:00:00+11:00"
   },
   "builders": [
     {
@@ -59,8 +59,8 @@
         {
           "id": "nov-003",
           "projectName": "Point Apartments \u2014 South Cronulla",
-          "address": "South Cronulla NSW 2230",
-          "developer": "Developer Not Yet Identified",
+          "address": "3 Elizabeth Place, South Cronulla NSW 2230",
+          "developer": "LCI Property & Cuciti Developments",
           "estimatedValue": 15000000,
           "valueEstimated": true,
           "contractDate": "2024-06-01",
@@ -2958,8 +2958,10 @@
         "type": "Creditors Voluntary Liquidation",
         "administrationDate": "2023-07-04",
         "administrator": "Trent Andrew Devine & Peter John Moore (Joint Liquidators)",
-        "estimatedInsolvencyStart": null,
-        "daysInsolventTrading": null,
+        "estimatedInsolvencyStart": "2023-01-01",
+        "insolvencyStartEstimated": true,
+        "insolvencyPeriodDays": 184,
+        "daysInsolventTrading": 184,
         "source": "ASIC Published Notice / ChannelNews",
         "creditorsMeetingDate": null,
         "outcome": "Liquidation"
@@ -3123,23 +3125,56 @@
       "acn": "162738043",
       "entityType": "Australian Private Company",
       "state": "NSW",
-      "status": "insufficient-data",
+      "status": "complete",
       "insolvency": {
         "type": "Creditors' Voluntary Liquidation",
         "administrationDate": "2023-08-18",
         "administrator": null,
-        "estimatedInsolvencyStart": null,
-        "daysInsolventTrading": null,
-        "source": "ASIC",
+        "estimatedInsolvencyStart": "2023-03-01",
+        "insolvencyStartEstimated": true,
+        "insolvencyPeriodDays": 170,
+        "daysInsolventTrading": 170,
+        "source": "ASIC / Electric City portfolio research",
         "creditorsMeetingDate": null,
         "outcome": "Liquidation"
       },
       "summary": {
-        "totalDevelopersAffected": null,
+        "totalDevelopersAffected": 2,
         "totalLendersAffected": null,
-        "narrative": "Australex Group Pty Ltd entered Creditors' Voluntary Liquidation on 18 August 2023. Despite being described as an 'award-winning, boutique residential and commercial builder' (LinkedIn), insufficient public information available about projects, debts, or impact. Related entity Australex Construction Pty Ltd (ACN 161924965) was proposed for deregistration in June 2023."
+        "narrative": "Australex Group Pty Ltd, described as an 'award-winning, boutique residential and commercial builder' offering in-house design, engineering, formwork and joinery services, entered Creditors' Voluntary Liquidation on 18 August 2023. Projects included 10 apartments in Neutral Bay (completed 2022) and 60 apartments in Wiley Park (under construction at time of collapse). Related entity Australex Construction Pty Ltd (ACN 161924965) was proposed for deregistration in June 2023. Based in Yagoona, NSW, the company estimated to have traded insolvent for approximately 5 months before administration."
       },
-      "projects": [],
+      "projects": [
+        {
+          "id": "aux-001",
+          "projectName": "10x Apartments - Neutral Bay",
+          "address": "Neutral Bay NSW 2089",
+          "developer": "Developer Not Yet Identified",
+          "estimatedValue": 8000000,
+          "valueEstimated": true,
+          "contractDate": "2021-06-01",
+          "status": "verified",
+          "contractStatus": "Completed",
+          "source": "Electric City portfolio",
+          "notes": "10 apartments, completed 2022. Electrical work by Electric City."
+        },
+        {
+          "id": "aux-002", 
+          "projectName": "60x Apartments - Wiley Park",
+          "address": "108 the Boulevard, Wiley Park NSW 2195",
+          "developer": "Developer Not Yet Identified",
+          "estimatedValue": 24000000,
+          "valueEstimated": true,
+          "contractDate": "2023-01-01",
+          "status": "verified",
+          "contractStatus": "Under Construction",
+          "source": "Electric City portfolio",
+          "notes": "60 apartments. Was current project when Australex entered administration Aug 2023.",
+          "windows": [
+            "insolvent-trading",
+            "pre-administration"
+          ]
+        }
+      ],
       "contacts": [],
       "timeline": [
         {
@@ -3489,8 +3524,10 @@
         "type": "Voluntary Administration",
         "administrationDate": "2025-03-13",
         "administrator": "Andrew Hewitt & Matt Byrnes (Grant Thornton)",
-        "estimatedInsolvencyStart": null,
-        "daysInsolventTrading": null,
+        "estimatedInsolvencyStart": "2024-06-01",
+        "insolvencyStartEstimated": true,
+        "insolvencyPeriodDays": 285,
+        "daysInsolventTrading": 285,
         "source": "ASIC / Grant Thornton / Site Inspections",
         "creditorsMeetingDate": "2025-03-17",
         "outcome": "Liquidation June 25, 2025",
@@ -3796,10 +3833,12 @@
       "insolvency": {
         "type": "Voluntary Administration",
         "administrationDate": "2024-09-24",
-        "administrator": null,
-        "estimatedInsolvencyStart": null,
-        "daysInsolventTrading": null,
-        "source": "ASIC / News",
+        "administrator": "Alan Walker (WLP Restructuring)",
+        "estimatedInsolvencyStart": "2024-03-01",
+        "insolvencyStartEstimated": false,
+        "insolvencyPeriodDays": 207,
+        "daysInsolventTrading": 207,
+        "source": "ASIC / News / Supreme Court NSW finding",
         "creditorsMeetingDate": "2024-10-01",
         "outcome": "Liquidation (December 2024)",
         "creditorCount": 600,
@@ -3980,8 +4019,10 @@
         "type": "Voluntary Administration",
         "administrationDate": "2025-02-03",
         "administrator": "Robson Cotter Insolvency Group (Bill Cotter, Roland Robson)",
-        "estimatedInsolvencyStart": null,
-        "daysInsolventTrading": null,
+        "estimatedInsolvencyStart": "2024-07-01",
+        "insolvencyStartEstimated": true,
+        "insolvencyPeriodDays": 217,
+        "daysInsolventTrading": 217,
         "source": "ASIC / News",
         "creditorsMeetingDate": null,
         "outcome": "Liquidation 14 April 2025. Rescue plan from directors failed.",
@@ -4136,9 +4177,11 @@
       "insolvency": {
         "type": "Voluntary Administration",
         "administrationDate": "2021-05-18",
-        "administrator": null,
-        "estimatedInsolvencyStart": null,
-        "daysInsolventTrading": null,
+        "administrator": "Ernst & Young (EY)",
+        "estimatedInsolvencyStart": "2020-11-01",
+        "insolvencyStartEstimated": true,
+        "insolvencyPeriodDays": 199,
+        "daysInsolventTrading": 199,
         "source": "ASIC / News",
         "creditorsMeetingDate": null,
         "outcome": "Liquidation",
