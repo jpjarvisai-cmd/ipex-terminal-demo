@@ -22,7 +22,367 @@
       "type": "developer",
       "source": "https://contractsadministrator.com.au/blogs/contracts-administrator-nsw",
       "builder": "Novati Constructions Pty Ltd"
+    },
+    {
+      "name": null,
+      "company": "amp",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Novati Constructions Pty Ltd",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "not categorized as either financial creditor or operational creditor is entitled to retain security interest in pledged shares",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Novati Constructions Pty Ltd",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "to charge lower interest",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Novati Constructions Pty Ltd",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "has",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Novati Constructions Pty Ltd",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "ing",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Novati Constructions Pty Ltd",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "ing",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Lanskey Constructions",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "may lose priority to other creditors",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Lanskey Constructions",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "takes",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Lanskey Constructions",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "amp",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Lanskey Constructions",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "may lose priority to other creditors",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Lloyd Group",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "ing",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Lloyd Group",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "may require for",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Lloyd Group",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "to charge lower interest",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Lloyd Group",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "Poly Global",
+      "type": "developer",
+      "role": "Creditor (developer)",
+      "builder": "GCB Constructions",
+      "source": "Brave Search \u2014 creditor extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "takes",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "GCB Constructions",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "may require for",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "GCB Constructions",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "ing financial",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "GCB Constructions",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "can take possession and sell the property ahead of other creditors",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "EQ Projects",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "with details of your mortgage and how much equity you have built up",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "EQ Projects",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "and",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "EQ Projects",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "may require additional security such as",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "EQ Projects",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "may require for",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "EQ Projects",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "nab",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "EQ Projects",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "ing",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "EQ Projects",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "will usually secure the debt by way of",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "St Hilliers",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "ing",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "St Hilliers",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "may require for",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "St Hilliers",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "to charge lower interest",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "St Hilliers",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "can enforce security against the assets of the debtor and avoid competing for",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Stevens Constructions",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "takes",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Stevens Constructions",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "ing",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Stevens Constructions",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "has rights in the collateral superior to those of unsecured creditors",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Stevens Constructions",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "or selling company might require the business to offer something else as collateral",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Project Coordination",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "takes",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Project Coordination",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "ing",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Project Coordination",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
+    },
+    {
+      "name": null,
+      "company": "nab",
+      "type": "lender",
+      "role": "Secured creditor (lender)",
+      "builder": "Project Coordination",
+      "source": "Brave Search \u2014 lender extraction",
+      "tier": 1,
+      "status": "not_contacted"
     }
   ],
-  "lastUpdated": "2026-02-17T14:54:00.459234"
+  "lastUpdated": "2026-02-17T15:20:20.268385"
 }
