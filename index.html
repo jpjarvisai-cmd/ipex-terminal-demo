@@ -264,19 +264,38 @@ tr:hover{background:rgba(255,255,255,.02)}
   <div class="stat-row">
     <div class="stat-card">
       <div class="val red" id="s-value">—</div>
-      <div class="lbl">Total value at risk</div>
-    </div>
-    <div class="stat-card">
-      <div class="val" id="s-days" style="color:var(--text-bright)">—</div>
-      <div class="lbl">Avg days insolvent</div>
+      <div class="lbl">Won during insolvent trading</div>
     </div>
     <div class="stat-card">
       <div class="val red" id="s-projects">—</div>
-      <div class="lbl">Projects at risk</div>
+      <div class="lbl">Projects won while insolvent</div>
+    </div>
+    <div class="stat-card">
+      <div class="val" id="s-days" style="color:var(--text-bright)">—</div>
+      <div class="lbl">Avg insolvency period</div>
     </div>
     <div class="stat-card">
       <div class="val green" id="s-builders">—</div>
       <div class="lbl">Builders tracked</div>
+    </div>
+  </div>
+
+  <div class="stat-row" style="margin-top:-20px">
+    <div class="stat-card" style="border-left:3px solid var(--yellow)">
+      <div class="val yellow" id="s-w1-count" style="font-size:1.4rem">—</div>
+      <div class="lbl">Pre-insolvency window<br><span style="font-size:.62rem">Won within 6mo before deemed insolvent</span></div>
+    </div>
+    <div class="stat-card" style="border-left:3px solid var(--red)">
+      <div class="val red" id="s-w2-count" style="font-size:1.4rem">—</div>
+      <div class="lbl">Insolvent trading window<br><span style="font-size:.62rem">Won while confirmed trading insolvent</span></div>
+    </div>
+    <div class="stat-card" style="border-left:3px solid var(--orange)">
+      <div class="val" id="s-w3-count" style="font-size:1.4rem;color:var(--orange)">—</div>
+      <div class="lbl">Pre-administration window<br><span style="font-size:.62rem">Won within 6mo before administration</span></div>
+    </div>
+    <div class="stat-card">
+      <div class="val" id="s-overlap" style="font-size:1.4rem;color:var(--text-dim)">—</div>
+      <div class="lbl">Overlapping projects<br><span style="font-size:.62rem">Appearing in multiple windows</span></div>
     </div>
   </div>
 
@@ -407,10 +426,21 @@ document.addEventListener('DOMContentLoaded',async()=>{
 function initDash(){
   if(!BD)return;
   const m=BD.meta;
-  document.getElementById('s-value').textContent=fmtCur(m.totalValueAtRisk);
+  const wt=m.windowTotals||{};
+  const w1=wt.preInsolvency||{};
+  const w2=wt.insolventTrading||{};
+  const w3=wt.preAdministration||{};
+  document.getElementById('s-value').textContent=fmtCur(w2.value||m.totalValueAtRisk);
   document.getElementById('s-days').textContent=m.avgDaysInsolvent+' days';
-  document.getElementById('s-projects').textContent=m.totalProjectsAtRisk;
+  document.getElementById('s-projects').textContent=w2.count||m.totalProjectsAtRisk;
   document.getElementById('s-builders').textContent=m.totalBuilders;
+  document.getElementById('s-w1-count').textContent=(w1.count||0)+' projects · '+fmtCur(w1.value||0);
+  document.getElementById('s-w2-count').textContent=(w2.count||0)+' projects · '+fmtCur(w2.value||0);
+  document.getElementById('s-w3-count').textContent=(w3.count||0)+' projects · '+fmtCur(w3.value||0);
+  // Count overlapping projects
+  let overlap=0;
+  BD.builders.forEach(b=>{(b.projects||[]).forEach(p=>{if((p.windows||[]).length>1)overlap++})});
+  document.getElementById('s-overlap').textContent=overlap+' projects';
   document.getElementById('tile-count').textContent=`${m.totalBuilders} builders tracked`;
   
   const grid=document.getElementById('tileGrid');
@@ -432,9 +462,11 @@ function mkTile(b){
   el.onclick=()=>go('builder',b.id);
   const ad=new Date(b.insolvency.administrationDate);
   const dateStr=ad.toLocaleDateString('en-AU',{day:'2-digit',month:'short',year:'numeric'});
-  const days=b.insolvency.daysInsolventTrading;
-  const proj=b.summary.totalProjectsAtRisk||0;
-  const val=b.summary.totalValueAtRisk||0;
+  const days=b.insolvency.insolvencyPeriodDays||b.insolvency.daysInsolventTrading;
+  const ws=b.windowStats||{};
+  const w2=ws.insolventTrading||{};
+  const proj=w2.count||b.summary.totalProjectsAtRisk||0;
+  const val=w2.value||b.summary.totalValueAtRisk||0;
   const meta=[b.state,dateStr,b.insolvency.administrator].filter(Boolean).join(' · ');
   
   el.innerHTML=`
@@ -499,33 +531,56 @@ function showBuilder(id){
     h+=`<div class="alert-box"><div class="a-icon">🔴</div><div><div class="a-label">New Case — Research In Progress</div><div class="a-text">${b.summary.narrative}</div></div></div>`;
   }
   
+  const ws=b.windowStats||{};
+  const w1=ws.preInsolvency||{};const w2=ws.insolventTrading||{};const w3=ws.preAdministration||{};
   h+=`<div class="info-grid">
-    <div class="info-box"><div class="ib-label">Projects at Risk</div><div class="ib-value" style="color:${b.summary.totalProjectsAtRisk>0?'var(--red)':'var(--yellow)'}">${b.summary.totalProjectsAtRisk||'TBC'}</div></div>
-    <div class="info-box"><div class="ib-label">Total Value</div><div class="ib-value" style="color:${b.summary.totalValueAtRisk>0?'var(--red)':'var(--yellow)'}">${b.summary.totalValueAtRisk?fmtCur(b.summary.totalValueAtRisk):'TBC'}</div></div>
+    <div class="info-box" style="border-left:3px solid var(--yellow)"><div class="ib-label">Pre-Insolvency Window</div><div class="ib-value" style="color:var(--yellow)">${w1.count||0} projects · ${fmtCur(w1.value||0)}</div><div style="font-size:.65rem;color:var(--text-dim);margin-top:2px">Won within 6mo before deemed insolvent</div></div>
+    <div class="info-box" style="border-left:3px solid var(--red)"><div class="ib-label">Insolvent Trading Window</div><div class="ib-value" style="color:var(--red)">${w2.count||0} projects · ${fmtCur(w2.value||0)}</div><div style="font-size:.65rem;color:var(--text-dim);margin-top:2px">Won while confirmed trading insolvent</div></div>
+    <div class="info-box" style="border-left:3px solid var(--orange)"><div class="ib-label">Pre-Administration Window</div><div class="ib-value" style="color:var(--orange)">${w3.count||0} projects · ${fmtCur(w3.value||0)}</div><div style="font-size:.65rem;color:var(--text-dim);margin-top:2px">Won within 6mo before entering administration</div></div>
     <div class="info-box"><div class="ib-label">Developers Affected</div><div class="ib-value">${b.summary.totalDevelopersAffected||'TBC'}</div></div>
-    <div class="info-box"><div class="ib-label">Lenders Affected</div><div class="ib-value">${b.summary.totalLendersAffected||'TBC'}</div></div>
   </div>`;
   
+  const ipd=b.insolvency.insolvencyPeriodDays||b.insolvency.daysInsolventTrading;
+  const isEst=b.insolvency.insolvencyStartEstimated;
   h+=`<div class="info-grid">
+    <div class="info-box"><div class="ib-label">Deemed Insolvent From</div><div class="ib-value" style="color:var(--red)">${b.insolvency.estimatedInsolvencyStart?new Date(b.insolvency.estimatedInsolvencyStart).toLocaleDateString():'Pending Report'}${isEst?' <span style=\"font-size:.65rem;color:var(--yellow)\">(estimated)</span>':''}</div></div>
     <div class="info-box"><div class="ib-label">Administration Date</div><div class="ib-value" style="color:var(--red)">${new Date(b.insolvency.administrationDate).toLocaleDateString()}</div></div>
+    <div class="info-box"><div class="ib-label">Insolvent Trading Period</div><div class="ib-value" style="color:${ipd>0?'var(--red)':'var(--yellow)'}">${ipd===null||ipd===undefined?'Pending':ipd+' days'}</div></div>
     <div class="info-box"><div class="ib-label">Administrator</div><div class="ib-value">${b.insolvency.administrator||'TBC'}</div></div>
-    <div class="info-box"><div class="ib-label">Est. Insolvency Start</div><div class="ib-value" style="color:${b.insolvency.estimatedInsolvencyStart?'var(--red)':'var(--yellow)'}">${b.insolvency.estimatedInsolvencyStart?new Date(b.insolvency.estimatedInsolvencyStart).toLocaleDateString():'Pending'}</div></div>
-    <div class="info-box"><div class="ib-label">Days Insolvent</div><div class="ib-value" style="color:${b.insolvency.daysInsolventTrading>0?'var(--red)':'var(--yellow)'}">${b.insolvency.daysInsolventTrading===null?'Pending':b.insolvency.daysInsolventTrading+' days'}</div></div>
     ${b.insolvency.creditorsMeetingDate?`<div class="info-box"><div class="ib-label">Creditors Meeting</div><div class="ib-value">${new Date(b.insolvency.creditorsMeetingDate).toLocaleDateString()}</div></div>`:''}
   </div>`;
   
   if(b.projects&&b.projects.length>0){
-    const wonDuring=b.projects.filter(p=>p.wonDuringInsolvency);
-    const valWon=wonDuring.reduce((s,p)=>s+(p.estimatedValue||0),0);
-    h+=`<div class="findings-bar"><div class="ft">Key Findings</div><div class="findings-row">
-      <div><div class="fv">${wonDuring.length}</div><div class="fl">Projects won during insolvency</div></div>
-      <div><div class="fv">${fmtCur(valWon)}</div><div class="fl">Value won while insolvent</div></div>
-      <div><div class="fv">${b.summary.totalDevelopersAffected||0}</div><div class="fl">Developers affected</div></div>
+    // Findings bar with three windows
+    h+=`<div class="findings-bar"><div class="ft">Key Findings — Three Windows of Risk</div><div class="findings-row">
+      <div><div class="fv" style="color:var(--yellow)">${w1.count||0}</div><div class="fl">Pre-insolvency window<br><span style="font-size:.6rem">${fmtCur(w1.value||0)}</span></div></div>
+      <div><div class="fv">${w2.count||0}</div><div class="fl">Insolvent trading window<br><span style="font-size:.6rem">${fmtCur(w2.value||0)}</span></div></div>
+      <div><div class="fv" style="color:var(--orange)">${w3.count||0}</div><div class="fl">Pre-administration window<br><span style="font-size:.6rem">${fmtCur(w3.value||0)}</span></div></div>
     </div></div>`;
     
-    h+=`<div class="tbl-section"><div class="tbl-title">Projects Won During Insolvent Trading</div><div style="overflow-x:auto"><table><thead><tr><th>Project</th><th>Developer</th><th>Value</th><th>Status</th></tr></thead><tbody>`;
-    wonDuring.forEach(p=>{
-      h+=`<tr><td><div class="pn">${p.projectName}</div><div class="pa">${p.address}</div></td><td>${p.developer||'—'}</td><td style="font-weight:500;color:var(--text-bright)">${fmtCur(p.estimatedValue)}</td><td><span class="badge-won">${p.contractStatus}</span></td></tr>`;
+    // Window badges helper
+    const wBadge=(wins)=>{
+      if(!wins||!wins.length)return'';
+      return wins.map(w=>{
+        if(w==='pre-insolvency')return'<span style="display:inline-block;background:rgba(245,158,11,.1);color:var(--yellow);font-size:.6rem;font-weight:500;padding:2px 7px;border-radius:4px;margin-right:3px">PRE-INSOLVENCY</span>';
+        if(w==='insolvent-trading')return'<span style="display:inline-block;background:rgba(239,68,68,.1);color:var(--red);font-size:.6rem;font-weight:500;padding:2px 7px;border-radius:4px;margin-right:3px">INSOLVENT TRADING</span>';
+        if(w==='pre-administration')return'<span style="display:inline-block;background:rgba(249,115,22,.1);color:var(--orange);font-size:.6rem;font-weight:500;padding:2px 7px;border-radius:4px;margin-right:3px">PRE-ADMIN</span>';
+        return'';
+      }).join('');
+    };
+
+    // Projects table with window badges
+    const windowOrder=['insolvent-trading','pre-administration','pre-insolvency'];
+    const projSorted=[...b.projects].sort((a,b)=>{
+      const aW=(a.windows||[]).includes('insolvent-trading')?0:(a.windows||[]).includes('pre-administration')?1:2;
+      const bW=(b.windows||[]).includes('insolvent-trading')?0:(b.windows||[]).includes('pre-administration')?1:2;
+      return aW-bW;
+    });
+    
+    h+=`<div class="tbl-section"><div class="tbl-title">All Projects — Window Classification</div><div style="overflow-x:auto"><table><thead><tr><th>Project</th><th>Developer</th><th>Contract Date</th><th>Value</th><th>Windows</th></tr></thead><tbody>`;
+    projSorted.forEach(p=>{
+      const cd=p.contractDate?new Date(p.contractDate).toLocaleDateString('en-AU',{day:'2-digit',month:'short',year:'numeric'}):'—';
+      h+=`<tr><td><div class="pn">${p.projectName}</div><div class="pa">${p.address||''}</div></td><td>${p.developer||'—'}</td><td style="font-size:.8rem">${cd}</td><td style="font-weight:500;color:var(--text-bright)">${fmtCur(p.estimatedValue)}</td><td>${wBadge(p.windows)}</td></tr>`;
     });
     h+=`</tbody></table></div></div>`;
   }
@@ -552,8 +607,8 @@ function showBuilder(id){
     if(b.research.gaps)h+=`<p style="font-size:.8rem;color:var(--text-dim);margin-bottom:20px"><strong>Gaps:</strong> ${b.research.gaps}</p>`;
   }
   
-  const valLost=b.summary.totalValueAtRisk||0;
-  h+=`<div class="cta-banner"><h3>${valLost>0?`${(b.projects||[]).filter(p=>p.wonDuringInsolvency).length} projects worth ${fmtCur(valLost)} won while trading insolvent`:'Case file will update as information becomes available'}</h3><p>${valLost>0?'Traditional due diligence didn\'t catch it.':'Analysis methodology will be applied once the administrator\'s report is published.'}</p><a class="cta-btn" href="mailto:info@ipex.com.au">Learn How IPEX Prevents This →</a></div>`;
+  const w2v=w2.value||0;const w2c=w2.count||0;
+  h+=`<div class="cta-banner"><h3>${w2c>0?`${w2c} projects worth ${fmtCur(w2v)} won during confirmed insolvent trading`:(b.projects&&b.projects.length>0?`${b.projects.length} projects identified across risk windows`:'Case file will update as information becomes available')}</h3><p>${w2c>0?'Won after the builder was deemed insolvent by the administrator. Traditional due diligence didn\'t catch it.':(b.status==='new'?'Analysis methodology will be applied once the administrator\'s report is published.':'All projects classified across pre-insolvency, insolvent trading, and pre-administration windows.')}</p><a class="cta-btn" href="mailto:info@ipex.com.au">Learn How IPEX Prevents This →</a></div>`;
   
   c.innerHTML=h;
 }

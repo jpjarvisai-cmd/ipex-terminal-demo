@@ -1,10 +1,24 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-17T14:54:50.397486",
+    "lastUpdated": "2026-02-17T14:56:37.409847",
     "totalBuilders": 8,
-    "totalProjectsAtRisk": 20,
-    "totalValueAtRisk": 396236300,
-    "avgDaysInsolvent": 249
+    "totalProjectsAtRisk": 18,
+    "totalValueAtRisk": 390385300,
+    "avgDaysInsolvent": 241,
+    "windowTotals": {
+      "preInsolvency": {
+        "count": 8,
+        "value": 134250000
+      },
+      "insolventTrading": {
+        "count": 18,
+        "value": 390385300
+      },
+      "preAdministration": {
+        "count": 13,
+        "value": 353986300
+      }
+    }
   },
   "builders": [
     {
@@ -19,11 +33,13 @@
         "type": "Voluntary Administration",
         "administrationDate": "2026-02-13",
         "administrator": "Worrells",
-        "estimatedInsolvencyStart": null,
+        "estimatedInsolvencyStart": "2025-08-17",
         "daysInsolventTrading": null,
         "source": "ASIC Published Notice / News",
         "creditorsMeetingDate": "2026-02-18",
-        "outcome": null
+        "outcome": null,
+        "insolvencyStartEstimated": true,
+        "insolvencyPeriodDays": 180
       },
       "summary": {
         "totalProjectsAtRisk": null,
@@ -200,7 +216,21 @@
       "abn_entity_type": "Australian Private Company",
       "abn_gst": "2000-07-01",
       "abn_business_names": [],
-      "abn_entity_name": "NOVATI CONSTRUCTIONS PTY LTD"
+      "abn_entity_name": "NOVATI CONSTRUCTIONS PTY LTD",
+      "windowStats": {
+        "preInsolvency": {
+          "count": 0,
+          "value": 0
+        },
+        "insolventTrading": {
+          "count": 0,
+          "value": 0
+        },
+        "preAdministration": {
+          "count": 0,
+          "value": 0
+        }
+      }
     },
     {
       "id": "lanskey-constructions",
@@ -218,7 +248,8 @@
         "daysInsolventTrading": 376,
         "source": "Administrator Report",
         "creditorsMeetingDate": null,
-        "outcome": null
+        "outcome": null,
+        "insolvencyPeriodDays": 376
       },
       "summary": {
         "totalProjectsAtRisk": 7,
@@ -245,7 +276,11 @@
           "wonWithin6MonthsOfAdmin": true,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading",
+            "pre-administration"
+          ]
         },
         {
           "id": "lanskey-002",
@@ -260,7 +295,11 @@
           "wonWithin6MonthsOfAdmin": true,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading",
+            "pre-administration"
+          ]
         },
         {
           "id": "lanskey-003",
@@ -275,7 +314,11 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading",
+            "pre-administration"
+          ]
         },
         {
           "id": "lanskey-004",
@@ -290,7 +333,10 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading"
+          ]
         },
         {
           "id": "lanskey-005",
@@ -305,7 +351,10 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading"
+          ]
         },
         {
           "id": "lanskey-006",
@@ -335,7 +384,10 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading"
+          ]
         }
       ],
       "contacts": [],
@@ -450,7 +502,21 @@
       "abn_entity_type": "Australian Private Company",
       "abn_gst": "2000-07-01",
       "abn_business_names": [],
-      "abn_entity_name": "LANSKEY CONSTRUCTIONS PTY. LTD."
+      "abn_entity_name": "LANSKEY CONSTRUCTIONS PTY. LTD.",
+      "windowStats": {
+        "preInsolvency": {
+          "count": 0,
+          "value": 0
+        },
+        "insolventTrading": {
+          "count": 6,
+          "value": 80460000
+        },
+        "preAdministration": {
+          "count": 3,
+          "value": 57730000
+        }
+      }
     },
     {
       "id": "lloyd-group",
@@ -468,7 +534,8 @@
         "daysInsolventTrading": 210,
         "source": "Administrator Report",
         "creditorsMeetingDate": null,
-        "outcome": null
+        "outcome": null,
+        "insolvencyPeriodDays": 211
       },
       "summary": {
         "totalProjectsAtRisk": 8,
@@ -495,7 +562,10 @@
           "wonWithin6MonthsOfAdmin": true,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading"
+          ]
         },
         {
           "id": "lloyd-002",
@@ -510,7 +580,10 @@
           "wonWithin6MonthsOfAdmin": true,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading"
+          ]
         },
         {
           "id": "lloyd-003",
@@ -521,11 +594,12 @@
           "contractDate": "2023-11-01",
           "status": "verified",
           "contractStatus": "Contract Won",
-          "wonDuringInsolvency": true,
+          "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": []
         },
         {
           "id": "lloyd-004",
@@ -540,7 +614,10 @@
           "wonWithin6MonthsOfAdmin": true,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading"
+          ]
         },
         {
           "id": "lloyd-005",
@@ -555,7 +632,10 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading"
+          ]
         },
         {
           "id": "lloyd-006",
@@ -570,7 +650,11 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "pre-insolvency",
+            "insolvent-trading"
+          ]
         },
         {
           "id": "lloyd-007",
@@ -581,11 +665,12 @@
           "contractDate": "2023-06-01",
           "status": "verified",
           "contractStatus": "Contract Won",
-          "wonDuringInsolvency": true,
+          "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": []
         },
         {
           "id": "lloyd-008",
@@ -600,7 +685,10 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading"
+          ]
         }
       ],
       "contacts": [],
@@ -675,7 +763,21 @@
       "abn_entity_type": "Australian Private Company",
       "abn_gst": "2011-03-01",
       "abn_business_names": [],
-      "abn_entity_name": "LLOYD GROUP PTY LTD"
+      "abn_entity_name": "LLOYD GROUP PTY LTD",
+      "windowStats": {
+        "preInsolvency": {
+          "count": 1,
+          "value": 1000000
+        },
+        "insolventTrading": {
+          "count": 6,
+          "value": 53649000
+        },
+        "preAdministration": {
+          "count": 0,
+          "value": 0
+        }
+      }
     },
     {
       "id": "gcb-constructions",
@@ -693,7 +795,8 @@
         "daysInsolventTrading": 205,
         "source": "Administrator Report",
         "creditorsMeetingDate": null,
-        "outcome": null
+        "outcome": null,
+        "insolvencyPeriodDays": 206
       },
       "summary": {
         "totalProjectsAtRisk": 1,
@@ -720,7 +823,11 @@
           "wonWithin6MonthsOfAdmin": true,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading",
+            "pre-administration"
+          ]
         },
         {
           "id": "gcb-002",
@@ -735,7 +842,10 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": "Won within 6 months of insolvent trading date, not during."
+          "notes": "Won within 6 months of insolvent trading date, not during.",
+          "windows": [
+            "pre-insolvency"
+          ]
         }
       ],
       "contacts": [],
@@ -806,7 +916,21 @@
       "abn_business_names": [
         "G C B CONSTRUCTIONS"
       ],
-      "abn_entity_name": "G C B CONSTRUCTIONS PTY LTD"
+      "abn_entity_name": "G C B CONSTRUCTIONS PTY LTD",
+      "windowStats": {
+        "preInsolvency": {
+          "count": 1,
+          "value": 51000000
+        },
+        "insolventTrading": {
+          "count": 1,
+          "value": 193000000
+        },
+        "preAdministration": {
+          "count": 1,
+          "value": 193000000
+        }
+      }
     },
     {
       "id": "eq-projects",
@@ -824,7 +948,8 @@
         "daysInsolventTrading": 422,
         "source": "Administrator Report",
         "creditorsMeetingDate": null,
-        "outcome": null
+        "outcome": null,
+        "insolvencyPeriodDays": 429
       },
       "summary": {
         "totalProjectsAtRisk": 1,
@@ -851,7 +976,10 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading"
+          ]
         }
       ],
       "contacts": [],
@@ -899,7 +1027,21 @@
       "abn_entity_type": "Australian Private Company",
       "abn_gst": null,
       "abn_business_names": [],
-      "abn_entity_name": "OFFICE EQ PROJECTS PTY LIMITED"
+      "abn_entity_name": "OFFICE EQ PROJECTS PTY LIMITED",
+      "windowStats": {
+        "preInsolvency": {
+          "count": 0,
+          "value": 0
+        },
+        "insolventTrading": {
+          "count": 1,
+          "value": 38580000
+        },
+        "preAdministration": {
+          "count": 0,
+          "value": 0
+        }
+      }
     },
     {
       "id": "st-hilliers",
@@ -917,7 +1059,8 @@
         "daysInsolventTrading": 0,
         "source": "Administrator Report",
         "creditorsMeetingDate": null,
-        "outcome": null
+        "outcome": null,
+        "insolvencyPeriodDays": 0
       },
       "summary": {
         "totalProjectsAtRisk": 0,
@@ -944,7 +1087,11 @@
           "wonWithin6MonthsOfAdmin": true,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "pre-insolvency",
+            "pre-administration"
+          ]
         },
         {
           "id": "sth-002",
@@ -959,7 +1106,11 @@
           "wonWithin6MonthsOfAdmin": true,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "pre-insolvency",
+            "pre-administration"
+          ]
         },
         {
           "id": "sth-003",
@@ -974,7 +1125,11 @@
           "wonWithin6MonthsOfAdmin": true,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "pre-insolvency",
+            "pre-administration"
+          ]
         },
         {
           "id": "sth-004",
@@ -989,7 +1144,11 @@
           "wonWithin6MonthsOfAdmin": true,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "pre-insolvency",
+            "pre-administration"
+          ]
         },
         {
           "id": "sth-005",
@@ -1004,7 +1163,11 @@
           "wonWithin6MonthsOfAdmin": true,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "pre-insolvency",
+            "pre-administration"
+          ]
         }
       ],
       "contacts": [],
@@ -1078,7 +1241,21 @@
       "abn_entity_type": "Australian Private Company",
       "abn_gst": "2000-07-01",
       "abn_business_names": [],
-      "abn_entity_name": "ST HILLIERS CONTRACTING PTY LIMITED"
+      "abn_entity_name": "ST HILLIERS CONTRACTING PTY LIMITED",
+      "windowStats": {
+        "preInsolvency": {
+          "count": 5,
+          "value": 62250000
+        },
+        "insolventTrading": {
+          "count": 0,
+          "value": 0
+        },
+        "preAdministration": {
+          "count": 5,
+          "value": 62250000
+        }
+      }
     },
     {
       "id": "stevens-constructions",
@@ -1096,7 +1273,8 @@
         "daysInsolventTrading": 237,
         "source": "Administrator Report (estimate \u2014 530 report does not provide specific date)",
         "creditorsMeetingDate": null,
-        "outcome": null
+        "outcome": null,
+        "insolvencyPeriodDays": 240
       },
       "summary": {
         "totalProjectsAtRisk": 2,
@@ -1123,7 +1301,11 @@
           "wonWithin6MonthsOfAdmin": true,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading",
+            "pre-administration"
+          ]
         },
         {
           "id": "stv-002",
@@ -1138,7 +1320,10 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading"
+          ]
         },
         {
           "id": "stv-003",
@@ -1149,11 +1334,15 @@
           "contractDate": "2024-04-01",
           "status": "verified",
           "contractStatus": "Contract Won",
-          "wonDuringInsolvency": false,
+          "wonDuringInsolvency": true,
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": "Won within 6 months of insolvent trading date."
+          "notes": "Won within 6 months of insolvent trading date.",
+          "windows": [
+            "insolvent-trading",
+            "pre-administration"
+          ]
         },
         {
           "id": "stv-004",
@@ -1168,7 +1357,8 @@
           "wonWithin6MonthsOfAdmin": true,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": "Won within 6 months of administration date."
+          "notes": "Won within 6 months of administration date.",
+          "windows": []
         }
       ],
       "contacts": [],
@@ -1226,7 +1416,21 @@
       "abn_entity_type": "Australian Private Company",
       "abn_gst": "2006-09-13",
       "abn_business_names": [],
-      "abn_entity_name": "STEVENS CONSTRUCTION (NSW) PTY LIMITED"
+      "abn_entity_name": "STEVENS CONSTRUCTION (NSW) PTY LIMITED",
+      "windowStats": {
+        "preInsolvency": {
+          "count": 0,
+          "value": 0
+        },
+        "insolventTrading": {
+          "count": 3,
+          "value": 20370000
+        },
+        "preAdministration": {
+          "count": 2,
+          "value": 16680000
+        }
+      }
     },
     {
       "id": "project-coordination",
@@ -1245,7 +1449,8 @@
         "source": "Administrator Report",
         "creditorsMeetingDate": null,
         "outcome": null,
-        "lastATOPayment": "2023-11-21"
+        "lastATOPayment": "2023-11-21",
+        "insolvencyPeriodDays": 48
       },
       "summary": {
         "totalProjectsAtRisk": 1,
@@ -1272,7 +1477,11 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": null
+          "notes": null,
+          "windows": [
+            "insolvent-trading",
+            "pre-administration"
+          ]
         },
         {
           "id": "pc-002",
@@ -1287,7 +1496,11 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": "Won within 6 months of insolvent trading date."
+          "notes": "Won within 6 months of insolvent trading date.",
+          "windows": [
+            "pre-insolvency",
+            "pre-administration"
+          ]
         },
         {
           "id": "pc-003",
@@ -1302,7 +1515,8 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "Paul Reid / IPEX Research",
           "sourceUrl": null,
-          "notes": "Won within 6 months of insolvent trading date."
+          "notes": "Won within 6 months of insolvent trading date.",
+          "windows": []
         }
       ],
       "contacts": [],
@@ -1350,7 +1564,21 @@
       "abn_entity_type": "Australian Private Company",
       "abn_gst": null,
       "abn_business_names": [],
-      "abn_entity_name": "PROJECT CO-ORDINATION (NSW) PTY LTD"
+      "abn_entity_name": "PROJECT CO-ORDINATION (NSW) PTY LTD",
+      "windowStats": {
+        "preInsolvency": {
+          "count": 1,
+          "value": 20000000
+        },
+        "insolventTrading": {
+          "count": 1,
+          "value": 4326300
+        },
+        "preAdministration": {
+          "count": 2,
+          "value": 24326300
+        }
+      }
     }
   ]
 }
