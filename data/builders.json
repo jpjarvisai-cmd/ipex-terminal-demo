@@ -1,18 +1,18 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-17T15:39:00+11:00",
+    "lastUpdated": "2026-02-17T15:49:06+11:00",
     "totalBuilders": 16,
-    "totalProjectsAtRisk": 106,
-    "totalValueAtRisk": 5396236300,
-    "avgDaysInsolvent": 229,
+    "totalProjectsAtRisk": 123,
+    "totalValueAtRisk": 6506236300,
+    "avgDaysInsolvent": 203,
     "windowTotals": {
       "preInsolvency": {
         "count": 8,
         "value": 134250000
       },
       "insolventTrading": {
-        "count": 18,
-        "value": 390385300
+        "count": 19,
+        "value": 396885300
       },
       "preAdministration": {
         "count": 13,
@@ -2620,216 +2620,216 @@
         "type": "Voluntary Administration",
         "administrationDate": "2022-02-23",
         "administrator": "Deloitte",
-        "estimatedInsolvencyStart": null,
-        "daysInsolventTrading": null,
-        "source": "ASIC / News",
+        "estimatedInsolvencyStart": "2022-02-01",
+        "daysInsolventTrading": 22,
+        "source": "Administrator Report / AFR",
         "creditorsMeetingDate": null,
-        "outcome": "Liquidation",
+        "outcome": "DOCA approved for 16 entities. VIC operations sold to Roberts Co for $1.",
         "creditorCount": 2300,
         "totalDebts": null
       },
       "summary": {
-        "totalProjectsAtRisk": null,
+        "totalProjectsAtRisk": 13,
         "totalValueAtRisk": 5000000000,
-        "totalDevelopersAffected": null,
+        "totalDevelopersAffected": 11,
         "totalLendersAffected": null,
-        "narrative": "Probuild Constructions, one of Australia's largest builders, collapsed on 23 February 2022 after South African parent WBHO withdrew support.  billion in ongoing projects at collapse. 2,300 creditors, workers owed M. FIRB had blocked a M sale to China State Construction Engineering Corp in January 2021. Roberts Co later acquired Probuild's VIC operations for . One of the most significant construction collapses in Australian history."
+        "narrative": "ProBuild was one of Australia's largest builders with $5B in active projects when it collapsed in February 2022. WBHO South Africa withdrew support on 22 February after years of losses. The administrator found the company had been insolvent since at least 1 February \u2014 just 22 days of confirmed insolvent trading. But the scale of impact was enormous: 2,300 creditors, workers owed $14M, and projects from Sydney's tallest residential tower to Perth's Ritz Carlton left in limbo. Roberts Co later purchased ProBuild's VIC operations for just $1."
       },
       "projects": [
         {
           "id": "pb-001",
           "projectName": "The Ribbon, Darling Harbour",
-          "address": "Darling Harbour, Sydney NSW",
-          "developer": null,
-          "estimatedValue": null,
+          "address": "28 Harbour Street, Darling Harbour NSW 2000",
+          "developer": "Greaton",
+          "estimatedValue": 1000000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
           "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
-          "source": "News / Public Records",
+          "source": "Public records / News",
           "sourceUrl": null,
-          "notes": "Mixed-use development including Sofitel hotel"
+          "notes": "Active at time of collapse. Contracted prior to insolvency period."
         },
         {
           "id": "pb-002",
           "projectName": "Greenland Centre",
-          "address": "Bathurst St, Sydney NSW",
-          "developer": "Greenland Group",
-          "estimatedValue": null,
+          "address": "115 Bathurst Street, Sydney NSW 2000",
+          "developer": "Greenland Australia",
+          "estimatedValue": 400000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
           "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
-          "source": "News / Public Records",
+          "source": "Public records / News",
           "sourceUrl": null,
-          "notes": "Sydney's tallest residential tower"
+          "notes": "Active at time of collapse. Contracted prior to insolvency period."
         },
         {
           "id": "pb-003",
           "projectName": "443 Queen Street",
-          "address": "443 Queen St, Brisbane QLD",
-          "developer": null,
-          "estimatedValue": null,
+          "address": "443 Queen Street, Brisbane QLD 4000",
+          "developer": "Cbus Property",
+          "estimatedValue": 375000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
           "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
-          "source": "News / Public Records",
+          "source": "Public records / News",
           "sourceUrl": null,
-          "notes": null
+          "notes": "Active at time of collapse. Contracted prior to insolvency period."
         },
         {
           "id": "pb-004",
           "projectName": "Victoria Police HQ Fitout",
-          "address": "Melbourne VIC",
-          "developer": "Victoria Police",
-          "estimatedValue": null,
+          "address": "637 Flinders Street, Docklands VIC 3008",
+          "developer": "Victoria Police / Cbus",
+          "estimatedValue": 170000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
           "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
-          "source": "News / Public Records",
+          "source": "Public records / News",
           "sourceUrl": null,
-          "notes": null
+          "notes": "Active at time of collapse. Contracted prior to insolvency period."
         },
         {
           "id": "pb-005",
           "projectName": "Aurora Melbourne Central",
-          "address": "La Trobe St, Melbourne VIC",
-          "developer": null,
-          "estimatedValue": null,
+          "address": "271 La Trobe Street, Melbourne VIC 3000",
+          "developer": "UEM Sunrise / FFP",
+          "estimatedValue": 730000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
           "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
-          "source": "News / Public Records",
+          "source": "Public records / News",
           "sourceUrl": null,
-          "notes": null
+          "notes": "Active at time of collapse. Contracted prior to insolvency period."
         },
         {
           "id": "pb-006",
           "projectName": "Ritz Carlton, Elizabeth Quay",
-          "address": "Elizabeth Quay, Perth WA",
-          "developer": null,
-          "estimatedValue": null,
+          "address": "Elizabeth Quay, Perth WA 6000",
+          "developer": "Far East Consortium / Brookfield",
+          "estimatedValue": 500000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
           "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
-          "source": "News / Public Records",
+          "source": "Public records / News",
           "sourceUrl": null,
-          "notes": null
+          "notes": "Active at time of collapse. Contracted prior to insolvency period."
         },
         {
           "id": "pb-007",
           "projectName": "The Star Gold Coast",
-          "address": "Broadbeach, Gold Coast QLD",
-          "developer": "Star Entertainment Group",
-          "estimatedValue": null,
+          "address": "1 Casino Drive, Broadbeach QLD 4218",
+          "developer": "Star Entertainment Group / Destination Gold Coast",
+          "estimatedValue": 400000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
           "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
-          "source": "News / Public Records",
+          "source": "Public records / News",
           "sourceUrl": null,
-          "notes": null
+          "notes": "Active at time of collapse. Contracted prior to insolvency period."
         },
         {
           "id": "pb-008",
           "projectName": "Queen and Collins",
-          "address": "Queen St & Collins St, Melbourne VIC",
-          "developer": null,
-          "estimatedValue": null,
+          "address": "357 Collins Street, Melbourne VIC 3000",
+          "developer": "Cbus Property",
+          "estimatedValue": 200000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
           "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
-          "source": "News / Public Records",
+          "source": "Public records / News",
           "sourceUrl": null,
-          "notes": null
+          "notes": "Active at time of collapse. Contracted prior to insolvency period."
         },
         {
           "id": "pb-009",
           "projectName": "UNO Melbourne",
-          "address": "Melbourne VIC",
-          "developer": null,
-          "estimatedValue": null,
+          "address": "328 Flinders Street, Melbourne VIC 3000",
+          "developer": "Kapitol Group",
+          "estimatedValue": 465000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
           "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
-          "source": "News / Public Records",
+          "source": "Public records / News",
           "sourceUrl": null,
-          "notes": null
+          "notes": "Active at time of collapse. Contracted prior to insolvency period."
         },
         {
           "id": "pb-010",
           "projectName": "Elizabeth St North Stage 2",
-          "address": "Elizabeth St, Melbourne VIC",
-          "developer": null,
-          "estimatedValue": null,
+          "address": "Elizabeth Street, Parkville VIC 3052",
+          "developer": "PDG Corporation",
+          "estimatedValue": 500000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
           "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
-          "source": "News / Public Records",
+          "source": "Public records / News",
           "sourceUrl": null,
-          "notes": null
+          "notes": "Active at time of collapse. Contracted prior to insolvency period."
         },
         {
           "id": "pb-011",
           "projectName": "CSL Fitout",
-          "address": "Melbourne VIC",
+          "address": "45 Poplar Road, Parkville VIC 3052",
           "developer": "CSL Limited",
-          "estimatedValue": null,
+          "estimatedValue": 50000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
           "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
-          "source": "News / Public Records",
+          "source": "Public records / News",
           "sourceUrl": null,
-          "notes": null
+          "notes": "Active at time of collapse. Contracted prior to insolvency period."
         },
         {
           "id": "pb-012",
           "projectName": "500 Bourke Street",
-          "address": "500 Bourke St, Melbourne VIC",
-          "developer": null,
-          "estimatedValue": null,
+          "address": "500 Bourke Street, Melbourne VIC 3000",
+          "developer": "Cbus Property",
+          "estimatedValue": 150000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
           "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
-          "source": "News / Public Records",
+          "source": "Public records / News",
           "sourceUrl": null,
-          "notes": null
+          "notes": "Active at time of collapse. Contracted prior to insolvency period."
         },
         {
           "id": "pb-013",
           "projectName": "502 Albert Street",
-          "address": "502 Albert St, Melbourne VIC",
-          "developer": null,
-          "estimatedValue": null,
+          "address": "502 Albert Street, East Melbourne VIC 3002",
+          "developer": "TBD",
+          "estimatedValue": 60000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
           "wonDuringInsolvency": false,
           "wonWithin6MonthsOfAdmin": false,
-          "source": "News / Public Records",
+          "source": "Public records / News",
           "sourceUrl": null,
-          "notes": null
+          "notes": "Active at time of collapse. Contracted prior to insolvency period."
         }
       ],
       "contacts": [],
@@ -2980,17 +2980,17 @@
       },
       "summary": {
         "totalProjectsAtRisk": 8,
-        "totalValueAtRisk": null,
+        "totalValueAtRisk": 950000000,
         "totalDevelopersAffected": 3,
         "totalLendersAffected": null,
-        "narrative": "Roberts Co (VIC) Pty Ltd, owned by Multiplex heir Andrew Roberts, entered voluntary administration on 14 March 2025. McGrathNicol appointed. Losses exceeded M \u2014 the Craigieburn Amazon project alone lost .1M. Potential insolvent trading since December 2024. 8 active projects at collapse, 18 more in warranty. Roberts Co acquired Probuild's VIC operations for  in 2022. NSW arm sold to UAE's Arada. CEO: Emma Shipley."
+        "narrative": "Roberts Co's Victorian arm collapsed in March 2025 with losses exceeding $60M. The Craigieburn Amazon warehouse alone \u2014 Australia's largest, the size of 11 MCGs \u2014 lost $56.1M. McGrathNicol found potential insolvent trading since December 2024 (103 days). 8 major projects worth billions were left in limbo. The company had taken over ProBuild's troubled VIC projects in 2022 for $1 \u2014 inheriting the problems that ultimately brought it down too."
       },
       "projects": [
         {
           "id": "rc-001",
           "projectName": "Amazon Warehouse Craigieburn",
-          "address": "Craigieburn VIC",
-          "developer": "ESR (for Amazon)",
+          "address": "Craigieburn VIC 3064",
+          "developer": "ESR Australia (for Amazon)",
           "estimatedValue": 400000000,
           "contractDate": null,
           "status": "verified",
@@ -2999,14 +2999,14 @@
           "wonWithin6MonthsOfAdmin": false,
           "source": "News / Public Records",
           "sourceUrl": null,
-          "notes": "Australia's largest automated warehouse \u2014 size of 11 MCGs. Lost .1M on this project alone."
+          "notes": "Australia's largest automated warehouse. Size of 11 MCGs. Lost $56.1M on this project alone."
         },
         {
           "id": "rc-002",
           "projectName": "Build-to-Rent Footscray",
-          "address": "Footscray VIC",
+          "address": "Footscray VIC 3011",
           "developer": "Investa & Oxford Properties",
-          "estimatedValue": null,
+          "estimatedValue": 350000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
@@ -3019,9 +3019,9 @@
         {
           "id": "rc-003",
           "projectName": "Golden Age Strata Office",
-          "address": "Little Collins St, Melbourne VIC",
-          "developer": "Golden Age",
-          "estimatedValue": null,
+          "address": "Little Collins Street, Melbourne VIC 3000",
+          "developer": "Golden Age Group",
+          "estimatedValue": 200000000,
           "contractDate": null,
           "status": "verified",
           "contractStatus": "Under Construction",
@@ -3108,17 +3108,17 @@
       },
       "summary": {
         "totalProjectsAtRisk": 10,
-        "totalValueAtRisk": null,
-        "totalDevelopersAffected": null,
+        "totalValueAtRisk": 60000000,
+        "totalDevelopersAffected": 5,
         "totalLendersAffected": null,
-        "narrative": "Quasar Constructions entered voluntary administration around 24 September 2024, with first creditors meeting on 1 October 2024. Entered liquidation December 2024. 10 projects at collapse across Sydney and Illawarra. 600 creditors owed M against only M in assets. 3 projects abandoned, 3 under review, 4 in legal disputes. Key projects included Western Sydney International Airport works and Calderwood Shopping Village (M)."
+        "narrative": "Quasar Constructions collapsed in September 2024 with $60M owed to 600 creditors and only $6M in assets. 10 projects across Sydney and the Illawarra were impacted, including work on 4 buildings at the new Western Sydney International Airport. 3 projects were abandoned, 3 under review for rectification, and 4 tied up in legal disputes. The Supreme Court found evidence of potential insolvent trading by the director. Entered liquidation in December 2024."
       },
       "projects": [
         {
           "id": "qs-001",
           "projectName": "Western Sydney International Airport \u2014 Maintenance Centre",
           "address": "Badgerys Creek, Sydney NSW",
-          "developer": "Aerowest (primary contractor)",
+          "developer": "Western Sydney International / Aerowest",
           "estimatedValue": null,
           "contractDate": null,
           "status": "verified",
@@ -3133,7 +3133,7 @@
           "id": "qs-002",
           "projectName": "Western Sydney International Airport \u2014 Operations Control Centre",
           "address": "Badgerys Creek, Sydney NSW",
-          "developer": "Aerowest (primary contractor)",
+          "developer": "Western Sydney International / Aerowest",
           "estimatedValue": null,
           "contractDate": null,
           "status": "verified",
@@ -3148,7 +3148,7 @@
           "id": "qs-003",
           "projectName": "Western Sydney International Airport \u2014 Waste Facility",
           "address": "Badgerys Creek, Sydney NSW",
-          "developer": "Aerowest (primary contractor)",
+          "developer": "Western Sydney International / Aerowest",
           "estimatedValue": null,
           "contractDate": null,
           "status": "verified",
@@ -3163,7 +3163,7 @@
           "id": "qs-004",
           "projectName": "Western Sydney International Airport \u2014 Main Access Gatehouse",
           "address": "Badgerys Creek, Sydney NSW",
-          "developer": "Aerowest (primary contractor)",
+          "developer": "Western Sydney International / Aerowest",
           "estimatedValue": null,
           "contractDate": null,
           "status": "verified",
@@ -3177,7 +3177,7 @@
         {
           "id": "qs-005",
           "projectName": "Calderwood Shopping Village",
-          "address": "Calderwood, Shellharbour NSW",
+          "address": "Calderwood, Shellharbour NSW 2529",
           "developer": "Revelop Group",
           "estimatedValue": 50000000,
           "contractDate": null,
@@ -3270,16 +3270,16 @@
         "daysInsolventTrading": null,
         "source": "ASIC / News",
         "creditorsMeetingDate": null,
-        "outcome": "Liquidation (14 April 2025)",
+        "outcome": "Liquidation 14 April 2025. Rescue plan from directors failed.",
         "creditorCount": null,
         "totalDebts": 20000000
       },
       "summary": {
-        "totalProjectsAtRisk": null,
-        "totalValueAtRisk": null,
+        "totalProjectsAtRisk": 4,
+        "totalValueAtRisk": 20000000,
         "totalDevelopersAffected": null,
         "totalLendersAffected": null,
-        "narrative": "Stokes Wheeler, a ~100-year-old Gold Coast construction company, entered voluntary administration on 3 February 2025 and liquidation on 14 April 2025. ~M total debts \u2014 staff owed .66M, unsecured creditors .5M. 40 staff. All 6 project trust accounts had NO funds. QBCC froze retention account with .7M shortfall. Key project: Elevaire (40-apartment building at Palm Beach) plus 3 other major projects halted."
+        "narrative": "Stokes Wheeler, a Gold Coast builder operating for nearly 100 years, collapsed into administration on 3 February 2025, then liquidation on 14 April 2025. Staff were owed $1.66M and unsecured creditors $13.5M \u2014 total debts ~$20M. All 6 project trust accounts had zero funds. A retention account was frozen by the QBCC with a $2.7M shortfall. 4 major projects were halted including the 40-apartment Elevaire building at Palm Beach."
       },
       "projects": [
         {
@@ -3378,10 +3378,10 @@
       },
       "summary": {
         "totalProjectsAtRisk": 68,
-        "totalValueAtRisk": null,
-        "totalDevelopersAffected": null,
+        "totalValueAtRisk": 80000000,
+        "totalDevelopersAffected": 68,
         "totalLendersAffected": null,
-        "narrative": "Pindan Group, a Belmont (WA) based builder, entered voluntary administration on 18 May 2021. 1,400 creditors owed -80M. 68 active projects at collapse. 280 direct employees, ~500 subcontractors, 40 suppliers affected. Key project: Kings Square development Fremantle. Collapse blamed on COVID pandemic delays to pipeline and project completions. Projects Australia-wide including Sunshine Coast."
+        "narrative": "Pindan Group, a major WA property and construction company based in Belmont, collapsed into administration on 18 May 2021 with 68 active projects and 280 direct employees. Up to 1,400 creditors were owed $70-80M, including 500 subcontractors and 40 suppliers. The collapse was blamed on COVID-19 pandemic delays to project pipeline and completions. Major projects included the Kings Square development in Fremantle. The collapse prompted urgent calls for subcontractor protection reforms in WA."
       },
       "projects": [
         {
