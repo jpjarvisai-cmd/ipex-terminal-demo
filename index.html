@@ -599,12 +599,42 @@ function showBuilder(id){
   }
   
   if(b.research){
-    h+=`<div class="tiles-header" style="margin-top:24px"><h2>Research</h2></div><div class="info-grid">
-      <div class="info-box"><div class="ib-label">Last Updated</div><div class="ib-value">${new Date(b.research.lastUpdated).toLocaleDateString()}</div></div>
-      <div class="info-box"><div class="ib-label">Team</div><div class="ib-value">${b.research.researchedBy}</div></div>
-      <div class="info-box"><div class="ib-label">Confidence</div><div class="ib-value" style="text-transform:capitalize">${b.research.confidence}</div></div>
+    const t1=b.research.tier1||{};
+    const confColor=b.research.confidence==='high'?'var(--green)':b.research.confidence==='medium'?'var(--yellow)':'var(--red)';
+    h+=`<div class="tiles-header" style="margin-top:24px"><h2>Research Provenance</h2></div><div class="info-grid">
+      <div class="info-box"><div class="ib-label">Tier 1 Coverage</div><div class="ib-value" style="color:${t1.coverage>=67?'var(--green)':'var(--yellow)'}">${t1.coverage||0}%</div><div style="font-size:.6rem;color:var(--text-dim);margin-top:2px">Free public sources</div></div>
+      <div class="info-box"><div class="ib-label">Confidence</div><div class="ib-value" style="color:${confColor};text-transform:capitalize">${b.research.confidence||'unknown'}</div></div>
+      <div class="info-box"><div class="ib-label">Articles Found</div><div class="ib-value">${t1.articlesSearched||0}</div></div>
+      <div class="info-box"><div class="ib-label">Court Records</div><div class="ib-value">${t1.courtRecords||0}</div></div>
     </div>`;
-    if(b.research.gaps)h+=`<p style="font-size:.8rem;color:var(--text-dim);margin-bottom:20px"><strong>Gaps:</strong> ${b.research.gaps}</p>`;
+    
+    // Show debts and creditor count if available
+    const debts=b.insolvency.totalDebts;const creds=b.insolvency.creditorCount;
+    if(debts||creds){
+      h+=`<div class="info-grid">`;
+      if(debts)h+=`<div class="info-box"><div class="ib-label">Total Debts Owed</div><div class="ib-value" style="color:var(--red)">${fmtCur(debts)}</div><div style="font-size:.55rem;color:var(--text-dim);margin-top:2px">Tier ${b.insolvency.totalDebtsTier||'?'} source</div></div>`;
+      if(creds)h+=`<div class="info-box"><div class="ib-label">Creditors</div><div class="ib-value">${creds}</div></div>`;
+      h+=`</div>`;
+    }
+    
+    // Gaps and recommendations
+    if(t1.gaps&&t1.gaps.length){
+      h+=`<div style="background:rgba(245,158,11,.05);border:1px solid rgba(245,158,11,.12);border-radius:8px;padding:14px 18px;margin-bottom:16px"><div style="font-size:.65rem;font-weight:600;color:var(--yellow);text-transform:uppercase;margin-bottom:6px">Data Gaps</div>`;
+      t1.gaps.forEach(g=>{h+=`<div style="font-size:.8rem;color:var(--text);margin-bottom:3px">• ${g}</div>`});
+      h+=`</div>`;
+    }
+    if(t1.recommendTier3){
+      h+=`<div style="background:rgba(239,68,68,.05);border:1px solid rgba(239,68,68,.12);border-radius:8px;padding:14px 18px;margin-bottom:16px"><div style="font-size:.65rem;font-weight:600;color:var(--red);text-transform:uppercase;margin-bottom:4px">💡 Recommended: ASIC Form 530 Purchase</div><div style="font-size:.8rem;color:var(--text)">High-value case with significant data gaps. Purchase the administrator's report from ASIC Connect ($42) for complete insolvency date and creditor details.</div></div>`;
+    }
+    
+    // Source articles
+    if(b.research.articles&&b.research.articles.length){
+      h+=`<div class="tiles-header" style="margin-top:16px"><h2>Source Articles</h2></div>`;
+      b.research.articles.slice(0,5).forEach(a=>{
+        const tierBadge=a.tier===1?'<span style="background:var(--green-glow);color:var(--green);font-size:.55rem;padding:2px 6px;border-radius:3px;margin-left:6px">TIER 1</span>':a.tier===2?'<span style="background:rgba(245,158,11,.1);color:var(--yellow);font-size:.55rem;padding:2px 6px;border-radius:3px;margin-left:6px">TIER 2</span>':'';
+        h+=`<div style="padding:8px 0;border-bottom:1px solid var(--card-border)"><a href="${a.url}" target="_blank" style="font-size:.82rem;color:var(--green);font-weight:400">${a.title||'Article'}</a>${tierBadge}<div style="font-size:.72rem;color:var(--text-dim);margin-top:2px">${(a.snippet||'').slice(0,150)}</div></div>`;
+      });
+    }
   }
   
   const w2v=w2.value||0;const w2c=w2.count||0;

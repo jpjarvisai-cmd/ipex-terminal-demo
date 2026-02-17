@@ -39,10 +39,7 @@
         "creditorsMeetingDate": "2026-02-18",
         "outcome": null,
         "insolvencyStartEstimated": true,
-        "insolvencyPeriodDays": 180,
-        "totalDebts": 4250000000,
-        "totalDebtsSource": "https://subbiesunited.com.au/ten-shocking-construction-company-collapses-in-australia-that-left-4-25bn-in-debt/",
-        "totalDebtsTier": 2
+        "insolvencyPeriodDays": 180
       },
       "summary": {
         "totalProjectsAtRisk": null,
@@ -200,10 +197,11 @@
           ]
         },
         "tier1": {
-          "coverage": 33,
+          "coverage": 0,
           "gaps": [
             "Deemed insolvency date not found in public sources",
-            "Creditor count not found in public sources"
+            "Creditor count not found in public sources",
+            "Total debts figure not found in public sources"
           ],
           "recommendTier3": false,
           "articlesSearched": 7,
@@ -1805,10 +1803,7 @@
         "source": "Administrator Report (estimate \u2014 530 report does not provide specific date)",
         "creditorsMeetingDate": null,
         "outcome": null,
-        "insolvencyPeriodDays": 240,
-        "totalDebts": 4250000000,
-        "totalDebtsSource": "https://subbiesunited.com.au/ten-shocking-construction-company-collapses-in-australia-that-left-4-25bn-in-debt/",
-        "totalDebtsTier": 2
+        "insolvencyPeriodDays": 240
       },
       "summary": {
         "totalProjectsAtRisk": 2,
@@ -1946,10 +1941,11 @@
           }
         ],
         "tier1": {
-          "coverage": 33,
+          "coverage": 0,
           "gaps": [
             "Deemed insolvency date not found in public sources",
-            "Creditor count not found in public sources"
+            "Creditor count not found in public sources",
+            "Total debts figure not found in public sources"
           ],
           "recommendTier3": false,
           "articlesSearched": 5,
