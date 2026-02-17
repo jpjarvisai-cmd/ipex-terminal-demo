@@ -938,19 +938,41 @@ function submitCase(event) {
     submitted: new Date().toISOString()
   };
   
-  // Store in localStorage (Phase 1 placeholder)
+  // Store locally as backup
   const existingDrafts = JSON.parse(localStorage.getItem('ipex-case-drafts') || '[]');
   existingDrafts.push(formData);
   localStorage.setItem('ipex-case-drafts', JSON.stringify(existingDrafts));
   
-  // Show success message
-  document.getElementById('success-message').style.display = 'block';
+  // Create GitHub issue for the monitoring pipeline to pick up
+  const issueTitle = `[NEW CASE] ${formData.builderName}`;
+  const issueBody = [
+    `**Builder:** ${formData.builderName}`,
+    formData.abn ? `**ABN:** ${formData.abn}` : '',
+    formData.administrationDate ? `**Administration Date:** ${formData.administrationDate}` : '',
+    formData.administrator ? `**Administrator:** ${formData.administrator}` : '',
+    formData.adminType ? `**Type:** ${formData.adminType}` : '',
+    formData.estimatedInsolvencyStart ? `**Est. Insolvency Start:** ${formData.estimatedInsolvencyStart}` : '',
+    formData.sourceUrl ? `**Source:** ${formData.sourceUrl}` : '',
+    formData.notes ? `\n**Notes:**\n${formData.notes}` : '',
+    `\n---\n_Submitted via IPEX Terminal at ${new Date().toLocaleString()}_`
+  ].filter(Boolean).join('\n');
   
-  // Clear form after short delay
+  // Open GitHub issue creation (pre-filled)
+  const ghUrl = `https://github.com/jpjarvisai-cmd/ipex-terminal-demo/issues/new?title=${encodeURIComponent(issueTitle)}&body=${encodeURIComponent(issueBody)}&labels=new-case`;
+  
+  // Also send via mailto as backup
+  const mailBody = issueBody.replace(/\*\*/g, '').replace(/\n/g, '%0A');
+  const mailUrl = `mailto:jp.jarvis.ai@gmail.com?subject=${encodeURIComponent(issueTitle)}&body=${mailBody}`;
+  
+  // Show success with action links
+  const successEl = document.getElementById('success-message');
+  successEl.innerHTML = `✅ Case saved locally. <a href="${ghUrl}" target="_blank" style="color:var(--green);text-decoration:underline">Submit to pipeline →</a> or <a href="${mailUrl}" style="color:var(--green);text-decoration:underline">Email to team</a>`;
+  successEl.style.display = 'block';
+  
+  // Clear form after delay
   setTimeout(() => {
     clearForm();
-    document.getElementById('success-message').style.display = 'none';
-  }, 3000);
+  }, 5000);
   
   return false;
 }
