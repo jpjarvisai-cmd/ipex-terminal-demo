@@ -1,10 +1,11 @@
 {
-  "lastScan": "2026-02-18T07:06:06.111834",
+  "lastScan": "2026-02-18T08:29:38.980354",
   "scanFrequency": "daily-7am-weekdays",
   "sources": [
     "Brave Search (construction insolvency)",
     "ABR (ABN verification)"
   ],
   "nextScan": "2026-02-19T07:00:06.111843",
-  "results": []
+  "results": [],
+  "totalBuilders": 18
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-18T07:06:06.108244",
-    "totalBuilders": 17,
+    "lastUpdated": "2026-02-18T08:29:27.979527",
+    "totalBuilders": 18,
     "totalProjectsAtRisk": 0,
     "totalValueAtRisk": 0,
     "avgDaysInsolvent": 206
@@ -151,7 +151,7 @@
         }
       ],
       "research": {
-        "lastUpdated": "2026-02-17T15:18:20.289475",
+        "lastUpdated": "2026-02-18T08:29:27.979503",
         "researchedBy": "Jarvis (automated)",
         "dataSources": [
           "ASIC",
@@ -396,7 +396,16 @@
           "insolvencyEstimate": null,
           "confidenceNote": null,
           "lastRun": "2026-02-17T15:18:14.330350"
-        }
+        },
+        "sourceArticles": [
+          {
+            "url": "https://www.apimagazine.com.au/news/article/veteran-sydney-builder-novati-constructions-collapses-into-voluntary-administration",
+            "title": "Veteran Sydney builder Novati Constructions collapses into voluntary administration",
+            "source": "API Magazine",
+            "date": "2026-02-12",
+            "summary": "Novati Constructions Pty Ltd, founded 1971 by Peter Novati, entered voluntary administration. Administrators Graeme Beattie and Aaron Lucan of Worrells appointed 8 Feb 2026. First creditors' meeting scheduled 18 Feb 2026. Directors Luisa and Marco Novati. Notable projects: Dicker Data warehouse (Kurnell), luxury apartments South Cronulla, Manly Civic Club fit-out, Sargood on Collaroy (MBA NSW award 2017). 1,567 construction companies entered administration in FY2025. Directors expressed desire to propose a Deed of Company Arrangement."
+          }
+        ]
       },
       "context": {
         "founded": "1971",
@@ -4350,11 +4359,11 @@
     },
     {
       "id": "uk-construction-company",
-      "name": "UK construction company",
+      "name": "Onespace Group (UK \u2014 Non-Australian)",
       "abn": "26653669553",
       "acn": "653669553",
-      "state": "VIC",
-      "status": "new",
+      "state": "N/A (UK)",
+      "status": "complete",
       "insolvency": {
         "administrationDate": "2026-02-18",
         "administrator": null,
@@ -4368,7 +4377,7 @@
         "totalValueAtRisk": 0,
         "totalDevelopersAffected": 0,
         "totalLendersAffected": 0,
-        "narrative": "Recently identified \u2014 automated monitoring detected potential insolvency. Research pipeline initiated. Source: UK construction company enters administration, records show | Largs and Millport Weekly News"
+        "narrative": "UK-based commercial fit-out and construction company. Entered administration 26 Jan 2026. Specialised in commercial office spaces with 500+ completed projects including Liverpool FC players' lounge. Based in Knutsford, Manchester. Administrators: Leonard Curtis. NOTE: This is a UK company \u2014 flagged by ABR scan but NOT an Australian insolvency. Included for reference only."
       },
       "projects": [],
       "timeline": [
@@ -4376,19 +4385,120 @@
           "date": "2026-02-18",
           "event": "Detected by IPEX monitoring system",
           "type": "detection"
+        },
+        {
+          "date": "2026-01-26",
+          "event": "Entered administration. Leonard Curtis appointed.",
+          "type": "administration"
+        },
+        {
+          "date": "2026-02-04",
+          "event": "Official notice published in The Gazette (UK)",
+          "type": "public_notice"
         }
       ],
       "research": {
-        "lastUpdated": "2026-02-18T07:06:05.678490",
+        "lastUpdated": "2026-02-18T08:29:27.979487",
         "researchedBy": "IPEX Monitoring Engine (automated)",
-        "confidence": "medium",
+        "confidence": "low",
         "dataSources": [
           "Brave Search",
           "https://www.largsandmillportnews.com/news/national/uk-today/25854901.uk-construction-company-enters-administration-records-show/",
           "ABR"
         ],
-        "gaps": "Pending administrator report, ABN verification, project research",
-        "sourceArticles": []
+        "gaps": "UK company \u2014 not relevant to Australian construction market. Included for completeness.",
+        "sourceArticles": [
+          {
+            "url": "https://www.largsandmillportnews.com/news/national/uk-today/25854901.uk-construction-company-enters-administration-records-show/",
+            "title": "UK construction company enters administration, records show",
+            "source": "Largs and Millport Weekly News",
+            "date": "2026-02-04",
+            "summary": "Onespace Group, based in Knutsford near Manchester, entered administration on 26 January 2026. Administrators from Leonard Curtis appointed. Company had completed 532 projects with a team of 30, specialising in commercial office fit-outs including Liverpool FC and Oxford Trust."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ljones-construction",
+      "name": "LJones Construction Pty Ltd",
+      "tradingAs": "Hotondo Homes North West Tas",
+      "abn": null,
+      "acn": null,
+      "state": "TAS",
+      "status": "complete",
+      "insolvency": {
+        "administrationDate": "2026-01-22",
+        "administrator": "Shelley-Maree Brooks",
+        "administrationType": "Liquidation",
+        "estimatedInsolvencyStart": "2025-06-01",
+        "daysInsolventTrading": 235,
+        "creditorsMeetingDate": null
+      },
+      "summary": {
+        "totalProjectsAtRisk": 12,
+        "totalValueAtRisk": 1700000,
+        "totalDevelopersAffected": 0,
+        "totalLendersAffected": 0,
+        "narrative": "North-West Coast Tasmania franchisee of Hotondo Homes national brand. Entered liquidation 22 January 2026. $1.7M in debts to contractors, subcontractors and employees (unpaid super). Up to 12 families affected \u2014 either holding large deposits or with incomplete homes. Director Luke Jones failed to renew building licence December 2025 after months of financial pressure including failing to pay contractors on time. Hotondo national office had been working with the franchisee since February 2025."
+      },
+      "projects": [
+        {
+          "name": "Residential builds \u2014 North West Tasmania",
+          "type": "Residential (multiple)",
+          "location": "North West Coast, TAS",
+          "estimatedValue": 1700000,
+          "status": "incomplete",
+          "developer": "Various homeowners (up to 12 families)",
+          "lender": null,
+          "notes": "Mix of incomplete homes and deposits held. Includes home on Janet Drive, Park Grove."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2025-02-01",
+          "event": "Hotondo national office begins working with franchisee to review workflow and financial position",
+          "type": "warning_sign"
+        },
+        {
+          "date": "2025-06-01",
+          "event": "Estimated start of financial difficulties \u2014 failing to pay contractors on time",
+          "type": "insolvency_indicator"
+        },
+        {
+          "date": "2025-12-01",
+          "event": "Director Luke Jones opts not to renew building licence",
+          "type": "key_event"
+        },
+        {
+          "date": "2026-01-22",
+          "event": "Entered liquidation (filed with ASIC)",
+          "type": "administration"
+        },
+        {
+          "date": "2026-02-05",
+          "event": "Reported by The Advocate \u2014 $1.7M debts, 12 families affected",
+          "type": "public_notice"
+        }
+      ],
+      "research": {
+        "lastUpdated": "2026-02-18T08:29:27.979497",
+        "researchedBy": "IPEX Intelligence Engine",
+        "confidence": "high",
+        "dataSources": [
+          "The Advocate (Burnie, TAS)",
+          "The Examiner (Launceston, TAS)",
+          "ASIC filings"
+        ],
+        "gaps": "ABN not confirmed via ABR. Exact deposit amounts per family unknown.",
+        "sourceArticles": [
+          {
+            "url": "https://www.theadvocate.com.au/story/9163752/tasmanian-builder-collapses-with-17m-debts-unfinished-homes/",
+            "title": "Tasmanian builder collapses with $1.7M debts, unfinished homes",
+            "source": "The Advocate",
+            "date": "2026-02-05",
+            "summary": "LJones Construction (trading as Hotondo Homes North West Tas) entered liquidation 22 Jan 2026. $1.7M debts to contractors/subcontractors/employees. Up to 12 families with deposits or incomplete homes. Liquidator Shelley-Maree Brooks appointed. Director Luke Jones didn't renew building licence Dec 2025 after months of financial pressure. Hotondo national office had been assisting since Feb 2025. CBOS contacting affected consumers re: government assistance. HIA Tasmania cited 'elevated input costs' and 'regulatory churn' as industry pressures."
+          }
+        ]
       }
     }
   ]
