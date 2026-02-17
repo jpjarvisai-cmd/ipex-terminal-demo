@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-17T14:56:37.409847",
+    "lastUpdated": "2026-02-17T15:06:16.015097",
     "totalBuilders": 8,
     "totalProjectsAtRisk": 18,
     "totalValueAtRisk": 390385300,
@@ -39,7 +39,10 @@
         "creditorsMeetingDate": "2026-02-18",
         "outcome": null,
         "insolvencyStartEstimated": true,
-        "insolvencyPeriodDays": 180
+        "insolvencyPeriodDays": 180,
+        "totalDebts": 4250000000,
+        "totalDebtsSource": "https://subbiesunited.com.au/ten-shocking-construction-company-collapses-in-australia-that-left-4-25bn-in-debt/",
+        "totalDebtsTier": 2
       },
       "summary": {
         "totalProjectsAtRisk": null,
@@ -63,7 +66,7 @@
         }
       ],
       "research": {
-        "lastUpdated": "2026-02-17T14:54:50.397439",
+        "lastUpdated": "2026-02-17T15:04:57.315295",
         "researchedBy": "Jarvis (automated)",
         "dataSources": [
           "ASIC",
@@ -195,7 +198,95 @@
               "developer": null
             }
           ]
-        }
+        },
+        "tier1": {
+          "coverage": 33,
+          "gaps": [
+            "Deemed insolvency date not found in public sources",
+            "Creditor count not found in public sources"
+          ],
+          "recommendTier3": false,
+          "articlesSearched": 7,
+          "courtRecords": 5,
+          "developersIdentified": 0,
+          "lastRun": "2026-02-17T15:04:57.315276"
+        },
+        "articles": [
+          {
+            "title": "Veteran Sydney builder Novati Constructions collapses into voluntary administration - latest building and construction n",
+            "url": "https://www.apimagazine.com.au/news/article/veteran-sydney-builder-novati-constructions-collapses-into-voluntary-administration",
+            "snippet": "Administrators from Worrells were appointed this week after the nearly 50-year-old company was placed into voluntary administration, triggered by financial difficulties that reflect broader pressures on the industry. A first creditors\u2019 meeting has be",
+            "tier": 1
+          },
+          {
+            "title": "NOVATI CONSTRUCTIONS PTY LTD - ABN 92001714905 - ACN 001714905 - Business Profile / Credit Report",
+            "url": "https://creditorwatch.com.au/credit/profile/92001714905",
+            "snippet": "Automated customer risk monitoring will alert you when a customer\u2019s circumstances changes. Alerts cover adverse changes such as payment defaults, court actions, director changes, financial distress and administrator appointments.",
+            "tier": 1
+          },
+          {
+            "title": "Novati Constructions Pty Ltd Enters Administration | Worrells",
+            "url": "https://worrells.net.au/resources/press-releases/novati-constructions-pty-ltd-enters-administration",
+            "snippet": "Unfortunately, ongoing market pressures ... for the current financial position of Novati, however, have made the difficult decision to appoint <strong>Graeme Beattie and Aaron Lucan</strong> as administrators....",
+            "tier": 1
+          },
+          {
+            "title": "Novati Constructions | LinkedIn",
+            "url": "https://au.linkedin.com/company/novati-constructions",
+            "snippet": "Development: p3living &amp; North East Corp Architecture &amp; Interior Design: SJB Landscape Architecture: Dangar Barin Smith Pty Ltd Construction: Novati Constructions Sales &amp; Marketing: Ray White Projects Sold by: Jason Boon Contact: Eddie Man",
+            "tier": 1
+          },
+          {
+            "title": "Novati Constructions - Overview, News & Similar companies | ZoomInfo.com",
+            "url": "https://www.zoominfo.com/c/novati-constructions-pty-ltd/199721342",
+            "snippet": "Novati Constructions is a construction company that specializes in a diverse range of projects including residential, educational, aged care, commercial, accommodation, and industrial sectors. With over 45 years of experience since its establishment ",
+            "tier": 1
+          },
+          {
+            "title": "NOVATI CONSTRUCTIONS PTY LTD - ABN 92001714905 - ACN 001714905 - Business Profile / Credit Report",
+            "url": "https://creditorwatch.com.au/credit/profile/92001714905/NOVATI-CONSTRUCTIONS-PTY-LTD",
+            "snippet": "Novati Constructions Pty Ltd (ABN 92 001 714 905 / ACN 001 714 905): Novati Constructions is a registered proprietary company limited by shares and was first registered with ASIC in 1979. Novati Constructions is registered on the Australian Business ",
+            "tier": 1
+          },
+          {
+            "title": "Novati Constructions Pty Ltd - Company Profile and News - Bloomberg Markets",
+            "url": "https://www.bloomberg.com/profile/company/9678363Z:AU",
+            "snippet": "Company profile page for Novati Constructions Pty Ltd including stock price, company news, executives, board members, and contact information",
+            "tier": 1
+          }
+        ],
+        "courtRecords": [
+          {
+            "title": "Judgment handed down in Facade Treatment Engineering Pty Ltd v Brookfield Multiplex Constructions Pty Ltd | The Supreme ",
+            "url": "https://www.supremecourt.vic.gov.au/news/judgment-handed-down-in-facade-treatment-engineering-pty-ltd-v-brookfield-multiplex",
+            "snippet": "Finally, the Court of Appeal determined that <strong>the respondent was not precluded from relying on s 553C of the Corporations Act by reason of the exception in s 553C(2)</strong>. The relevant time for determining notice of insolvency for the purp",
+            "tier": 1
+          },
+          {
+            "title": "SUPREME COURT OF NEW SOUTH WALES FRIDAY, 5 DECEMBER 2025 DUTY ROSTER",
+            "url": "https://supremecourt.nsw.gov.au/documents/daily-court-list/Daily_Court_List_for_5_December_2025.pdf",
+            "snippet": "AUSTRALIAN LIQUOR MARKETERS PTY. LIMITED ... COMMUNITY OF N.S.W. LIMITED ... No. <strong>95763 v NOVATI CONSTRUCTIONS PTY LTD</strong>",
+            "tier": 1
+          },
+          {
+            "title": "Insolvency: How to assess a company's solvency",
+            "url": "https://www.landers.com.au/legal-insights-news/insolvency-matters-assessing-a-companys-solvency",
+            "snippet": "That definition adopts a &quot;cash flow test&quot; of insolvency, which turns upon the income sources available to the company and the expenditure obligations that it has to meet (Southern Cross Interiors Pty Ltd (in liq) v Deputy Cmr of Taxation (2",
+            "tier": 1
+          },
+          {
+            "title": "Nova Builders Pty Ltd v Civil & Civic Corporation Pty Ltd - ACT Supreme Court",
+            "url": "https://www.courts.act.gov.au/supreme/judgments/nova-builders-pty-ltd-v-civil-and-civic-corporation-pty-ltd",
+            "snippet": "The conclusion I have reached is that the adjudicator\u2019s finding at [129] was in error insofar as it expressed the view that the debt the subject of the payment claims was not the same as the disputed sum that had been paid into court in the Supreme C",
+            "tier": 1
+          },
+          {
+            "title": "Supremecourt",
+            "url": "https://www.supremecourt.vic.gov.au/sites/default/files/2018-10/recentdevelopmentsincorporateinsolvencylaw.pdf",
+            "snippet": "The Supreme Court of Victoria safeguards and maintains the rule of law to ensure equal justice for all.",
+            "tier": 1
+          }
+        ]
       },
       "context": {
         "founded": "1971",
@@ -249,7 +340,11 @@
         "source": "Administrator Report",
         "creditorsMeetingDate": null,
         "outcome": null,
-        "insolvencyPeriodDays": 376
+        "insolvencyPeriodDays": 376,
+        "totalDebts": 11200000,
+        "totalDebtsSource": "https://subbiesunited.com.au/qld-construction-giant-goes-under-owing-11m/",
+        "totalDebtsTier": 2,
+        "creditorCount": 282
       },
       "summary": {
         "totalProjectsAtRisk": 7,
@@ -459,7 +554,7 @@
         }
       ],
       "research": {
-        "lastUpdated": "2026-02-17T14:54:50.397454",
+        "lastUpdated": "2026-02-17T15:05:08.799224",
         "researchedBy": "Paul Reid / MC / James Curtis",
         "dataSources": [
           "ASIC",
@@ -468,7 +563,7 @@
           "Builder Website",
           "ABR"
         ],
-        "confidence": "high",
+        "confidence": "medium",
         "gaps": "ABN/ACN not yet populated. No developer/lender contacts. Vermont development details incomplete.",
         "latestNews": [
           {
@@ -495,6 +590,98 @@
             "title": "Liquidators Appointed to Lanskey Constructions\u2019 Queensland Arm | The Urban Developer",
             "url": "https://www.theurbandeveloper.com/articles/lanskey-constructions-queensland-liquidation-fti-consulting",
             "snippet": "The Queensland arm of builder Lanskey Constructions went into liquidation on Monday after the company appointed FTI Consultings\u2019 Ben Campbell and John Park as liquidators of the troubled company..."
+          }
+        ],
+        "tier1": {
+          "coverage": 67,
+          "gaps": [
+            "Deemed insolvency date not found in public sources"
+          ],
+          "recommendTier3": false,
+          "articlesSearched": 11,
+          "courtRecords": 5,
+          "developersIdentified": 0,
+          "lastRun": "2026-02-17T15:05:08.799171"
+        },
+        "articles": [
+          {
+            "title": "Lanskey Constructions Pty. Ltd. 010 636 512 | Court Liquidation | Meeting | QLD | Published : 06/09/2024 | ASIC Notice D",
+            "url": "https://publishednotices.asic.gov.au/browsesearch-notices/notice-details/Lanskey-Constructions-Pty-Ltd-010636512/1de3f70d-26fc-4698-b3e0-0228d9f089ba",
+            "snippet": "NOTICE OF MEETING OF CREDITORS Schedule 2 - Insolvency Practice Schedule (Corporations) s75-10(a) Insolvency Practice Rules (Corporations) 2016 s75-40(1) - In Liquidation | Published : 06/09/2024 | Appointment Date : 23/01/2023 | ASIC Published Notic",
+            "tier": 1
+          },
+          {
+            "title": "Lanskey Constructions QLD Pty Ltd in Liquidation - Subbies United",
+            "url": "https://subbiesunited.com.au/lanskey-constructions-qld-pty-ltd-in-liquidation/",
+            "snippet": "Reports on sites of trades also being short paid and claims reduced from the works that were achieved \u00b7 I would strongly recommend avoiding this builder. That was way back in 2017, now fast forward to August 2022 and now we have Lanskey Constructions",
+            "tier": 1
+          },
+          {
+            "title": "Brisbane building company Lanskey Constructions QLD goes into liquidation - Company Liquidation Brisbane",
+            "url": "https://companyliquidationbrisbane.com.au/brisbane-building-company-lanskey-constructions-qld-goes-into-liquidation/",
+            "snippet": "A Queensland builder with offices across Australia and overseas has become the latest casualty in the struggling construction sector after it collapsed earlier this week.",
+            "tier": 1
+          },
+          {
+            "title": "$80m collapse of Melbourne Cup winner\u2019s building firm hits subbies - Subbies United",
+            "url": "https://subbiesunited.com.au/80m-collapse-of-melbourne-cup-winners-building-firm-hits-subbies/",
+            "snippet": "That\u2019s the opinion of liquidators ... by liquidator Alan Walker, of WLP Restructuring, <strong>secured creditors owed about $12.7m may see a return of three cents in the dollar once the liquidation is completed over the next few months</strong>....",
+            "tier": 1
+          },
+          {
+            "title": "Liquidators Appointed to Lanskey Constructions\u2019 Queensland Arm | The Urban Developer",
+            "url": "https://www.theurbandeveloper.com/articles/lanskey-constructions-queensland-liquidation-fti-consulting",
+            "snippet": "While the company\u2019s outstanding ... report lodged with ASIC, <strong>parent company Lanskey Constructions made a loss of $218,000 on revenue of $139.7 million in the 12 months to the end of June last year</strong>....",
+            "tier": 1
+          },
+          {
+            "title": "Failed Queensland builder owes more than $11 million | Mortgage Professional Australia",
+            "url": "https://www.mpamag.com/au/news/general/failed-queensland-builder-owes-more-than-11-million/426795",
+            "snippet": "A report lodged by liquidators FTI Consulting with the Australian Securities and Investments Commission TUesday said that Lanskey Constructions Qld Pty Ltd had <strong>282 unsecured creditors</strong>, The Australian reported.",
+            "tier": 1
+          },
+          {
+            "title": "Subbies unlikely to see payday from collapsed builder | Mortgage Professional Australia",
+            "url": "https://www.mpamag.com/au/news/general/subbies-unlikely-to-see-payday-from-collapsed-builder/447745",
+            "snippet": "Subcontractors and contractors ... firm Lanskey Constructions, valued at $80 million, are <strong>unlikely to recover any of their outstanding payments</strong>, according to the liquidators overseeing the company&#x27;s financial affairs.",
+            "tier": 1
+          },
+          {
+            "title": "Lanskey Constructions Pty Ltd v Westrac ...",
+            "url": "https://mosaicprojects.com.au/PDF-Casewatch/1167_Lanskey-Constructions-v-Westrac.pdf",
+            "tier": 2
+          }
+        ],
+        "courtRecords": [
+          {
+            "title": "Lanskey Constructions v Noxequin - Doyles Arbitration Lawyers",
+            "url": "https://doylesarbitrationlawyers.com/lanskey-constructions-v-noxequin/",
+            "snippet": "Lanskey then sought to appeal the Adjudicator\u2019s Determination on the grounds that Adjudicator failed to engage in a bona fide exercise of power and failed to afford Lanskey natural justice in respect of the deductions.",
+            "tier": 1
+          },
+          {
+            "title": "Judgment handed down in Facade Treatment Engineering Pty Ltd v Brookfield Multiplex Constructions Pty Ltd | The Supreme ",
+            "url": "https://www.supremecourt.vic.gov.au/news/judgment-handed-down-in-facade-treatment-engineering-pty-ltd-v-brookfield-multiplex",
+            "snippet": "It provides that, in the context of the winding up of an insolvent company, <strong>a party to whom the company owes a debt is entitled to set off that debt against any sum it owes to the company</strong>.",
+            "tier": 1
+          },
+          {
+            "title": "Construction Matters - Lexology",
+            "url": "https://www.lexology.com/library/detail.aspx?g=cf9366d8-f142-4b6f-a320-486e56e7ea63",
+            "snippet": "However, Lanskey sought immediate injunctive relief to prevent Westrac from having recourse to the bank guarantees, in part, on the basis of a purported oral agreement from a Westrac employee that Westrac would not levy liquidated damages against Lan",
+            "tier": 1
+          },
+          {
+            "title": "Construction and Infrastructure case note: Victorian Supreme Court 'plainly wrong'; insolvent construction companies may",
+            "url": "https://kcllaw.com.au/construction-and-infrastructure-case-note-victorian-supreme-court-plainly-wrong-insolvent-construction-companies-may-be-able-to-recover-debts-via-the-security-of-payment-legislation/",
+            "snippet": "Construction and Infrastructure case note: Victorian Supreme Court \u2018plainly wrong\u2019; insolvent construction companies may be able to recover debts via the Security of Payment legislation",
+            "tier": 1
+          },
+          {
+            "title": "Construction Alert: No relief for insolvent contractors: Court grants permanent stay on judgment obtained by contractor ",
+            "url": "https://www.tglaw.com.au/corporate/publications/construction-alert-no-relief-insolvent-contractors-court-grants-permanent-stay-judgment-obtained-contractor-security-payment-regime/",
+            "snippet": "On the contrary, His Honour determined that the Court was not confined to asking whether the original circumstances resulting in the granting of the stay still exist, however should have regard to the present facts in determining the question of whet",
+            "tier": 1
           }
         ]
       },
@@ -535,7 +722,10 @@
         "source": "Administrator Report",
         "creditorsMeetingDate": null,
         "outcome": null,
-        "insolvencyPeriodDays": 211
+        "insolvencyPeriodDays": 211,
+        "totalDebts": 10000000,
+        "totalDebtsSource": "https://subbiesunited.com.au/creditors-emerge-after-major-building-firm-collapse/",
+        "totalDebtsTier": 2
       },
       "summary": {
         "totalProjectsAtRisk": 8,
@@ -720,7 +910,7 @@
         }
       ],
       "research": {
-        "lastUpdated": "2026-02-17T14:54:50.397459",
+        "lastUpdated": "2026-02-17T15:05:19.873094",
         "researchedBy": "Paul Reid / MC / James Curtis",
         "dataSources": [
           "ASIC",
@@ -729,7 +919,7 @@
           "Builder Website",
           "ABR"
         ],
-        "confidence": "high",
+        "confidence": "low",
         "gaps": "ABN/ACN not yet populated. No developer/lender contacts.",
         "latestNews": [
           {
@@ -756,6 +946,100 @@
             "title": "Home builder Porter Davis collapses affecting 1,700 homes, LLoyd Group enters voluntary administration - ABC News",
             "url": "https://www.abc.net.au/news/2023-03-31/home-builder-porter-davis-liquidation-lloyd-group-administration/102170136",
             "snippet": "<strong>A major Victorian builder has collapsed and another construction firm has entered voluntary administration</strong>, in a further sign pressures on the construction industry are not going away"
+          }
+        ],
+        "tier1": {
+          "coverage": 33,
+          "gaps": [
+            "Deemed insolvency date not found in public sources",
+            "Creditor count not found in public sources"
+          ],
+          "recommendTier3": true,
+          "articlesSearched": 9,
+          "courtRecords": 5,
+          "developersIdentified": 0,
+          "lastRun": "2026-02-17T15:05:19.873084"
+        },
+        "articles": [
+          {
+            "title": "Lloyd Group | Deloitte Australia | Restructuring, Insolvency & Financial Advisory",
+            "url": "https://www.deloitte.com/au/en/services/financial-advisory/notices/lloyd-group.html",
+            "snippet": "Please note that separate notifications have been issued to principals and suppliers with respect to the status of specific projects, next steps and the ongoing supply processes during administration.",
+            "tier": 1
+          },
+          {
+            "title": "LLOYD GROUP PROPERTIES PTY LTD 164 434 039 | Voluntary Administration | Meeting | VIC | Published : 10/05/2023 | ASIC No",
+            "url": "https://publishednotices.asic.gov.au/browsesearch-notices/notice-details/LLOYD-GROUP-PROPERTIES-PTY-LTD-164434039/3178bc0e-8d0d-4034-824c-13947c10abfd",
+            "snippet": "NOTICE OF SECOND MEETING OF CREDITORS OF COMPANY UNDER ADMINISTRATION Subsection 439A(1) Insolvency Practice Rules (Corporations) 2016 s75-40(1) - Administrators Appointed | Published : 10/05/2023 | Appointment Date : 31/03/2023 | ASIC Published Noti",
+            "tier": 1
+          },
+          {
+            "title": "Top 13 Construction Company Collapses in Australia",
+            "url": "https://www.mastt.com/blogs/top-construction-company-collapses-australia",
+            "snippet": "<strong>In December 2022, Clough Group entered voluntary administration</strong>. Efforts to restructure or find a buyer failed, resulting in the company&#x27;s liquidation. ... The GOTAFE Seymour Health &amp; Community Centre in rural Victoria is am",
+            "tier": 1
+          },
+          {
+            "title": "Lloyd Group Investments Pty Ltd 633 451 948 | Voluntary Administration | Meeting | VIC | Published : 03/04/2023 | ASIC N",
+            "url": "https://publishednotices.asic.gov.au/browsesearch-notices/notice-details/Lloyd-Group-Investments-Pty-Ltd-633451948/dcb085b7-55ce-458d-98bb-f291b49095d1",
+            "snippet": "COMBINED NOTICE OF APPOINTMENT AND FIRST MEETING OF CREDITORS OF COMPANY UNDER ADMINISTRATION Paragraph 436E(3)(b) - Regulation 5.3A.03A and Paragraph 450A(1)(b) - Regulation 5.3A.07A - Administrators Appointed | Published : 03/04/2023 | Appointment ",
+            "tier": 1
+          },
+          {
+            "title": "Black Friday: Porter Davis, Lloyd Group in Crisis | The Urban Developer",
+            "url": "https://www.theurbandeveloper.com/articles/porter-davis-homes-lloyd-group-liquidation-administration-collapse",
+            "snippet": "It became Black Friday on <strong>March 31, 2023</strong> with the collapse of one major Australian construction company while a second big builder called in administrators. The day began with news Australia\u2019s 13th biggest builder, Porter Davis Home ",
+            "tier": 1
+          },
+          {
+            "title": "Porter Davis Homes, Lloyd Group collapses: Australian housing giants collapse on same day, leaving families and workers ",
+            "url": "https://www.9news.com.au/national/porter-davis-homes-lloyd-group-collapse-into-construction/af019a8e-e88b-4822-ab39-c2114a969590",
+            "snippet": "<strong>Each is owed more than $50,000</strong> and will join a huge line of creditors. \ufeff \u00b7 READ MORE: Aussie music legend John Farnham back in hospital\ufeff \u00b7 Renderers Sam Haidar and Guss Sekmani said they have been locked out of their worksites at Gre",
+            "tier": 1
+          },
+          {
+            "title": "School builder Lloyd Group slumps into administration, dozens of projects affected",
+            "url": "https://www.smh.com.au/business/companies/school-builder-lloyd-group-slumps-into-administration-dozens-of-projects-affected-20230331-p5cx1f.html",
+            "snippet": "Lloyd\u2019s hundreds of subcontractors, staff and suppliers are dealing with the same uncertainty and financial loss as that confronting Porter Davis\u2019 creditors.",
+            "tier": 1
+          },
+          {
+            "title": "Bond Homes creditors report reveals debts of liquidated Ballarat builder - ABC News",
+            "url": "https://www.abc.net.au/news/2023-09-25/bond-homes-creditors-report-liquidated-ballarat-builder/102889200",
+            "snippet": "At the same time Lloyd Group also entered voluntary administration. Harmac Group entered voluntary administration in August, with tools downed on 50 sites under construction across Ballarat, Bendigo, Geelong and Melbourne. Creditors will meet on Tues",
+            "tier": 1
+          }
+        ],
+        "courtRecords": [
+          {
+            "title": "Lloyd v Google LLC: Supreme Court judgment makes it personal, Cindy Knott",
+            "url": "https://thelens.slaughterandmay.com/post/102hbci/lloyd-v-google-llc-supreme-court-judgment-makes-it-personal",
+            "snippet": "As Google LLC is based in the US, as an initial phase of his claim, Mr Lloyd applied to the court for permission to serve proceedings on Google outside of the jurisdiction. The High Court had initially dismissed his application and refused to allow h",
+            "tier": 1
+          },
+          {
+            "title": "Lloyd v Google: Supreme Court hearings set for 28 and 29 April 2021 - Lexology",
+            "url": "https://www.lexology.com/library/detail.aspx?g=4f89bea0-6f95-4af0-b4d4-76d73c33d6d3",
+            "snippet": "On the 28 and 29 April 2021, the Supreme Court will be hearing the appeal by Google LLC against the order of the Court of Appeal in the case of Lloyd\u2026",
+            "tier": 1
+          },
+          {
+            "title": "News: Supreme Court grants permission to appeal in Lloyd v Google LLC \u2013 Inforrm's Blog",
+            "url": "https://inforrm.org/2020/03/11/news-supreme-court-grants-permission-to-appeal-in-lloyd-v-google-llc/",
+            "snippet": "<strong>The case is not expected to be heard by the Supreme Court until late 2020 or early 2021</strong>.",
+            "tier": 1
+          },
+          {
+            "title": "NOVEMBER 2021 LLOYD V GOOGLE: HOW THE SUPREME COURT JUDGMENT CLOSED THE DOOR",
+            "url": "https://www.cliffordchance.com/content/dam/cliffordchance/briefings/2021/11/lvg-how-the-supreme-court-judgment.pdf",
+            "snippet": "Supreme Court&#x27;s judgment in Lloyd.",
+            "tier": 1
+          },
+          {
+            "title": "SOCIETY OF LLOYD v. ASHENDEN (2000) | FindLaw",
+            "url": "https://caselaw.findlaw.com/court/us-7th-circuit/1287031.html",
+            "snippet": "Pursuant to this strategy, Lloyd&#x27;s filed the judgments in the district court and then issued \u201ccitations\u201d pursuant to the Illinois procedure for executing a judgment. The filing of the judgments inaugurated this federal-court proceeding to collec",
+            "tier": 1
           }
         ]
       },
@@ -796,7 +1080,10 @@
         "source": "Administrator Report",
         "creditorsMeetingDate": null,
         "outcome": null,
-        "insolvencyPeriodDays": 206
+        "insolvencyPeriodDays": 206,
+        "totalDebts": 52000000,
+        "totalDebtsSource": "https://helix.legal/insight/a-tale-of-trusts-separating-myths-from-reality-in-sop/",
+        "totalDebtsTier": 1
       },
       "summary": {
         "totalProjectsAtRisk": 1,
@@ -872,7 +1159,7 @@
         }
       ],
       "research": {
-        "lastUpdated": "2026-02-17T14:54:50.397462",
+        "lastUpdated": "2026-02-17T15:05:31.033915",
         "researchedBy": "Paul Reid / MC / James Curtis",
         "dataSources": [
           "ASIC",
@@ -880,7 +1167,7 @@
           "Cordell",
           "ABR"
         ],
-        "confidence": "high",
+        "confidence": "low",
         "gaps": "ABN/ACN not yet populated. No developer/lender contacts.",
         "latestNews": [
           {
@@ -907,6 +1194,94 @@
             "title": "A Tale of Trusts: Separating Myths from Reality in SOP",
             "url": "https://helix.legal/insight/a-tale-of-trusts-separating-myths-from-reality-in-sop/",
             "snippet": "However, given the dreadful overall financial position of GCB Constructions as reported by the liquidator, I think it is highly unlikely that amounts legitimately due and owing to subcontractors who d"
+          }
+        ],
+        "tier1": {
+          "coverage": 33,
+          "gaps": [
+            "Deemed insolvency date not found in public sources",
+            "Creditor count not found in public sources"
+          ],
+          "recommendTier3": true,
+          "articlesSearched": 11,
+          "courtRecords": 4,
+          "developersIdentified": 0,
+          "lastRun": "2026-02-17T15:05:31.033901"
+        },
+        "articles": [
+          {
+            "title": "Gold Coast's GCB Constructions goes into administration a day after licence suspended - ABC News",
+            "url": "https://www.abc.net.au/news/2023-07-26/gcb-constructions-goes-into-administration/102648426",
+            "snippet": "An initial report to creditors is expected to be issued on Friday. A meeting of creditors will be held by the administrators on August 7. Master Builders Queensland Gold Coast regional manager Adam Profke told the ABC that GCB Constructions, a family",
+            "tier": 1
+          },
+          {
+            "title": "Building company collapses are surging amid construction crisis",
+            "url": "https://attwoodmarshall.com.au/building-company-collapses-construction-crisis-what-are-creditors-rights/",
+            "snippet": "Owners can also contact the administrator to learn more about the development status, the potential for completion, and how deposits are handled. [UPDATE: Since publishing this blog, GCB Constructions has been wound up and placed in liquidation. This",
+            "tier": 1
+          },
+          {
+            "title": "GCB Constructions goes into administration",
+            "url": "https://www.businessnewsaustralia.com/articles/gold-coast-builder-gcb-constructions-goes-bust.html",
+            "snippet": "&quot;The appointment occurred primarily due to disputes relating to two major construction projects on the Gold Coast,&quot; the administrators said in a statement, although they did not specify which specific projects. &quot;The company\u2019s QBCC lice",
+            "tier": 1
+          },
+          {
+            "title": "Uniting Yamba builder GCB Constructions in administration \u2013 Clarence Valley Independent",
+            "url": "https://clarencevalleynews.com.au/uniting-yamba-builder-gcb-constructions-in-administration/",
+            "snippet": "The news of the company being placed into administration came just a day after the Queensland Building and Construction Commission suspended GCB\u2019s building licence for \u2018failure to pay debts\u2019, bringing a halt to all work on its projects. Palmers Islan",
+            "tier": 1
+          },
+          {
+            "title": "GCB CONSTRUCTIONS PTY LTD (the Company)",
+            "url": "https://svpartners.com.au/wp-content/uploads/Statement-1-from-SV-Partners-GCB-Constructions-Pty-Ltd.pdf",
+            "snippet": "The Administrators will conduct an investigation into the affairs of the Company and will be reporting",
+            "tier": 1
+          },
+          {
+            "title": "Fate of GCB Constructions' creditors hangs on $17m claims",
+            "url": "https://www.businessnewsaustralia.com/articles/fate-of-gcb-construction-s-creditors-hinges-on-legal-stoushes-totalling--17m.html",
+            "snippet": "Creditors to Gold Coast building company GCB Constructions were told by administrators today that <strong>they will have to wait on the outcome of two legal stoushes totalling $17 million if they are to see any meaningful return on the debts they are",
+            "tier": 1
+          },
+          {
+            "title": "A Tale of Trusts: Separating Myths from Reality in SOP",
+            "url": "https://helix.legal/insight/a-tale-of-trusts-separating-myths-from-reality-in-sop/",
+            "snippet": "\u201cSubcontractors of failed Gold ... will get <strong>less than 11 cents for every dollar owed in the $52m collapse \u2013 and it could take up to two years to get it \u2013 the liquidator has revealed. In his latest report, liquidator David Stimpson of SV Partn",
+            "tier": 1
+          },
+          {
+            "title": "GCB Constructions (Qld) Pty Ltd | Queensland Building and Construction Commission",
+            "url": "https://www.qbcc.qld.gov.au/running-your-business/trust-accounts/gcb-constructions-qld-pty-ltd",
+            "snippet": "The timeframes SV Partners use as administrator to determine outstanding payment is unknown to the QBCC and is dependent on their confirmation of outstanding payments for GCB Constructions operations. The QBCC encourage all persons who consider thems",
+            "tier": 1
+          }
+        ],
+        "courtRecords": [
+          {
+            "title": "Uncertain construction contract leads to void adjudication determination | Construction",
+            "url": "https://www.tglaw.com.au/insights/uncertain-construction-contract-leaves-subcontractor-cashless",
+            "snippet": "GCB, by originating application, <strong>sought a declaration from the Supreme Court that the adjudication decision be found void</strong>, asserting that:",
+            "tier": 1
+          },
+          {
+            "title": "Supreme Court provides further clarification on meaning of \"construction contract\" under the BIF Act - Construct Law Gro",
+            "url": "https://constructlaw.com.au/supreme-court-provides-further-clarification-on-meaning-of-construction-contract-under-the-bif-act/",
+            "snippet": "Recent Supreme Court Decision confirms that <strong>an adjudication decision is void and of no effect where a valid \u201cconstruction contract\u201d does not exist</strong>. The recent case of GCB Constructions Pty Ltd v SEQ Formwork Pty Ltd &amp; Ors [2023] ",
+            "tier": 1
+          },
+          {
+            "title": "| Supreme Court Library Queensland",
+            "url": "https://www.sclqld.org.au/caselaw/QSC/2018/292",
+            "snippet": "Improved case landing pages\u2014get a quick overview of a judgment and navigate between search results. Explore and access new collections and more content. For a detailed list of updates, view our CaseLaw release notes, or subscribe and be the first to ",
+            "tier": 1
+          },
+          {
+            "title": "Runaway Bay Investments Pty Ltd v GCB Constructions Pty Ltd [2018] QSC 292 - Supreme Court of Queensland - Trial Divisio",
+            "url": "https://www.queenslandjudgments.com.au/caselaw/qsc/2018/292",
+            "snippet": "Runaway Bay Investments Pty Ltd v GCB Constructions Pty Ltd \u00b7 [2018] QSC 292 To print this judgment please return to the case and click on the PDF icon next to the case name. For court use, a full PDF copy is required or preferred.",
+            "tier": 1
           }
         ]
       },
@@ -949,7 +1324,8 @@
         "source": "Administrator Report",
         "creditorsMeetingDate": null,
         "outcome": null,
-        "insolvencyPeriodDays": 429
+        "insolvencyPeriodDays": 429,
+        "creditorCount": 30
       },
       "summary": {
         "totalProjectsAtRisk": 1,
@@ -1001,14 +1377,14 @@
         }
       ],
       "research": {
-        "lastUpdated": "2026-02-17T14:54:50.397465",
+        "lastUpdated": "2026-02-17T15:05:41.757883",
         "researchedBy": "Paul Reid / MC / James Curtis",
         "dataSources": [
           "ASIC",
           "Administrator Report",
           "ABR"
         ],
-        "confidence": "high",
+        "confidence": "low",
         "gaps": "ABN/ACN not yet populated. Developer identity unknown (TBD). No contacts.",
         "latestNews": [
           {
@@ -1020,6 +1396,64 @@
             "title": "EQ PROJECTS LIMITED overview - Find and update company information - GOV.UK",
             "url": "https://find-and-update.company-information.service.gov.uk/company/03728419",
             "snippet": "EQ PROJECTS LIMITED - Free company information from Companies House including registered office address, filing history, accounts, annual return, officers, charges, business activity"
+          }
+        ],
+        "tier1": {
+          "coverage": 33,
+          "gaps": [
+            "Deemed insolvency date not found in public sources",
+            "Total debts figure not found in public sources"
+          ],
+          "recommendTier3": false,
+          "articlesSearched": 2,
+          "courtRecords": 5,
+          "developersIdentified": 0,
+          "lastRun": "2026-02-17T15:05:41.757864"
+        },
+        "articles": [
+          {
+            "title": "Sydney builder EQ Constructions collapses - building and construction news - API Magazine",
+            "url": "https://www.apimagazine.com.au/news/article/major-sydney-builder-folds-owing-up-to-50-million",
+            "snippet": "Their demise has hit residential buyers, including first home buyers, as it has jeopardised 18 projects. It owes <strong>30 creditors $800,000 as well as a sizeable tax debt</strong>.",
+            "tier": 1
+          },
+          {
+            "title": "EQ Construction enters administration as latest construction company collapses | Daily Mail Online",
+            "url": "https://www.dailymail.co.uk/news/article-11743425/EQ-Construction-enters-administration-latest-construction-company-collapses.html",
+            "snippet": "The NSW-based company, also known as EQ Projects, collapsed earlier this month and owes money to <strong>between 400 and 500 creditors</strong>.",
+            "tier": 1
+          }
+        ],
+        "courtRecords": [
+          {
+            "title": "Equity Division practice notes | Supreme Court of NSW",
+            "url": "https://supremecourt.nsw.gov.au/practice-procedure/practice-notes0/equity-division-practice-notes.html",
+            "snippet": "SC EQ 06 - Cross Border Insolvency: Cooperation with Foreign Courts or Foreign Representatives - 15 September 2017 east",
+            "tier": 1
+          },
+          {
+            "title": "Equity Division | Supreme Court of NSW",
+            "url": "https://supremecourt.nsw.gov.au/about-us/equity-division.html",
+            "snippet": "The Equity Division hears civil cases in a number of different areas. The Chief Judge in Equity is responsible for the administration of the Equity Division generally.",
+            "tier": 1
+          },
+          {
+            "title": "NSW Supreme Court homepage",
+            "url": "http://www.supremecourt.justice.nsw.gov.au/",
+            "snippet": "This service is temporarily unavailable due to maintenance",
+            "tier": 1
+          },
+          {
+            "title": "What is the Cost of Insolvency - Enforcement of Judgment Debt",
+            "url": "https://stonegatelegal.com.au/what-is-the-cost-of-insolvency/",
+            "snippet": "This article outlines the various costs associated with enforcing a judgment debt through bankruptcy or winding up proceedings in Australia. The costs can vary significantly depending on whether the debtor is an individual or a company, and whether t",
+            "tier": 1
+          },
+          {
+            "title": "ISG, Lion, Mayflower; the investor burnt in three failed investments and how to avoid the same traps - investment news -",
+            "url": "https://www.apimagazine.com.au/news/article/isg-lion-mayflower-the-investor-burnt-in-three-failed-investments-and-how-to-avoid-the-same-traps",
+            "snippet": "By December 2024, the responsible entity was in liquidation. <strong>In January 2025, the Federal Court ordered the winding up of multiple ISG project companies, including entities linked to The Mills Norfolk</strong>.",
+            "tier": 1
           }
         ]
       },
@@ -1060,7 +1494,10 @@
         "source": "Administrator Report",
         "creditorsMeetingDate": null,
         "outcome": null,
-        "insolvencyPeriodDays": 0
+        "insolvencyPeriodDays": 0,
+        "totalDebts": 52000000,
+        "totalDebtsSource": "https://greenstreetnews.com/article/st-hilliers-owes-52m-to-creditors-administrator-reveals/",
+        "totalDebtsTier": 1
       },
       "summary": {
         "totalProjectsAtRisk": 0,
@@ -1199,7 +1636,7 @@
         }
       ],
       "research": {
-        "lastUpdated": "2026-02-17T14:54:50.397468",
+        "lastUpdated": "2026-02-17T15:05:53.046178",
         "researchedBy": "Paul Reid / MC / James Curtis",
         "dataSources": [
           "ASIC",
@@ -1207,7 +1644,7 @@
           "Cordell",
           "ABR"
         ],
-        "confidence": "high",
+        "confidence": "low",
         "gaps": "ABN/ACN not yet populated. No developer/lender contacts. Opal Healthcare project value unknown.",
         "latestNews": [
           {
@@ -1234,6 +1671,100 @@
             "title": "Australian construction company St Hilliers goes into administration - ABC News",
             "url": "https://www.abc.net.au/news/2024-02-05/construction-company-st-hilliers-goes-into-admininistration/103428320",
             "snippet": "<strong>Major construction company St Hilliers has been placed into voluntary administration, halting work on 21 multimillion-dollar development projects around Australia</strong>."
+          }
+        ],
+        "tier1": {
+          "coverage": 33,
+          "gaps": [
+            "Deemed insolvency date not found in public sources",
+            "Creditor count not found in public sources"
+          ],
+          "recommendTier3": false,
+          "articlesSearched": 14,
+          "courtRecords": 6,
+          "developersIdentified": 1,
+          "lastRun": "2026-02-17T15:05:53.046166"
+        },
+        "articles": [
+          {
+            "title": "St Hilliers owes $52m to creditors, administrator reveals - Green Street News",
+            "url": "https://greenstreetnews.com/article/st-hilliers-owes-52m-to-creditors-administrator-reveals/",
+            "snippet": "<strong>CONSTRUCTION company St Hilliers collapsed owing $52 million to creditors, subcontractors, suppliers and staff</strong>, administrators confirmed yesterday. St Hilliers became latest casualty of the harsh trading environment for construction ",
+            "tier": 1
+          },
+          {
+            "title": "St Hilliers owes $52m to creditors, administrator reveals - Australian Property Journal",
+            "url": "https://www.australianpropertyjournal.com.au/2024/02/14/st-hilliers-owes-52m-to-creditors-administrator-reveals/",
+            "snippet": "<strong>CONSTRUCTION company St Hilliers collapsed owing $52 million to creditors, subcontractors, suppliers and staff</strong>, administrators confirmed yesterday. St Hilliers became latest casualty of the harsh trading environment for construction ",
+            "tier": 1
+          },
+          {
+            "title": "St Hilliers Contracting Pty Limited in Voluntary Administration - Subbies United",
+            "url": "https://subbiesunited.com.au/st-hilliers-contracting-pty-limited-in-voluntary-administration/",
+            "snippet": "05-02-24 Updated 12 noon. Glenn Livingstone and Allan Walker, of WLP Restructuring have been appointed to the group. Updated at 8.15am Communication from St Hilliers. &quot;All sites shut until further notice&quot;. Yesterday we were informed that Ca",
+            "tier": 1
+          },
+          {
+            "title": "Industry Blow as \u2018Danger Zone\u2019 Claims Construction Giant | The Urban Developer",
+            "url": "https://www.theurbandeveloper.com/articles/industry-blow-as-danger-zone-claims-construction-giant-st-hilliers",
+            "snippet": "It is not unfamiliar territory for the group after it bounced back from its construction arm being placed into voluntary administration in May 2012 following the collapse of a joint venture to develop a $350-million prison in Victoria. Eventually, th",
+            "tier": 1
+          },
+          {
+            "title": "Construction industry: St Hilliers director Tim Casey wants to keep insolvent builder going",
+            "url": "https://www.afr.com/property/commercial/st-hilliers-director-tim-casey-wants-to-keep-insolvent-builder-going-20240213-p5f4pj",
+            "snippet": "St Hilliers director <strong>Tim Casey will make an offer to creditors \u2013 including subcontractors owed at least $7.1 million \u2013 to revive his cash-strapped contracting business and trade out of administration</strong>.",
+            "tier": 1
+          },
+          {
+            "title": "St Hilliers Contracting debt exposure could top $40m",
+            "url": "https://www.businessnewsaustralia.com/articles/st-hilliers-contracting-group-s-debt-exposure-could-top--40m--creditors-told.html",
+            "snippet": "The first creditors meeting held today for the construction arm of residential and commercial developer St Hilliers revealed more about the company\u2019s financial position after administrators were appointed earlier this month. Administrators Glenn Livi",
+            "tier": 1
+          },
+          {
+            "title": "St Hilliers Contracting Pty Ltd | Queensland Building and Construction Commission",
+            "url": "https://www.qbcc.qld.gov.au/running-your-business/trust-accounts/st-hilliers-contracting-pty-ltd",
+            "snippet": "The timeframes WLP use as administrator to determine outstanding payment is unknown to the QBCC and is dependent on their confirmation of outstanding payments for St Hilliers Contracting\u2019s operations. The QBCC encourage all persons who consider thems",
+            "tier": 1
+          },
+          {
+            "title": "No guarantees for 21 construction projects left in limbo after St Hilliers' voluntary administration - ABC News",
+            "url": "https://www.abc.net.au/news/2024-02-15/st-hilliers-voluntary-administration-21-construction-projects/103470708",
+            "snippet": "During a meeting with creditors ... would resume. The company has <strong>up to $10 million in unpaid subcontractor and supplier debt and potentially up to another $20 million in employee and other debt</strong>....",
+            "tier": 1
+          }
+        ],
+        "courtRecords": [
+          {
+            "title": "Corporations and Corporate Insolvency Jurisdiction of the",
+            "url": "https://www.hcourt.gov.au/sites/default/files/assets/publications/speeches/current-justices/gordonj/Corporations_and_Corporate_Insolvency_Jurisdiction_of_the_Federal_Court.pdf",
+            "snippet": "15 February 1977. Incidentally, it is also the first Federal Court case \u00b7 to appear on AustLII.12 Tradestock involved an action brought under",
+            "tier": 1
+          },
+          {
+            "title": "INSOLVENCY LITIGATION Australia",
+            "url": "https://ironbridgelegal.com.au/wp-content/uploads/2023/11/2024-Insolvency-Litigation-in-Australia.pdf",
+            "snippet": "One notable exception is in respect ... not to trade while insolvent. While such claims are ordinarily brought by the liquidator on behalf of all creditors, if the liquidator does not bring a \u00b7 claim then a creditor may (either with the consent of th",
+            "tier": 1
+          },
+          {
+            "title": "Restructuring & Insolvency: Australia (2023) | G+T",
+            "url": "https://www.gtlaw.com.au/insights/restructuring-and-insolvency-australia-2023",
+            "snippet": "The Federal Court of Australia and the supreme court of each state and territory have jurisdiction to hear matters relating to companies incorporated in Australia (which include insolvency matters and the prosecution of both civil and criminal offenc",
+            "tier": 1
+          },
+          {
+            "title": "Corporations - Winding Up List | The Supreme Court of Victoria",
+            "url": "https://www.supremecourt.vic.gov.au/areas/commercial-court/specialist-lists/corporations/winding-up",
+            "snippet": "The Corporations \u2013 Winding Up in Insolvency List (Winding Up List) <strong>deals with the applications to wind up companies in insolvency and have a liquidator appointed on the grounds the company has failed to comply with a statutory demand</strong>",
+            "tier": 1
+          },
+          {
+            "title": "Unimelb",
+            "url": "https://law.unimelb.edu.au/__data/assets/pdf_file/0004/1707952/30_1_5.pdf",
+            "snippet": "jurisdiction requires the foreign court to recognise and enforce the judgment. 36 Michael Lennard, \u2018Weaving Nets to Catch the Wind: Extraterritorial and Supra-Territorial \u00b7 Business Regulation in International Law\u2019 (Paper presented at the 23rd Intern",
+            "tier": 1
           }
         ]
       },
@@ -1274,7 +1805,10 @@
         "source": "Administrator Report (estimate \u2014 530 report does not provide specific date)",
         "creditorsMeetingDate": null,
         "outcome": null,
-        "insolvencyPeriodDays": 240
+        "insolvencyPeriodDays": 240,
+        "totalDebts": 4250000000,
+        "totalDebtsSource": "https://subbiesunited.com.au/ten-shocking-construction-company-collapses-in-australia-that-left-4-25bn-in-debt/",
+        "totalDebtsTier": 2
       },
       "summary": {
         "totalProjectsAtRisk": 2,
@@ -1390,14 +1924,14 @@
         }
       ],
       "research": {
-        "lastUpdated": "2026-02-17T14:54:50.397470",
+        "lastUpdated": "2026-02-17T15:06:04.507487",
         "researchedBy": "Paul Reid / MC / James Curtis",
         "dataSources": [
           "ASIC",
           "Administrator Report (530 report)",
           "ABR"
         ],
-        "confidence": "medium",
+        "confidence": "low",
         "gaps": "ABN/ACN not yet populated. 530 report does not provide specific insolvency date \u2014 estimate used. No developer/lender contacts. Note: Paul's Overall Summary spreadsheet has a formula error for Stevens ($3.69M instead of $10.39M for value won after insolvency).",
         "latestNews": [
           {
@@ -1409,6 +1943,82 @@
             "title": "Stevens Constructions: Major building company enters voluntary administration amid 'unprecedented disruptions' | Daily Mail Online",
             "url": "https://www.dailymail.co.uk/news/article-13463205/Stevens-Constructions-administraction-construction.html",
             "snippet": "Stevens Construction, based on the NSW Central Coast, <strong>announced on Monday that it had fallen into administration having faced &#x27;unprecedented disruptions&#x27; during recent constructions<"
+          }
+        ],
+        "tier1": {
+          "coverage": 33,
+          "gaps": [
+            "Deemed insolvency date not found in public sources",
+            "Creditor count not found in public sources"
+          ],
+          "recommendTier3": false,
+          "articlesSearched": 5,
+          "courtRecords": 5,
+          "developersIdentified": 0,
+          "lastRun": "2026-02-17T15:06:04.507456"
+        },
+        "articles": [
+          {
+            "title": "Stevens Constructions: Major building company enters voluntary administration amid 'unprecedented disruptions' | Daily M",
+            "url": "https://www.dailymail.co.uk/news/article-13463205/Stevens-Constructions-administraction-construction.html",
+            "snippet": "Mr Keenan said appointed administrators will work with the company &#x27;to investigate what has occurred and seek to identify options that may be available to clients, employees, subcontractors and suppliers of the company&#x27;. Stevens Constructio",
+            "tier": 1
+          },
+          {
+            "title": "Stevens Constructions Enters Voluntary Administration: Latest Trends - Insolvency news",
+            "url": "https://www.insolvencynews.com.au/stevens-constructions-enters-voluntary-administration-latest-trends/",
+            "snippet": "Stevens Constructions, a significant player in the construction industry, has decided to enter voluntary administration due to financial challenges. The company\u2019s move reflects current trends impacting the sector, signaling potential shifts in the ma",
+            "tier": 1
+          },
+          {
+            "title": "Stevens Construction (NSW) Pty Limited (In Liquidation) EXAD Portal",
+            "url": "https://exad.com.au/bri/stevensconstruction/",
+            "snippet": "Jonathon Keenan, Peter Krejci and ... Act. The Second Report to Creditors has been released. <strong>To submit a Proof of Debt (POD) Form with supporting documentation, please login using your Creditor ID and Passcode</strong>....",
+            "tier": 1
+          },
+          {
+            "title": "S.J Stevens Constructions Pty Ltd 613 316 475 | Creditors' Voluntary Liquidation | Appointment | Select One | Published ",
+            "url": "https://publishednotices.asic.gov.au/browsesearch-notices/notice-details/SJ-Stevens-Constructions-Pty-Ltd-613316475/36399580-91e2-4567-aaf0-664f145b9e45",
+            "snippet": "NOTICE OF APPOINTMENT AS LIQUIDATOR Paragraph 491(2)(b) Regulation 5.5.01 - In Liquidation | Published : 24/03/2025 | Appointment Date : 24/03/2025 | ASIC Published Notices",
+            "tier": 1
+          },
+          {
+            "title": "Stevens Construction - Overview, News & Similar companies | ZoomInfo.com",
+            "url": "https://www.zoominfo.com/c/stevens-construction-corp/100860164",
+            "snippet": "Stevens Construction, Inc. has been awarded the construction management service of a new 5,200-square-foot building for Kari Mann Dental Studio, located at 3111 Del Prado Blvd. in Cape Coral, announced Daniel F.",
+            "tier": 1
+          }
+        ],
+        "courtRecords": [
+          {
+            "title": "Supreme Court Collection: Opinions by Justice Stevens",
+            "url": "https://www.law.cornell.edu/supct/justices/stevens.dec.html",
+            "snippet": "FEDERAL TRADE COMMISSION et al., Petitioners, v. STANDARD OIL COMPANY OF CALIFORNIA.",
+            "tier": 1
+          },
+          {
+            "title": "List of current class actions in the Federal Court",
+            "url": "https://www.fedcourt.gov.au/law-and-practice/class-actions/class-actions",
+            "snippet": "Below is a list of the current first instance class actions in the Federal Court. Information published here is updated every 2-3 months \u00b7 Parties and lawyers to a class action can register on the Commonwealth Courts Portal (CCP) external link to acc",
+            "tier": 1
+          },
+          {
+            "title": "Fraudulent trading: not always an \"inside job\" (but bring your claims quickly) - Stevens & Bolton LLP",
+            "url": "https://www.stevens-bolton.com/site/insights/articles/fraudulent-trading-not-always-an-inside-job",
+            "snippet": "The Supreme Court decision reaffirms ... that <strong>any person who is knowingly a participant in the carrying on of an insolvent business with the intent to defraud creditors could be liable for fraudulent trading under section 213 IA 1986</strong>",
+            "tier": 1
+          },
+          {
+            "title": "Construction and Infrastructure case note: Victorian Supreme Court 'plainly wrong'; insolvent construction companies may",
+            "url": "https://kcllaw.com.au/construction-and-infrastructure-case-note-victorian-supreme-court-plainly-wrong-insolvent-construction-companies-may-be-able-to-recover-debts-via-the-security-of-payment-legislation/",
+            "snippet": "The VCA found that s 9 of the Vic SOP Act (s 8 of the NSW SOP Act) <strong>does not create an entitlement to progress payments for companies in liquidation as they are not continuing to carry out construction work or supply related goods or services<",
+            "tier": 1
+          },
+          {
+            "title": "What is a Creditor's Statutory Demand? - Stonegate Legal",
+            "url": "https://stonegatelegal.com.au/what-is-a-creditors-statutory-demand/",
+            "snippet": "<strong>If the company fails to respond within 21 days, it is presumed insolvent, enabling the creditor to initiate winding-up proceedings in the Federal or Supreme Court</strong>. This process is commonly used in Australia for efficient commercial d",
+            "tier": 1
           }
         ]
       },
@@ -1450,7 +2060,11 @@
         "creditorsMeetingDate": null,
         "outcome": null,
         "lastATOPayment": "2023-11-21",
-        "insolvencyPeriodDays": 48
+        "insolvencyPeriodDays": 48,
+        "totalDebts": 50000000,
+        "totalDebtsSource": "http://www.bfcsa.com.au/index.php/entry/bfcsa-another-crash-project-group-collapse-just-the-first-of-many-in-overheated-market-subbies-warn",
+        "totalDebtsTier": 2,
+        "creditorCount": 200
       },
       "summary": {
         "totalProjectsAtRisk": 1,
@@ -1543,20 +2157,105 @@
         }
       ],
       "research": {
-        "lastUpdated": "2026-02-17T14:54:50.397472",
+        "lastUpdated": "2026-02-17T15:06:16.010589",
         "researchedBy": "Paul Reid / MC / James Curtis",
         "dataSources": [
           "ASIC",
           "Administrator Report",
           "ABR"
         ],
-        "confidence": "high",
+        "confidence": "medium",
         "gaps": "ABN/ACN not yet populated. No developer/lender contacts.",
         "latestNews": [
           {
             "title": "Risky business: why builders are leading insolvency numbers",
             "url": "https://www.canberratimes.com.au/story/8572071/australia-tracks-for-worst-period-of-business-collapses-in-years/",
             "snippet": "Well-established builders <strong>Project Coordination and Rork Projects were among four Canberra construction firms that went bust within a month</strong>. Insolvencies across all industries have bee"
+          }
+        ],
+        "tier1": {
+          "coverage": 67,
+          "gaps": [
+            "Deemed insolvency date not found in public sources"
+          ],
+          "recommendTier3": false,
+          "articlesSearched": 7,
+          "courtRecords": 5,
+          "developersIdentified": 0,
+          "lastRun": "2026-02-17T15:06:16.010578"
+        },
+        "articles": [
+          {
+            "title": "Bust builder Project Coordination's debts revealed in ASIC report | The Canberra Times | Canberra, ACT",
+            "url": "https://www.canberratimes.com.au/story/8640427/bust-builder-project-coordinations-debts-revealed-in-asic-report/",
+            "snippet": "Canberra building company Project Coordination owes <strong>an estimated $25 million to about 200 creditors</strong>, with major debts to local Canberra businesses.",
+            "tier": 1
+          },
+          {
+            "title": "Award-winning 50-year-old building company operating in ACT and NSW enters voluntary administration | RSM Australia",
+            "url": "https://www.rsm.global/australia/news/award-winning-building-company-enters-voluntary-administration",
+            "snippet": "These creditors are owed <strong>more than $20 million</strong>, with the majority of these debts being less than two months old. \u201cThese numbers are preliminary and are likely to change over the coming weeks as we undertake detailed investigations in",
+            "tier": 1
+          },
+          {
+            "title": "Collapsed builder Project Coordination's debt reaches $25 million | The Canberra Times | Canberra, ACT",
+            "url": "https://www.canberratimes.com.au/story/8577770/collapsed-builder-project-coordinations-debt-reaches-25-million/",
+            "snippet": "RSM Australia partner Jonathon Colbran said administrators had received <strong>about 200 creditor claims valued at more than $25 million</strong>. &quot;Despite the challenging situation the meeting was productive and constructive,&quot; he said.",
+            "tier": 1
+          },
+          {
+            "title": "Administrators in control of Project Coordination (Australia) Pty Ltd update creditors at first meeting",
+            "url": "https://www.rsm.global/australia/news/administrators-control-project-coordination-creditors-first-meeting",
+            "snippet": "No decision has been made yet, but there was no objection at the meeting.&quot; \u201cWe will update creditors in due course regarding the proposed way forward regarding a possible extension of the administration.\u2019\u2019 \u00b7 Project Coordination is the latest in",
+            "tier": 1
+          },
+          {
+            "title": "Project Coordination: Building company collapses under $20million of debts after 50 years in business - with $120million",
+            "url": "https://www.dailymail.co.uk/news/article-13212879/Project-Coordination-Building-voluntary-administration.html",
+            "snippet": "An initial investigation by RSM identified &#x27;<strong>more than 200 creditors&#x27; who are still owed by Project Coordination to the tune of over $20million</strong>, a majority of which had been brought on less than two months ago.",
+            "tier": 1
+          },
+          {
+            "title": "Administrative Project Coordinator Confidential/Supervisory Range: 20",
+            "url": "https://sbccd.edu/district-services/human-resources/job-descriptions/documents/administrative-project-coordinator-ba-2024-09-12.pdf",
+            "tier": 2
+          },
+          {
+            "title": "Local Government Project Management Guide",
+            "url": "https://ftp.txdot.gov/pub/txdot/lgp/procedures/guide.pdf",
+            "tier": 2
+          }
+        ],
+        "courtRecords": [
+          {
+            "title": "7. Australian remedies: debt and insolvency | ALRC",
+            "url": "https://www.alrc.gov.au/publication/legal-risk-in-international-transactions-alrc-report-80/7-australian-remedies-debt-and-insolvency/",
+            "snippet": "It is assumed for this analysis that the Australian supplier is a trade creditor and is not the holder of any security over assets of the European corporation. 7.58 Winding up a company in Australia is governed by the Corporations Law. The Corporatio",
+            "tier": 1
+          },
+          {
+            "title": "Corporations and Corporate Insolvency Jurisdiction of the",
+            "url": "https://www.hcourt.gov.au/sites/default/files/assets/publications/speeches/current-justices/gordonj/Corporations_and_Corporate_Insolvency_Jurisdiction_of_the_Federal_Court.pdf",
+            "snippet": "15 February 1977. Incidentally, it is also the first Federal Court case \u00b7 to appear on AustLII.12 Tradestock involved an action brought under",
+            "tier": 1
+          },
+          {
+            "title": "List of current class actions in the Federal Court",
+            "url": "https://www.fedcourt.gov.au/law-and-practice/class-actions/class-actions",
+            "snippet": "Below is a list of the current first instance class actions in the Federal Court. Information published here is updated every 2-3 months \u00b7 Parties and lawyers to a class action can register on the Commonwealth Courts Portal (CCP) external link to acc",
+            "tier": 1
+          },
+          {
+            "title": "General federal law: Enforcement | Federal Circuit and Family Court of Australia",
+            "url": "https://www.fcfcoa.gov.au/gfl/enforcement",
+            "snippet": "You will have to use the enforcement procedures of the relevant supreme court. While the terminology may differ between states and territories, the following methods of enforcing a judgment debt are broadly available:",
+            "tier": 1
+          },
+          {
+            "title": "What is the Cost of Insolvency - Enforcement of Judgment Debt",
+            "url": "https://stonegatelegal.com.au/what-is-the-cost-of-insolvency/",
+            "snippet": "This article outlines the various costs associated with enforcing a judgment debt through bankruptcy or winding up proceedings in Australia. The costs can vary significantly depending on whether the debtor is an individual or a company, and whether t",
+            "tier": 1
           }
         ]
       },
