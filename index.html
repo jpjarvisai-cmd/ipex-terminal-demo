@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPEX Terminal — Construction Intelligence Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--green:#3DE680;--green-dark:#32c96d;--navy:#0B1120;
+--card-bg:#1A2332;--sidebar-bg:#0B1120;
+--red:#EF4444;--yellow:#F59E0B;--blue:#3B82F6;--orange:#F97316;
+--bg:#0B1120;--font:'Poppins',sans-serif;
+--radius:12px;--shadow:0 2px 8px rgba(0,0,0,.3);
+}
+[data-theme="light"]{
+--bg:#F5F7FA;--card-bg:#FFFFFF;--sidebar-bg:#FFFFFF;
+--navy:#0B1120;
+}
+body{font-family:var(--font);font-weight:300;background:var(--bg);color:#fff;min-height:100vh;display:flex}
+[data-theme="light"] body{color:#1a1a2e}
+a{color:var(--green);text-decoration:none}
+button{font-family:var(--font);cursor:pointer;border:none;font-size:.9rem;border-radius:8px;padding:10px 20px;transition:all .2s}
+
+/* SIDEBAR */
+.sidebar{width:270px;background:var(--sidebar-bg);padding:20px 16px;flex-shrink:0;display:flex;flex-direction:column;min-height:100vh;border-right:1px solid rgba(255,255,255,.08)}
+[data-theme="light"] .sidebar{border-right:1px solid #e5e7eb}
+.sidebar-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px}
+.sidebar-logo{display:flex;align-items:center}
+.sidebar-logo img{height:20px;width:auto}
+.sidebar-logo .logo-light{display:none}
+.sidebar-logo .logo-dark{display:block}
+[data-theme="light"] .sidebar-logo .logo-light{display:block}
+[data-theme="light"] .sidebar-logo .logo-dark{display:none}
+.theme-toggle{width:28px;height:28px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;transition:all .2s}
+[data-theme="light"] .theme-toggle{border-color:#d1d5db}
+.theme-toggle .toggle-icon{font-size:.75rem;color:rgba(255,255,255,.5)}
+[data-theme="light"] .theme-toggle .toggle-icon{color:#6b7280}
+.sidebar nav{display:flex;flex-direction:column;gap:4px}
+.sidebar nav a{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;color:#c0c8d4;font-size:.88rem;transition:all .2s;text-decoration:none;cursor:pointer}
+[data-theme="light"] .sidebar nav a{color:#6b7280}
+.sidebar nav a:hover,.sidebar nav a.active{background:rgba(255,255,255,.08);color:#fff}
+[data-theme="light"] .sidebar nav a:hover,[data-theme="light"] .sidebar nav a.active{background:rgba(0,0,0,.05);color:#0B1120}
+.nav-icon{width:20px;text-align:center;flex-shrink:0}
+.nav-badge{margin-left:auto;background:var(--red);color:#fff;font-size:.65rem;font-weight:700;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.nav-badge.green{background:var(--green);color:#0B1120}
+.nav-spacer{height:16px}
+.sidebar-bottom{margin-top:auto;display:flex;align-items:center;gap:10px;padding:8px 4px}
+.sidebar-bottom .avatar{width:32px;height:32px;border-radius:50%;background:#2d3e50;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.75rem;color:#c0c8d4;flex-shrink:0}
+.sidebar-bottom .user-info{flex:1}
+.sidebar-bottom .user-name{font-size:.85rem;color:#c0c8d4;display:block}
+[data-theme="light"] .sidebar-bottom .user-name{color:#374151}
+.sidebar-bottom .user-role{font-size:.7rem;color:#667}
+
+/* MAIN */
+.main{flex:1;padding:28px 36px;overflow-y:auto;background:var(--bg)}
+.page-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.page-title{font-size:1.5rem;font-weight:700}
+.header-right{display:flex;align-items:center;gap:12px}
+.search-bar{background:var(--card-bg);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:8px 14px;color:#fff;font-family:var(--font);font-size:.85rem;width:280px;outline:none;transition:border-color .2s}
+[data-theme="light"] .search-bar{border-color:#e5e7eb;color:#374151;background:#fff}
+.search-bar:focus{border-color:var(--green)}
+.search-bar::placeholder{color:#667}
+.live-dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.live-label{font-size:.75rem;color:#667;display:flex;align-items:center;gap:6px}
+
+/* METRIC CARDS */
+.metrics-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+.metric-card{background:var(--card-bg);border-radius:var(--radius);padding:20px;border-left:4px solid transparent}
+.metric-card.red{border-left-color:var(--red)}
+.metric-card.yellow{border-left-color:var(--yellow)}
+.metric-card.green{border-left-color:var(--green)}
+.metric-card.blue{border-left-color:var(--blue)}
+.metric-label{font-size:.75rem;color:#667;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.metric-value{font-size:2rem;font-weight:700;margin-bottom:4px}
+.metric-sub{font-size:.8rem;color:#667}
+.metric-change{font-size:.75rem;font-weight:600;display:inline-flex;align-items:center;gap:2px}
+.metric-change.up{color:var(--red)}
+.metric-change.down{color:var(--green)}
+
+/* ALERTS PANEL */
+.section-title{font-size:1.1rem;font-weight:600;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.section-title .count{background:var(--red);color:#fff;font-size:.7rem;font-weight:700;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.alerts-list{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.alert-card{background:var(--card-bg);border-radius:var(--radius);padding:16px 20px;display:flex;align-items:center;gap:16px;cursor:pointer;transition:all .2s;border:1px solid transparent}
+.alert-card:hover{border-color:rgba(255,255,255,.15);transform:translateX(4px)}
+[data-theme="light"] .alert-card:hover{border-color:#e5e7eb}
+.alert-severity{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.alert-severity.critical{background:var(--red);box-shadow:0 0 8px rgba(239,68,68,.5)}
+.alert-severity.high{background:var(--orange)}
+.alert-severity.medium{background:var(--yellow)}
+.alert-body{flex:1}
+.alert-title{font-size:.9rem;font-weight:600;margin-bottom:2px}
+.alert-detail{font-size:.8rem;color:#667}
+.alert-time{font-size:.7rem;color:#667;white-space:nowrap}
+.alert-tag{font-size:.65rem;padding:2px 8px;border-radius:4px;font-weight:600;white-space:nowrap}
+.alert-tag.insolvency{background:rgba(239,68,68,.15);color:var(--red)}
+.alert-tag.payment{background:rgba(245,158,11,.15);color:var(--yellow)}
+.alert-tag.risk{background:rgba(249,115,22,.15);color:var(--orange)}
+
+/* TWO COLUMN LAYOUT */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:28px}
+.panel{background:var(--card-bg);border-radius:var(--radius);padding:20px 24px}
+.panel-title{font-size:.95rem;font-weight:600;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between}
+.panel-title .badge{font-size:.7rem;padding:3px 10px;border-radius:12px;font-weight:600}
+
+/* RISK TABLE */
+.risk-table{width:100%;border-collapse:collapse}
+.risk-table th{text-align:left;font-size:.7rem;color:#667;text-transform:uppercase;letter-spacing:.5px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+[data-theme="light"] .risk-table th{border-bottom-color:#e5e7eb}
+.risk-table td{padding:10px 0;font-size:.85rem;border-bottom:1px solid rgba(255,255,255,.04)}
+[data-theme="light"] .risk-table td{border-bottom-color:#f3f4f6}
+.risk-score{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:8px;font-weight:700;font-size:.8rem}
+.risk-score.critical{background:rgba(239,68,68,.15);color:var(--red)}
+.risk-score.high{background:rgba(249,115,22,.15);color:var(--orange)}
+.risk-score.medium{background:rgba(245,158,11,.15);color:var(--yellow)}
+.risk-score.low{background:rgba(61,230,128,.15);color:var(--green)}
+.company-name{font-weight:500}
+.company-abn{font-size:.7rem;color:#667;display:block}
+.status-pill{font-size:.7rem;padding:3px 10px;border-radius:12px;font-weight:600}
+.status-pill.admin{background:rgba(239,68,68,.15);color:var(--red)}
+.status-pill.watch{background:rgba(245,158,11,.15);color:var(--yellow)}
+.status-pill.active{background:rgba(61,230,128,.15);color:var(--green)}
+
+/* TIMELINE */
+.timeline{position:relative;padding-left:20px}
+.timeline::before{content:'';position:absolute;left:5px;top:0;bottom:0;width:2px;background:rgba(255,255,255,.08)}
+[data-theme="light"] .timeline::before{background:#e5e7eb}
+.timeline-item{position:relative;padding:0 0 20px 16px;font-size:.85rem}
+.timeline-item:last-child{padding-bottom:0}
+.timeline-item::before{content:'';position:absolute;left:-18px;top:4px;width:10px;height:10px;border-radius:50%;border:2px solid var(--green);background:var(--bg)}
+.timeline-item.critical::before{border-color:var(--red);background:var(--red)}
+.timeline-item.warning::before{border-color:var(--yellow)}
+.timeline-date{font-size:.7rem;color:#667;margin-bottom:2px}
+.timeline-text{color:#c0c8d4}
+[data-theme="light"] .timeline-text{color:#374151}
+.timeline-text strong{color:#fff;font-weight:600}
+[data-theme="light"] .timeline-text strong{color:#0B1120}
+
+/* ENTITY DETAIL MODAL */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;z-index:100;opacity:0;pointer-events:none;transition:opacity .3s}
+.overlay.open{opacity:1;pointer-events:all}
+.modal{background:var(--card-bg);border-radius:16px;width:740px;max-width:95vw;max-height:90vh;overflow-y:auto;transform:scale(.95);transition:transform .3s;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+[data-theme="light"] .modal{background:#fff}
+.overlay.open .modal{transform:scale(1)}
+.modal-header{padding:24px 28px;border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between}
+[data-theme="light"] .modal-header{border-bottom-color:#e5e7eb}
+.modal-header h2{font-size:1.2rem;font-weight:700}
+.modal-close{width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1rem;color:#667;border:none;transition:all .2s}
+.modal-close:hover{background:rgba(255,255,255,.15);color:#fff}
+.modal-body{padding:24px 28px}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
+.detail-item{background:rgba(255,255,255,.04);border-radius:8px;padding:14px 16px}
+[data-theme="light"] .detail-item{background:#f9fafb;border:1px solid #e5e7eb}
+.detail-label{font-size:.7rem;color:#667;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.detail-value{font-size:1rem;font-weight:600}
+
+/* HEATMAP */
+.heatmap-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:4px;margin-bottom:8px}
+.heatmap-cell{aspect-ratio:1;border-radius:4px;position:relative;cursor:pointer;transition:transform .15s}
+.heatmap-cell:hover{transform:scale(1.3);z-index:2}
+.heatmap-cell.g1{background:rgba(61,230,128,.15)}
+.heatmap-cell.g2{background:rgba(61,230,128,.35)}
+.heatmap-cell.g3{background:rgba(61,230,128,.6)}
+.heatmap-cell.y1{background:rgba(245,158,11,.2)}
+.heatmap-cell.y2{background:rgba(245,158,11,.45)}
+.heatmap-cell.r1{background:rgba(239,68,68,.25)}
+.heatmap-cell.r2{background:rgba(239,68,68,.5)}
+.heatmap-cell.r3{background:rgba(239,68,68,.8)}
+.heatmap-legend{display:flex;align-items:center;gap:6px;font-size:.7rem;color:#667;justify-content:center}
+.heatmap-legend span{width:12px;height:12px;border-radius:2px}
+
+/* INDUSTRY STATS */
+.stat-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+[data-theme="light"] .stat-row{border-bottom-color:#f3f4f6}
+.stat-row:last-child{border:none}
+.stat-label{font-size:.85rem;color:#c0c8d4}
+[data-theme="light"] .stat-label{color:#6b7280}
+.stat-value{font-size:.85rem;font-weight:600}
+
+/* EXPOSURE BAR */
+.exposure-bar{display:flex;height:24px;border-radius:6px;overflow:hidden;margin:8px 0}
+.exposure-segment{transition:width .6s}
+.exposure-legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.exposure-legend-item{display:flex;align-items:center;gap:4px;font-size:.75rem;color:#667}
+.exposure-legend-item span{width:10px;height:10px;border-radius:2px}
+
+/* CHARTS (simple CSS bars) */
+.bar-chart{display:flex;align-items:flex-end;gap:8px;height:120px;padding:8px 0}
+.bar-col{display:flex;flex-direction:column;align-items:center;gap:4px;flex:1}
+.bar{width:100%;border-radius:4px 4px 0 0;transition:height .6s;min-height:2px}
+.bar.green{background:var(--green)}
+.bar.red{background:var(--red)}
+.bar.yellow{background:var(--yellow)}
+.bar-label{font-size:.6rem;color:#667;text-align:center;white-space:nowrap}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .sidebar{display:none}
+  .metrics-row{grid-template-columns:repeat(2,1fr)}
+  .two-col{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-top">
+    <div class="sidebar-logo">
+      <img src="ipex-logo-dark.svg" alt="IPEX" class="logo-dark">
+      <img src="ipex-logo-light.svg" alt="IPEX" class="logo-light">
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()"><span class="toggle-icon">☀</span></button>
+  </div>
+  <nav>
+    <a class="active" onclick="showPage('dashboard')"><span class="nav-icon">📊</span> Dashboard <span class="nav-badge">3</span></a>
+    <a onclick="showPage('watchlist')"><span class="nav-icon">👁</span> Watchlist</a>
+    <a onclick="showPage('entities')"><span class="nav-icon">🏢</span> Entities</a>
+    <a onclick="showPage('payments')"><span class="nav-icon">💳</span> Payment Intel</a>
+    <a onclick="showPage('verify')"><span class="nav-icon">✓</span> QS Verify</a>
+    <div class="nav-spacer"></div>
+    <a onclick="showPage('reports')"><span class="nav-icon">📋</span> Reports</a>
+    <a onclick="showPage('settings')"><span class="nav-icon">⚙</span> Settings</a>
+  </nav>
+  <div class="sidebar-bottom">
+    <div class="avatar">JD</div>
+    <div class="user-info">
+      <span class="user-name">Jane Davidson</span>
+      <span class="user-role">Risk Analyst • ABC Developer</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+  <!-- HEADER -->
+  <div class="page-header">
+    <div>
+      <div class="page-title">IPEX Terminal</div>
+      <div class="live-label"><span class="live-dot"></span> Live monitoring • 14,832 entities tracked</div>
+    </div>
+    <div class="header-right">
+      <input type="text" class="search-bar" placeholder="Search entity, ABN, or project..." id="searchBar">
+      <div style="font-size:.75rem;color:#667;text-align:right">
+        <div style="font-weight:600;color:#c0c8d4">Feb 17, 2026</div>
+        <div>2:30 PM AEDT</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- METRIC CARDS -->
+  <div class="metrics-row">
+    <div class="metric-card red">
+      <div class="metric-label">Active Insolvencies</div>
+      <div class="metric-value">23</div>
+      <div class="metric-sub">This month <span class="metric-change up">↑ 4 from Jan</span></div>
+    </div>
+    <div class="metric-card yellow">
+      <div class="metric-label">Watchlist Entities</div>
+      <div class="metric-value">147</div>
+      <div class="metric-sub">Elevated risk <span class="metric-change up">↑ 12 this week</span></div>
+    </div>
+    <div class="metric-card blue">
+      <div class="metric-label">Payment Anomalies</div>
+      <div class="metric-value">38</div>
+      <div class="metric-sub">Last 30 days <span class="metric-change down">↓ 6 from Jan</span></div>
+    </div>
+    <div class="metric-card green">
+      <div class="metric-label">Your Exposure</div>
+      <div class="metric-value">$4.2M</div>
+      <div class="metric-sub">Across 12 active projects</div>
+    </div>
+  </div>
+
+  <!-- ALERTS -->
+  <div class="section-title">🚨 Priority Alerts <span class="count">3</span></div>
+  <div class="alerts-list">
+    <div class="alert-card" onclick="showNovatiDetail()">
+      <div class="alert-severity critical"></div>
+      <div class="alert-body">
+        <div class="alert-title">Novati Constructions — Voluntary Administration</div>
+        <div class="alert-detail">Founded 1971 • ABN 52 000 785 021 • Worrells appointed as administrators. First creditors' meeting 18 Feb. 3 active projects affected, $2.1M in outstanding claims.</div>
+      </div>
+      <span class="alert-tag insolvency">INSOLVENCY</span>
+      <div class="alert-time">2 days ago</div>
+    </div>
+    <div class="alert-card">
+      <div class="alert-severity high"></div>
+      <div class="alert-body">
+        <div class="alert-title">Summit Building Group — Payment Delays Escalating</div>
+        <div class="alert-detail">ABN 61 145 892 337 • Average payment days increased from 34 to 67 over 90 days. 4 subcontractor complaints logged. Risk score elevated to 78/100.</div>
+      </div>
+      <span class="alert-tag payment">PAYMENT</span>
+      <div class="alert-time">5 hrs ago</div>
+    </div>
+    <div class="alert-card">
+      <div class="alert-severity medium"></div>
+      <div class="alert-body">
+        <div class="alert-title">Greenfield Developments — Director Change + ASIC Filing</div>
+        <div class="alert-detail">ABN 44 218 903 556 • New director appointed, 2 resigned. PPSR filings increased 300% in 60 days. Monitoring escalated.</div>
+      </div>
+      <span class="alert-tag risk">RISK SIGNAL</span>
+      <div class="alert-time">1 day ago</div>
+    </div>
+  </div>
+
+  <!-- TWO COLUMN -->
+  <div class="two-col">
+    <!-- RISK TABLE -->
+    <div class="panel">
+      <div class="panel-title">
+        Highest Risk Entities
+        <span class="badge" style="background:rgba(239,68,68,.15);color:var(--red)">Top 8</span>
+      </div>
+      <table class="risk-table">
+        <thead>
+          <tr><th>Entity</th><th>Status</th><th>Risk</th><th>Exposure</th></tr>
+        </thead>
+        <tbody>
+          <tr onclick="showNovatiDetail()" style="cursor:pointer">
+            <td><span class="company-name">Novati Constructions</span><span class="company-abn">ABN 52 000 785 021</span></td>
+            <td><span class="status-pill admin">ADMIN</span></td>
+            <td><span class="risk-score critical">97</span></td>
+            <td style="font-weight:600">$2.1M</td>
+          </tr>
+          <tr>
+            <td><span class="company-name">Summit Building Group</span><span class="company-abn">ABN 61 145 892 337</span></td>
+            <td><span class="status-pill watch">WATCH</span></td>
+            <td><span class="risk-score high">78</span></td>
+            <td style="font-weight:600">$890K</td>
+          </tr>
+          <tr>
+            <td><span class="company-name">Greenfield Developments</span><span class="company-abn">ABN 44 218 903 556</span></td>
+            <td><span class="status-pill watch">WATCH</span></td>
+            <td><span class="risk-score high">72</span></td>
+            <td style="font-weight:600">$1.4M</td>
+          </tr>
+          <tr>
+            <td><span class="company-name">Pacific Interiors</span><span class="company-abn">ABN 33 601 445 218</span></td>
+            <td><span class="status-pill watch">WATCH</span></td>
+            <td><span class="risk-score medium">64</span></td>
+            <td style="font-weight:600">$520K</td>
+          </tr>
+          <tr>
+            <td><span class="company-name">CrestView Builders</span><span class="company-abn">ABN 87 290 113 667</span></td>
+            <td><span class="status-pill watch">WATCH</span></td>
+            <td><span class="risk-score medium">58</span></td>
+            <td style="font-weight:600">$340K</td>
+          </tr>
+          <tr>
+            <td><span class="company-name">Albion Civil Works</span><span class="company-abn">ABN 19 778 234 501</span></td>
+            <td><span class="status-pill active">ACTIVE</span></td>
+            <td><span class="risk-score low">31</span></td>
+            <td style="font-weight:600">$1.8M</td>
+          </tr>
+          <tr>
+            <td><span class="company-name">Hargraves Construction</span><span class="company-abn">ABN 56 412 990 881</span></td>
+            <td><span class="status-pill active">ACTIVE</span></td>
+            <td><span class="risk-score low">24</span></td>
+            <td style="font-weight:600">$2.3M</td>
+          </tr>
+          <tr>
+            <td><span class="company-name">Meridian Projects</span><span class="company-abn">ABN 70 553 219 840</span></td>
+            <td><span class="status-pill active">ACTIVE</span></td>
+            <td><span class="risk-score low">18</span></td>
+            <td style="font-weight:600">$950K</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- INDUSTRY OVERVIEW -->
+    <div class="panel">
+      <div class="panel-title">
+        Industry Pulse
+        <span class="badge" style="background:rgba(61,230,128,.12);color:var(--green)">FY 2025-26</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Construction insolvencies (FY25)</span>
+        <span class="stat-value" style="color:var(--red)">1,567</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Insolvencies FY24</span>
+        <span class="stat-value">3,596</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">FY26 YTD (Jul–Feb)</span>
+        <span class="stat-value" style="color:var(--yellow)">1,142</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Avg days to payment (industry)</span>
+        <span class="stat-value">47 days</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">IPEX-monitored entities</span>
+        <span class="stat-value" style="color:var(--green)">14,832</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Active payment streams</span>
+        <span class="stat-value" style="color:var(--green)">$8.4B</span>
+      </div>
+
+      <div style="margin-top:20px">
+        <div style="font-size:.8rem;font-weight:600;margin-bottom:8px">Monthly Insolvencies (FY26)</div>
+        <div class="bar-chart">
+          <div class="bar-col"><div class="bar red" style="height:60%"></div><div class="bar-label">Jul</div></div>
+          <div class="bar-col"><div class="bar red" style="height:52%"></div><div class="bar-label">Aug</div></div>
+          <div class="bar-col"><div class="bar red" style="height:70%"></div><div class="bar-label">Sep</div></div>
+          <div class="bar-col"><div class="bar red" style="height:58%"></div><div class="bar-label">Oct</div></div>
+          <div class="bar-col"><div class="bar red" style="height:65%"></div><div class="bar-label">Nov</div></div>
+          <div class="bar-col"><div class="bar red" style="height:48%"></div><div class="bar-label">Dec</div></div>
+          <div class="bar-col"><div class="bar red" style="height:75%"></div><div class="bar-label">Jan</div></div>
+          <div class="bar-col"><div class="bar yellow" style="height:85%"></div><div class="bar-label">Feb</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECOND ROW -->
+  <div class="two-col">
+    <!-- RISK HEATMAP -->
+    <div class="panel">
+      <div class="panel-title">Risk Heatmap — Your Portfolio</div>
+      <div style="font-size:.75rem;color:#667;margin-bottom:12px">Each cell = 1 entity on your active projects</div>
+      <div class="heatmap-grid">
+        <div class="heatmap-cell g1"></div><div class="heatmap-cell g2"></div><div class="heatmap-cell g1"></div>
+        <div class="heatmap-cell g1"></div><div class="heatmap-cell g3"></div><div class="heatmap-cell g1"></div>
+        <div class="heatmap-cell g2"></div><div class="heatmap-cell y1"></div><div class="heatmap-cell g1"></div>
+        <div class="heatmap-cell g1"></div><div class="heatmap-cell g2"></div><div class="heatmap-cell g1"></div>
+        <div class="heatmap-cell g1"></div><div class="heatmap-cell g1"></div><div class="heatmap-cell y2"></div>
+        <div class="heatmap-cell g2"></div><div class="heatmap-cell g1"></div><div class="heatmap-cell g1"></div>
+        <div class="heatmap-cell y1"></div><div class="heatmap-cell g1"></div><div class="heatmap-cell g3"></div>
+        <div class="heatmap-cell g1"></div><div class="heatmap-cell r1"></div><div class="heatmap-cell g1"></div>
+        <div class="heatmap-cell g2"></div><div class="heatmap-cell g1"></div><div class="heatmap-cell g1"></div>
+        <div class="heatmap-cell g1"></div><div class="heatmap-cell g1"></div><div class="heatmap-cell y1"></div>
+        <div class="heatmap-cell g1"></div><div class="heatmap-cell r3" title="Novati Constructions — Critical"></div><div class="heatmap-cell g1"></div>
+        <div class="heatmap-cell g2"></div><div class="heatmap-cell g1"></div><div class="heatmap-cell r1"></div>
+      </div>
+      <div class="heatmap-legend">
+        <span style="background:rgba(61,230,128,.15)"></span> Low
+        <span style="background:rgba(61,230,128,.6)"></span> Normal
+        <span style="background:rgba(245,158,11,.45)"></span> Elevated
+        <span style="background:rgba(239,68,68,.5)"></span> High
+        <span style="background:rgba(239,68,68,.8)"></span> Critical
+      </div>
+    </div>
+
+    <!-- EXPOSURE BREAKDOWN -->
+    <div class="panel">
+      <div class="panel-title">Exposure by Risk Tier</div>
+      <div class="exposure-bar">
+        <div class="exposure-segment" style="width:8%;background:var(--red)" title="Critical: $2.1M"></div>
+        <div class="exposure-segment" style="width:15%;background:var(--orange)" title="High: $2.3M"></div>
+        <div class="exposure-segment" style="width:22%;background:var(--yellow)" title="Elevated: $3.8M"></div>
+        <div class="exposure-segment" style="width:55%;background:var(--green)" title="Normal: $9.1M"></div>
+      </div>
+      <div class="exposure-legend">
+        <div class="exposure-legend-item"><span style="background:var(--red)"></span> Critical $2.1M (8%)</div>
+        <div class="exposure-legend-item"><span style="background:var(--orange)"></span> High $2.3M (15%)</div>
+        <div class="exposure-legend-item"><span style="background:var(--yellow)"></span> Elevated $3.8M (22%)</div>
+        <div class="exposure-legend-item"><span style="background:var(--green)"></span> Normal $9.1M (55%)</div>
+      </div>
+
+      <div style="margin-top:24px">
+        <div style="font-size:.8rem;font-weight:600;margin-bottom:12px">Recent Payment Intelligence</div>
+        <div class="timeline">
+          <div class="timeline-item critical">
+            <div class="timeline-date">Feb 15, 2026</div>
+            <div class="timeline-text"><strong>Novati Constructions</strong> — All payments frozen. Worrells appointed. Subcontractor claims portal opening.</div>
+          </div>
+          <div class="timeline-item warning">
+            <div class="timeline-date">Feb 14, 2026</div>
+            <div class="timeline-text"><strong>Summit Building</strong> — Invoice #4421 overdue 33 days ($127K). Third consecutive late payment.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Feb 13, 2026</div>
+            <div class="timeline-text"><strong>Hargraves Construction</strong> — All Q4 invoices settled. Payment health: excellent.</div>
+          </div>
+          <div class="timeline-item warning">
+            <div class="timeline-date">Feb 12, 2026</div>
+            <div class="timeline-text"><strong>Greenfield Dev</strong> — PPSR registrations detected: 3 new security interests filed in 7 days.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Feb 10, 2026</div>
+            <div class="timeline-text"><strong>Meridian Projects</strong> — Progress claim #8 certified and paid within 14 days. On track.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NOVATI DETAIL MODAL -->
+<div class="overlay" id="overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div>
+        <h2>Novati Constructions Pty Ltd</h2>
+        <div style="font-size:.8rem;color:#667;margin-top:2px">ABN 52 000 785 021 • Sydney, NSW • Founded 1971</div>
+      </div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <!-- Status Banner -->
+      <div style="background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);border-radius:10px;padding:16px 20px;margin-bottom:24px;display:flex;align-items:center;gap:12px">
+        <span style="font-size:1.5rem">🔴</span>
+        <div>
+          <div style="font-weight:700;color:var(--red);font-size:.95rem">VOLUNTARY ADMINISTRATION</div>
+          <div style="font-size:.8rem;color:#667">Worrells appointed 13 Feb 2026 • First creditors' meeting: 18 Feb 2026</div>
+        </div>
+        <div style="margin-left:auto"><span class="risk-score critical" style="width:48px;height:48px;font-size:1.1rem">97</span></div>
+      </div>
+
+      <!-- Detail Grid -->
+      <div class="detail-grid">
+        <div class="detail-item">
+          <div class="detail-label">Directors</div>
+          <div class="detail-value" style="font-size:.9rem">Luisa Novati, Marco Novati</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Administrator</div>
+          <div class="detail-value" style="font-size:.9rem">Worrells</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Your Exposure</div>
+          <div class="detail-value" style="color:var(--red)">$2,147,830</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Active Projects</div>
+          <div class="detail-value">3 projects affected</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Last Payment Received</div>
+          <div class="detail-value" style="font-size:.9rem">23 Jan 2026 — $184,200</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Outstanding Claims</div>
+          <div class="detail-value" style="color:var(--yellow)">$2,147,830</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Payment Trend (90d)</div>
+          <div class="detail-value" style="color:var(--red);font-size:.9rem">↓ Deteriorating — avg 58 days</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">IPEX Risk Score History</div>
+          <div class="detail-value" style="font-size:.9rem">42 → 61 → 78 → <span style="color:var(--red)">97</span></div>
+        </div>
+      </div>
+
+      <!-- Risk Timeline -->
+      <div style="font-size:.9rem;font-weight:600;margin-bottom:12px">📈 Risk Escalation Timeline</div>
+      <div style="font-size:.8rem;color:#667;margin-bottom:12px">IPEX detected warning signals 47 days before administration</div>
+      <div class="timeline" style="margin-bottom:24px">
+        <div class="timeline-item critical">
+          <div class="timeline-date">Feb 13, 2026 — Risk Score: 97</div>
+          <div class="timeline-text"><strong>Voluntary administration.</strong> Worrells appointed. All payments frozen.</div>
+        </div>
+        <div class="timeline-item critical">
+          <div class="timeline-date">Feb 10, 2026 — Risk Score: 89</div>
+          <div class="timeline-text"><strong>ASIC filing detected.</strong> Application for administration lodged. IPEX alert issued to all connected parties.</div>
+        </div>
+        <div class="timeline-item warning">
+          <div class="timeline-date">Jan 28, 2026 — Risk Score: 78</div>
+          <div class="timeline-text"><strong>Payment pattern anomaly.</strong> 3 subcontractor invoices >45 days overdue. PPSR: 2 new security interests filed.</div>
+        </div>
+        <div class="timeline-item warning">
+          <div class="timeline-date">Jan 15, 2026 — Risk Score: 61</div>
+          <div class="timeline-text"><strong>Director changes flagged.</strong> Company secretary resigned. Credit enquiry volume increased 4x.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Dec 28, 2025 — Risk Score: 42</div>
+          <div class="timeline-text"><strong>⚡ First IPEX early warning.</strong> Payment days trending up (28→41 days). Added to elevated watchlist.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Nov 2025 — Risk Score: 24</div>
+          <div class="timeline-text">Normal operations. Payments on time. No anomalies detected.</div>
+        </div>
+      </div>
+
+      <!-- Affected Projects -->
+      <div style="font-size:.9rem;font-weight:600;margin-bottom:12px">🏗️ Affected Projects</div>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px">
+        <div style="background:rgba(255,255,255,.04);border-radius:8px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between">
+          <div>
+            <div style="font-weight:500;font-size:.9rem">Harbour View Apartments — Cronulla</div>
+            <div style="font-size:.75rem;color:#667">Contract value: $4.2M • 67% complete</div>
+          </div>
+          <div style="font-weight:600;color:var(--red);font-size:.9rem">$1,260,000</div>
+        </div>
+        <div style="background:rgba(255,255,255,.04);border-radius:8px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between">
+          <div>
+            <div style="font-weight:500;font-size:.9rem">Kurnell Distribution Centre</div>
+            <div style="font-size:.75rem;color:#667">Contract value: $2.8M • 45% complete</div>
+          </div>
+          <div style="font-weight:600;color:var(--red);font-size:.9rem">$630,830</div>
+        </div>
+        <div style="background:rgba(255,255,255,.04);border-radius:8px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between">
+          <div>
+            <div style="font-weight:500;font-size:.9rem">Manly Commercial Fit-out</div>
+            <div style="font-size:.75rem;color:#667">Contract value: $890K • 82% complete</div>
+          </div>
+          <div style="font-weight:600;color:var(--yellow);font-size:.9rem">$257,000</div>
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button style="background:var(--green);color:#0B1120;font-weight:600;padding:10px 20px;border-radius:8px">📄 Generate Risk Report</button>
+        <button style="background:rgba(255,255,255,.08);color:#fff;padding:10px 20px;border-radius:8px;border:1px solid rgba(255,255,255,.15)">📧 Alert Stakeholders</button>
+        <button style="background:rgba(255,255,255,.08);color:#fff;padding:10px 20px;border-radius:8px;border:1px solid rgba(255,255,255,.15)">📋 Lodge Claim</button>
+        <button style="background:rgba(255,255,255,.08);color:#fff;padding:10px 20px;border-radius:8px;border:1px solid rgba(255,255,255,.15)">🔗 ASIC Filing</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function showPage(page){
+  document.querySelectorAll('.sidebar nav a').forEach(a=>a.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  // Demo: only dashboard is implemented
+}
+
+function showNovatiDetail(){
+  document.getElementById('overlay').classList.add('open');
+}
+function closeModal(){
+  document.getElementById('overlay').classList.remove('open');
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+
+function toggleTheme(){
+  var html=document.documentElement;
+  var next=html.getAttribute('data-theme')==='light'?'dark':'light';
+  html.setAttribute('data-theme',next);
+  localStorage.setItem('ipex-terminal-theme',next);
+  document.querySelector('.theme-toggle .toggle-icon').textContent=next==='light'?'◑':'☀';
+}
+(function(){
+  var saved=localStorage.getItem('ipex-terminal-theme');
+  if(saved){document.documentElement.setAttribute('data-theme',saved);
+    var icon=document.querySelector('.theme-toggle .toggle-icon');
+    if(icon)icon.textContent=saved==='light'?'◑':'☀';
+  }
+})();
+
+// Search bar demo
+document.getElementById('searchBar').addEventListener('input',function(e){
+  if(e.target.value.toLowerCase().includes('novati')){
+    showNovatiDetail();
+  }
+});
+</script>
+</body>
+</html>
