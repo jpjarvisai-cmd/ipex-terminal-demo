@@ -186,7 +186,43 @@
       ],
       "status": "not_contacted",
       "notes": "HIGH PRIORITY: Government client. Wattleup East Primary School ($22.5M) contracted during insolvent trading period (Sep 2022).",
-      "previousProjects": []
+      "previousProjects": [
+        {
+          "name": "Alkimos College Stage 1",
+          "builder": "PACT Construction",
+          "value": 48400000,
+          "year": 2019,
+          "location": "Alkimos, WA"
+        },
+        {
+          "name": "Bob Hawke College Stage 1",
+          "builder": "PACT Construction", 
+          "value": 70000000,
+          "year": 2020,
+          "location": "Subiaco, WA"
+        },
+        {
+          "name": "Bob Hawke College Stage 2",
+          "builder": "PACT Construction",
+          "value": 40000000,
+          "year": 2023,
+          "location": "Subiaco, WA"
+        },
+        {
+          "name": "Balcatta Senior High School Redevelopment",
+          "builder": "Unknown",
+          "value": 50000000,
+          "year": 2021,
+          "location": "Balcatta, WA"
+        },
+        {
+          "name": "Rossmoyne Senior High School",
+          "builder": "Unknown",
+          "value": 43000000,
+          "year": 2024,
+          "location": "Rossmoyne, WA"
+        }
+      ]
     },
     {
       "id": "contact-006",
@@ -202,7 +238,29 @@
       ],
       "status": "not_contacted",
       "notes": "HIGH PRIORITY: Major retailer. Greendale Village Shopping Centre ($19M) tendering during insolvent trading period (Aug 2022).",
-      "previousProjects": []
+      "previousProjects": [
+        {
+          "name": "Moorebank National Distribution Centre",
+          "builder": "Richard Crookes Constructions",
+          "value": 780000000,
+          "year": 2021,
+          "location": "Moorebank, NSW"
+        },
+        {
+          "name": "Moorebank Regional Distribution Centre",
+          "builder": "Qube Logistics",
+          "value": 440000000,
+          "year": 2025,
+          "location": "Moorebank, NSW"
+        },
+        {
+          "name": "Heathwood Distribution Centre",
+          "builder": "Unknown",
+          "value": 184000000,
+          "year": 2021,
+          "location": "Southeast Queensland"
+        }
+      ]
     },
     {
       "id": "contact-007",
@@ -218,7 +276,43 @@
       ],
       "status": "not_contacted",
       "notes": "HIGH PRIORITY: Rose Bay Apartments ($16.2M) contracted during insolvent trading period (Oct 2022).",
-      "previousProjects": []
+      "previousProjects": [
+        {
+          "name": "599 Old South Head Road Apartments",
+          "builder": "Unknown",
+          "value": 35000000,
+          "year": 2022,
+          "location": "Rose Bay, NSW"
+        },
+        {
+          "name": "Heirloom Armadale",
+          "builder": "Unknown",
+          "value": 45000000,
+          "year": 2024,
+          "location": "Armadale, VIC"
+        },
+        {
+          "name": "Harbour Frankston",
+          "builder": "Unknown",
+          "value": 42000000,
+          "year": 2025,
+          "location": "Frankston, VIC"
+        },
+        {
+          "name": "A'Beckett Tower",
+          "builder": "Unknown",
+          "value": 180000000,
+          "year": 2019,
+          "location": "Melbourne CBD, VIC"
+        },
+        {
+          "name": "401 St Kilda Road",
+          "builder": "Unknown",
+          "value": 120000000,
+          "year": 2020,
+          "location": "Melbourne, VIC"
+        }
+      ]
     },
     {
       "id": "contact-008",
@@ -234,7 +328,29 @@
       ],
       "status": "not_contacted",
       "notes": "Metroplex Estate ($10M) contracted during insolvent trading period (Jan 2022).",
-      "previousProjects": []
+      "previousProjects": [
+        {
+          "name": "Ballina Regional Development",
+          "builder": "Unknown",
+          "value": 85000000,
+          "year": 2023,
+          "location": "Ballina, NSW"
+        },
+        {
+          "name": "Robina Mixed-Use Development", 
+          "builder": "Unknown",
+          "value": 72000000,
+          "year": 2022,
+          "location": "Robina, QLD"
+        },
+        {
+          "name": "Northern Rivers Commercial Estate",
+          "builder": "Unknown",
+          "value": 55000000,
+          "year": 2021,
+          "location": "Northern NSW"
+        }
+      ]
     },
     {
       "id": "contact-009",
@@ -361,7 +477,29 @@
       ],
       "status": "not_contacted",
       "notes": "Build-to-Rent Footscray ($350M). Joint venture with Investa Property Group.",
-      "previousProjects": []
+      "previousProjects": [
+        {
+          "name": "Pitt Street Metro Mixed-Use Development",
+          "builder": "CPB Contractors",
+          "value": 800000000,
+          "year": 2025,
+          "location": "Sydney CBD, NSW"
+        },
+        {
+          "name": "Parkline Place Development",
+          "builder": "Unknown",
+          "value": 450000000,
+          "year": 2024,
+          "location": "Sydney, NSW"
+        },
+        {
+          "name": "Build-to-Rent Footscray (with Investa)",
+          "builder": "Roberts Co",
+          "value": 350000000,
+          "year": 2023,
+          "location": "Footscray, VIC"
+        }
+      ]
     },
     {
       "id": "contact-012",
@@ -377,7 +515,36 @@
       ],
       "status": "not_contacted",
       "notes": "Golden Age Strata Office Little Collins St ($200M). 28-level strata office tower.",
-      "previousProjects": []
+      "previousProjects": [
+        {
+          "name": "SKY SQR Box Hill",
+          "builder": "Icon Construction",
+          "value": 450000000,
+          "year": 2025,
+          "location": "Box Hill, VIC"
+        },
+        {
+          "name": "SKY SQR Residential Towers (with Local)",
+          "builder": "Icon Construction",
+          "value": 360000000,
+          "year": 2024,
+          "location": "Box Hill, VIC"
+        },
+        {
+          "name": "130 Little Collins Street Office Tower",
+          "builder": "Roberts Co",
+          "value": 180000000,
+          "year": 2025,
+          "location": "Melbourne CBD, VIC"
+        },
+        {
+          "name": "Wembley Hill Residential Tower",
+          "builder": "Unknown",
+          "value": 168000000,
+          "year": 2023,
+          "location": "Melbourne, VIC"
+        }
+      ]
     },
     {
       "id": "contact-013",
@@ -396,7 +563,36 @@
       ],
       "status": "not_contacted",
       "notes": "HIGH PRIORITY: Government infrastructure. 4 buildings at new airport ($40M total) all >90% complete at collapse. Federal project.",
-      "previousProjects": []
+      "previousProjects": [
+        {
+          "name": "Western Sydney Airport Terminal",
+          "builder": "Multiplex",
+          "value": 800000000,
+          "year": 2025,
+          "location": "Badgerys Creek, NSW"
+        },
+        {
+          "name": "Western Sydney Airport Earthworks",
+          "builder": "CPB Contractors & Acciona JV",
+          "value": 644000000,
+          "year": 2021,
+          "location": "Badgerys Creek, NSW"
+        },
+        {
+          "name": "Western Sydney Airport Landside Works",
+          "builder": "BMD & Seymour Whyte JV (Aerowest)",
+          "value": 300000000,
+          "year": 2022,
+          "location": "Badgerys Creek, NSW"
+        },
+        {
+          "name": "Western Sydney Airport Airside Civil Works",
+          "builder": "CPB Contractors & Acciona JV",
+          "value": 250000000,
+          "year": 2021,
+          "location": "Badgerys Creek, NSW"
+        }
+      ]
     },
     {
       "id": "contact-014",
@@ -415,7 +611,29 @@
       ],
       "status": "not_contacted",
       "notes": "Airport contractor/developer working with Western Sydney Airport on maintenance centre, operations control centre, waste facility, and gatehouse.",
-      "previousProjects": []
+      "previousProjects": [
+        {
+          "name": "Western Sydney Airport Landside Civil Works",
+          "builder": "BMD Constructions & Seymour Whyte JV",
+          "value": 300000000,
+          "year": 2022,
+          "location": "Badgerys Creek, NSW"
+        },
+        {
+          "name": "Western Sydney Airport Operational Buildings",
+          "builder": "BMD Constructions & Seymour Whyte JV",
+          "value": 150000000,
+          "year": 2023,
+          "location": "Badgerys Creek, NSW"
+        },
+        {
+          "name": "Western Sydney Airport Car Parks & Roads",
+          "builder": "BMD Constructions & Seymour Whyte JV",
+          "value": 120000000,
+          "year": 2023,
+          "location": "Badgerys Creek, NSW"
+        }
+      ]
     },
     {
       "id": "contact-015",
@@ -431,7 +649,29 @@
       ],
       "status": "not_contacted",
       "notes": "Calderwood Shopping Village ($50M). Major retail development in Shellharbour.",
-      "previousProjects": []
+      "previousProjects": [
+        {
+          "name": "Calderwood Shopping Village",
+          "builder": "Quasar Constructions",
+          "value": 50000000,
+          "year": 2024,
+          "location": "Shellharbour, NSW"
+        },
+        {
+          "name": "Wollongong Industrial Estate",
+          "builder": "Unknown",
+          "value": 35000000,
+          "year": 2022,
+          "location": "Wollongong, NSW"
+        },
+        {
+          "name": "Illawarra Commercial Development",
+          "builder": "Unknown",
+          "value": 28000000,
+          "year": 2023,
+          "location": "Illawarra, NSW"
+        }
+      ]
     },
     {
       "id": "contact-016",
@@ -447,7 +687,29 @@
       ],
       "status": "not_contacted",
       "notes": "HIGH PRIORITY: Elevaire Apartments Palm Beach. Owed $6.49M and struggling to find replacement builder. 40 apartments abandoned.",
-      "previousProjects": []
+      "previousProjects": [
+        {
+          "name": "Elevaire Apartments Palm Beach",
+          "builder": "Stokes Wheeler",
+          "value": 25000000,
+          "year": 2024,
+          "location": "Palm Beach, QLD"
+        },
+        {
+          "name": "Gold Coast Residential Development",
+          "builder": "Unknown",
+          "value": 18000000,
+          "year": 2022,
+          "location": "Gold Coast, QLD"
+        },
+        {
+          "name": "Sunshine Coast Mixed-Use Project",
+          "builder": "Unknown",
+          "value": 32000000,
+          "year": 2023,
+          "location": "Sunshine Coast, QLD"
+        }
+      ]
     },
     {
       "id": "contact-017",
@@ -463,7 +725,29 @@
       ],
       "status": "not_contacted",
       "notes": "The Ribbon Darling Harbour ($1B). Sydney's tallest residential tower project was under construction at Probuild collapse.",
-      "previousProjects": []
+      "previousProjects": [
+        {
+          "name": "The Ribbon Darling Harbour",
+          "builder": "Multiplex",
+          "value": 1000000000,
+          "year": 2025,
+          "location": "Darling Harbour, NSW"
+        },
+        {
+          "name": "The Ribbon (Grocon phase)",
+          "builder": "Grocon",
+          "value": 730000000,
+          "year": 2021,
+          "location": "Darling Harbour, NSW"
+        },
+        {
+          "name": "The Ribbon (Probuild phase)",
+          "builder": "Probuild",
+          "value": 1000000000,
+          "year": 2022,
+          "location": "Darling Harbour, NSW"
+        }
+      ]
     },
     {
       "id": "contact-018",
@@ -479,7 +763,36 @@
       ],
       "status": "not_contacted",
       "notes": "Greenland Centre ($400M). Major Sydney CBD development affected by Probuild collapse.",
-      "previousProjects": []
+      "previousProjects": [
+        {
+          "name": "Greenland Centre Sydney",
+          "builder": "Probuild",
+          "value": 400000000,
+          "year": 2022,
+          "location": "Sydney CBD, NSW"
+        },
+        {
+          "name": "Sydney CBD Site Acquisition",
+          "builder": "N/A",
+          "value": 100000000,
+          "year": 2013,
+          "location": "Bathurst & Pitt Streets, NSW"
+        },
+        {
+          "name": "Erskineville Site Development",
+          "builder": "Unknown",
+          "value": 315000000,
+          "year": 2022,
+          "location": "Erskineville, NSW"
+        },
+        {
+          "name": "Park Sydney Development",
+          "builder": "Unknown",
+          "value": 280000000,
+          "year": 2024,
+          "location": "Sydney, NSW"
+        }
+      ]
     },
     {
       "id": "contact-019",
@@ -613,7 +926,36 @@
       ],
       "status": "not_contacted",
       "notes": "Insurance claim lodged for Brunswick Yard sabotage damage ($1M+). Deciding whether to continue funding rectification works.",
-      "previousProjects": []
+      "previousProjects": [
+        {
+          "name": "Major Infrastructure Surety Bonds Program",
+          "builder": "Various",
+          "value": 2000000000,
+          "year": 2023,
+          "location": "Australia Wide"
+        },
+        {
+          "name": "Construction Insurance Portfolio",
+          "builder": "Various",
+          "value": 1500000000,
+          "year": 2024,
+          "location": "Australia Wide"
+        },
+        {
+          "name": "Treasury Surety Bonds Expansion",
+          "builder": "Various",
+          "value": 735000000,
+          "year": 2022,
+          "location": "Australia Wide"
+        },
+        {
+          "name": "Commercial Construction Risk Coverage",
+          "builder": "Various",
+          "value": 850000000,
+          "year": 2023,
+          "location": "Australia Wide"
+        }
+      ]
     }
   ]
 }
