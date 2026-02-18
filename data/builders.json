@@ -498,7 +498,8 @@
           "category": "insolvency",
           "usedFor": "Dun &amp; Bradstreet collects private company financials for more than 23 million companies in over "
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "lanskey-constructions",
@@ -939,7 +940,8 @@
           "category": "insolvency",
           "usedFor": "A Queensland construction business that collapsed last month owes subbies and other creditors more t"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "lloyd-group",
@@ -1354,7 +1356,8 @@
           "category": "insolvency",
           "usedFor": "The problem with determining a date of insolvency is that companies have good and bad months. A temp"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "gcb-constructions",
@@ -1673,7 +1676,8 @@
           "category": "insolvency",
           "usedFor": "Developers of six major Queensland projects left in limbo after builder GCB Constructions collapsed "
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "eq-projects",
@@ -1950,7 +1954,8 @@
           "category": "legal",
           "usedFor": "Administrator's report to creditors"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "st-hilliers",
@@ -2324,7 +2329,8 @@
           "category": "insolvency",
           "usedFor": "05-02-24 Updated 12 noon. Glenn Livingstone and Allan Walker, of WLP Restructuring have been appoint"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "stevens-constructions",
@@ -2645,7 +2651,8 @@
           "category": "legal",
           "usedFor": "Administrator's report to creditors"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "project-coordination",
@@ -2956,7 +2963,8 @@
           "category": "insolvency",
           "usedFor": "An initial review of the company&#x27;s books and records showed <strong>more than 200 creditors cou"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "smlxl-projects",
@@ -3128,7 +3136,8 @@
           "category": "company-profile",
           "usedFor": "Construction company specializing in design, construction, fit-out and refurbishment services"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "australex-group",
@@ -3248,7 +3257,8 @@
           "category": "insolvency",
           "usedFor": "Liquidation details and creditor information including petitioning creditor Preston Hire (NSW) Pty Ltd"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "probuild-constructions",
@@ -3522,7 +3532,8 @@
           "category": "legal",
           "usedFor": "Legal analysis of collapse causes and early risk identification for construction companies"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "element-five",
@@ -3628,7 +3639,8 @@
           "category": "insolvency",
           "usedFor": "Administrator's creditor information portal and business turnaround details"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "roberts-co",
@@ -3832,7 +3844,8 @@
           "category": "legal",
           "usedFor": "Analysis of security bond implications for construction projects"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "quasar-constructions",
@@ -4017,7 +4030,8 @@
           "category": "project",
           "usedFor": "Analysis of airport project continuity with $60 million owed to creditors and $6 million in assets"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "stokes-wheeler",
@@ -4176,7 +4190,8 @@
           "category": "legal",
           "usedFor": "Official administration notice with resumed creditors meeting details"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "pindan-group",
@@ -4355,7 +4370,8 @@
           "category": "insolvency",
           "usedFor": "Impact analysis on hundreds of suppliers and subcontractors across multiple projects"
         }
-      ]
+      ],
+      "country": "AU"
     },
     {
       "id": "ljones-construction",
@@ -4438,7 +4454,8 @@
             "summary": "LJones Construction (trading as Hotondo Homes North West Tas) entered liquidation 22 Jan 2026. $1.7M debts to contractors/subcontractors/employees. Up to 12 families with deposits or incomplete homes. Liquidator Shelley-Maree Brooks appointed. Director Luke Jones didn't renew building licence Dec 2025 after months of financial pressure. Hotondo national office had been assisting since Feb 2025. CBOS contacting affected consumers re: government assistance. HIA Tasmania cited 'elevated input costs' and 'regulatory churn' as industry pressures."
           }
         ]
-      }
+      },
+      "country": "AU"
     }
   ]
 }

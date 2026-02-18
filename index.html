@@ -256,7 +256,7 @@ tr:hover{background:rgba(255,255,255,.02)}
   <div class="dash-header">
     <div>
       <h1>Builder Insolvency <span>Intelligence</span></h1>
-      <div class="sub">Monitoring Australian construction sector insolvencies in real time</div>
+      <div class="sub">Monitoring Australian construction sector insolvencies in real time — domestic builders only</div>
     </div>
     <div class="live-badge"><span class="dot"></span> Live Monitoring</div>
   </div>
@@ -272,7 +272,7 @@ tr:hover{background:rgba(255,255,255,.02)}
     </div>
     <div class="stat-card">
       <div class="val" id="s-days" style="color:var(--text-bright)">—</div>
-      <div class="lbl">Avg insolvency period</div>
+      <div class="lbl">Avg insolvent trading period</div>
     </div>
     <div class="stat-card">
       <div class="val green" id="s-builders">—</div>
@@ -417,6 +417,8 @@ document.addEventListener('DOMContentLoaded',async()=>{
       fetch('data/monitoring.json').then(r=>r.json())
     ]);
     BD=b;CD=c;MD=m;
+    // Filter out non-Australian builders (country !== 'AU')
+    BD.builders=BD.builders.filter(b=>b.country!=='INTL');
     computeWindows();
     initDash();initNav();
     const t=localStorage.getItem('theme')||'dark';
@@ -940,6 +942,13 @@ function renderFilteredContacts() {
     
     const projectCount = contact.linkedProjects ? contact.linkedProjects.length : 0;
     
+    const prevProjects = contact.previousProjects || [];
+    const prevHtml = prevProjects.length > 0 ? `
+      <div style="margin-top:10px;padding:10px;background:rgba(245,158,11,.05);border:1px solid rgba(245,158,11,.12);border-radius:6px">
+        <div style="font-size:.62rem;font-weight:600;color:var(--yellow);text-transform:uppercase;margin-bottom:4px">Previous Projects (Close Calls)</div>
+        ${prevProjects.map(p => `<div style="font-size:.75rem;color:var(--text);margin-bottom:2px">• ${p.name}${p.builder ? ' <span style="color:var(--text-dim)">(' + p.builder + ')</span>' : ''}${p.value ? ' — ' + (typeof p.value === 'number' ? '$' + (p.value/1e6).toFixed(1) + 'M' : p.value) : ''}</div>`).join('')}
+      </div>` : '';
+    
     card.innerHTML = `
       <div class="contact-company">${contact.company}</div>
       <div class="contact-role">${contact.role || contact.type}</div>
@@ -947,8 +956,10 @@ function renderFilteredContacts() {
         <span class="contact-type-badge ${typeBadgeClass}">${contact.type.toUpperCase()}</span>
         Builder: ${builderName}
         ${projectCount > 0 ? ` • ${projectCount} project${projectCount > 1 ? 's' : ''}` : ''}
+        ${prevProjects.length > 0 ? ` • <span style="color:var(--yellow)">${prevProjects.length} previous</span>` : ''}
       </div>
       ${contact.notes ? `<div class="contact-notes">${contact.notes}</div>` : ''}
+      ${prevHtml}
       <div class="contact-status ${statusClass}">${(contact.status || 'not_contacted').replace('_', ' ')}</div>
     `;
     

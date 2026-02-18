@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-17T21:00:00+11:00",
+    "lastUpdated": "2026-02-18T12:40:00+11:00",
     "totalContacts": 21,
-    "note": "Developer and lender contacts affected by builder insolvency cases. Focus on insolvent trading and pre-administration windows."
+    "note": "Developer and lender contacts affected by builder insolvency cases. Focus on insolvent trading and pre-administration windows. previousProjects tracks close-call projects from the same developer/lender with OTHER builders."
   },
   "contacts": [
     {
@@ -14,22 +14,29 @@
       "email": "",
       "phone": "",
       "linkedBuilder": "novati-constructions",
-      "linkedProjects": ["nov-001", "nov-006"],
+      "linkedProjects": [
+        "nov-001",
+        "nov-006"
+      ],
       "status": "not_contacted",
-      "notes": "Affected by Novati collapse. Loftex Industrial Warehouse ($30M) and Embassy Residences ($20M). Repeat client relationship."
+      "notes": "Affected by Novati collapse. Loftex Industrial Warehouse ($30M) and Embassy Residences ($20M). Repeat client relationship.",
+      "previousProjects": []
     },
     {
       "id": "contact-002",
       "name": null,
       "role": "Developer",
       "company": "Dicker Data Ltd",
-      "type": "developer", 
+      "type": "developer",
       "email": "",
       "phone": "",
       "linkedBuilder": "novati-constructions",
-      "linkedProjects": ["nov-002"],
+      "linkedProjects": [
+        "nov-002"
+      ],
       "status": "not_contacted",
-      "notes": "Affected by Novati collapse. Dicker Data Industrial Facilities ($25M) completed prior to collapse."
+      "notes": "Affected by Novati collapse. Dicker Data Industrial Facilities ($25M) completed prior to collapse.",
+      "previousProjects": []
     },
     {
       "id": "contact-003",
@@ -40,9 +47,12 @@
       "email": "",
       "phone": "",
       "linkedBuilder": "novati-constructions",
-      "linkedProjects": ["nov-003"],
+      "linkedProjects": [
+        "nov-003"
+      ],
       "status": "not_contacted",
-      "notes": "Joint developer with Cuciti Developments. Point Apartments Cronulla ($15M) completed before collapse."
+      "notes": "Joint developer with Cuciti Developments. Point Apartments Cronulla ($15M) completed before collapse.",
+      "previousProjects": []
     },
     {
       "id": "contact-004",
@@ -53,9 +63,12 @@
       "email": "",
       "phone": "",
       "linkedBuilder": "novati-constructions",
-      "linkedProjects": ["nov-003"],
+      "linkedProjects": [
+        "nov-003"
+      ],
       "status": "not_contacted",
-      "notes": "Joint developer with LCI Property. Point Apartments Cronulla ($15M). 18 apartments designed by Couvaras Architects."
+      "notes": "Joint developer with LCI Property. Point Apartments Cronulla ($15M). 18 apartments designed by Couvaras Architects.",
+      "previousProjects": []
     },
     {
       "id": "contact-005",
@@ -66,12 +79,15 @@
       "email": "",
       "phone": "",
       "linkedBuilder": "lanskey-constructions",
-      "linkedProjects": ["lanskey-001"],
+      "linkedProjects": [
+        "lanskey-001"
+      ],
       "status": "not_contacted",
-      "notes": "HIGH PRIORITY: Government client. Wattleup East Primary School ($22.5M) contracted during insolvent trading period (Sep 2022)."
+      "notes": "HIGH PRIORITY: Government client. Wattleup East Primary School ($22.5M) contracted during insolvent trading period (Sep 2022).",
+      "previousProjects": []
     },
     {
-      "id": "contact-006", 
+      "id": "contact-006",
       "name": null,
       "role": "Developer",
       "company": "Woolworths Group Ltd",
@@ -79,35 +95,44 @@
       "email": "",
       "phone": "",
       "linkedBuilder": "lanskey-constructions",
-      "linkedProjects": ["lanskey-002"],
+      "linkedProjects": [
+        "lanskey-002"
+      ],
       "status": "not_contacted",
-      "notes": "HIGH PRIORITY: Major retailer. Greendale Village Shopping Centre ($19M) tendering during insolvent trading period (Aug 2022)."
+      "notes": "HIGH PRIORITY: Major retailer. Greendale Village Shopping Centre ($19M) tendering during insolvent trading period (Aug 2022).",
+      "previousProjects": []
     },
     {
       "id": "contact-007",
       "name": null,
-      "role": "Developer", 
+      "role": "Developer",
       "company": "Urban DC",
       "type": "developer",
       "email": "",
       "phone": "",
       "linkedBuilder": "lanskey-constructions",
-      "linkedProjects": ["lanskey-003"],
+      "linkedProjects": [
+        "lanskey-003"
+      ],
       "status": "not_contacted",
-      "notes": "HIGH PRIORITY: Rose Bay Apartments ($16.2M) contracted during insolvent trading period (Oct 2022)."
+      "notes": "HIGH PRIORITY: Rose Bay Apartments ($16.2M) contracted during insolvent trading period (Oct 2022).",
+      "previousProjects": []
     },
     {
       "id": "contact-008",
       "name": null,
       "role": "Developer",
-      "company": "Clarence Property Group Pty Ltd", 
+      "company": "Clarence Property Group Pty Ltd",
       "type": "developer",
       "email": "",
       "phone": "",
       "linkedBuilder": "lanskey-constructions",
-      "linkedProjects": ["lanskey-005"],
+      "linkedProjects": [
+        "lanskey-005"
+      ],
       "status": "not_contacted",
-      "notes": "Metroplex Estate ($10M) contracted during insolvent trading period (Jan 2022)."
+      "notes": "Metroplex Estate ($10M) contracted during insolvent trading period (Jan 2022).",
+      "previousProjects": []
     },
     {
       "id": "contact-009",
@@ -118,9 +143,12 @@
       "email": "",
       "phone": "",
       "linkedBuilder": "roberts-co",
-      "linkedProjects": ["rc-001"],
-      "status": "not_contacted", 
-      "notes": "Amazon Warehouse Craigieburn ($400M). Roberts Co lost $56.1M on this project alone. Australia's largest automated warehouse."
+      "linkedProjects": [
+        "rc-001"
+      ],
+      "status": "not_contacted",
+      "notes": "Amazon Warehouse Craigieburn ($400M). Roberts Co lost $56.1M on this project alone. Australia's largest automated warehouse.",
+      "previousProjects": []
     },
     {
       "id": "contact-010",
@@ -131,12 +159,15 @@
       "email": "",
       "phone": "",
       "linkedBuilder": "roberts-co",
-      "linkedProjects": ["rc-002"],
+      "linkedProjects": [
+        "rc-002"
+      ],
       "status": "not_contacted",
-      "notes": "Build-to-Rent Footscray ($350M). 702-unit development. Joint venture with Oxford Properties."
+      "notes": "Build-to-Rent Footscray ($350M). 702-unit development. Joint venture with Oxford Properties.",
+      "previousProjects": []
     },
     {
-      "id": "contact-011", 
+      "id": "contact-011",
       "name": null,
       "role": "Developer",
       "company": "Oxford Properties",
@@ -144,9 +175,12 @@
       "email": "",
       "phone": "",
       "linkedBuilder": "roberts-co",
-      "linkedProjects": ["rc-002"],
+      "linkedProjects": [
+        "rc-002"
+      ],
       "status": "not_contacted",
-      "notes": "Build-to-Rent Footscray ($350M). Joint venture with Investa Property Group."
+      "notes": "Build-to-Rent Footscray ($350M). Joint venture with Investa Property Group.",
+      "previousProjects": []
     },
     {
       "id": "contact-012",
@@ -156,26 +190,35 @@
       "type": "developer",
       "email": "",
       "phone": "",
-      "linkedBuilder": "roberts-co", 
-      "linkedProjects": ["rc-003"],
+      "linkedBuilder": "roberts-co",
+      "linkedProjects": [
+        "rc-003"
+      ],
       "status": "not_contacted",
-      "notes": "Golden Age Strata Office Little Collins St ($200M). 28-level strata office tower."
+      "notes": "Golden Age Strata Office Little Collins St ($200M). 28-level strata office tower.",
+      "previousProjects": []
     },
     {
       "id": "contact-013",
       "name": null,
       "role": "Developer",
-      "company": "Western Sydney Airport", 
+      "company": "Western Sydney Airport",
       "type": "developer",
       "email": "",
       "phone": "",
       "linkedBuilder": "quasar-constructions",
-      "linkedProjects": ["qs-001", "qs-002", "qs-003", "qs-004"],
+      "linkedProjects": [
+        "qs-001",
+        "qs-002",
+        "qs-003",
+        "qs-004"
+      ],
       "status": "not_contacted",
-      "notes": "HIGH PRIORITY: Government infrastructure. 4 buildings at new airport ($40M total) all >90% complete at collapse. Federal project."
+      "notes": "HIGH PRIORITY: Government infrastructure. 4 buildings at new airport ($40M total) all >90% complete at collapse. Federal project.",
+      "previousProjects": []
     },
     {
-      "id": "contact-014", 
+      "id": "contact-014",
       "name": null,
       "role": "Developer",
       "company": "Aerowest",
@@ -183,9 +226,15 @@
       "email": "",
       "phone": "",
       "linkedBuilder": "quasar-constructions",
-      "linkedProjects": ["qs-001", "qs-002", "qs-003", "qs-004"],
+      "linkedProjects": [
+        "qs-001",
+        "qs-002",
+        "qs-003",
+        "qs-004"
+      ],
       "status": "not_contacted",
-      "notes": "Airport contractor/developer working with Western Sydney Airport on maintenance centre, operations control centre, waste facility, and gatehouse."
+      "notes": "Airport contractor/developer working with Western Sydney Airport on maintenance centre, operations control centre, waste facility, and gatehouse.",
+      "previousProjects": []
     },
     {
       "id": "contact-015",
@@ -195,10 +244,13 @@
       "type": "developer",
       "email": "",
       "phone": "",
-      "linkedBuilder": "quasar-constructions", 
-      "linkedProjects": ["qs-005"],
+      "linkedBuilder": "quasar-constructions",
+      "linkedProjects": [
+        "qs-005"
+      ],
       "status": "not_contacted",
-      "notes": "Calderwood Shopping Village ($50M). Major retail development in Shellharbour."
+      "notes": "Calderwood Shopping Village ($50M). Major retail development in Shellharbour.",
+      "previousProjects": []
     },
     {
       "id": "contact-016",
@@ -209,22 +261,28 @@
       "email": "",
       "phone": "",
       "linkedBuilder": "stokes-wheeler",
-      "linkedProjects": ["sw-001"],
+      "linkedProjects": [
+        "sw-001"
+      ],
       "status": "not_contacted",
-      "notes": "HIGH PRIORITY: Elevaire Apartments Palm Beach. Owed $6.49M and struggling to find replacement builder. 40 apartments abandoned."
+      "notes": "HIGH PRIORITY: Elevaire Apartments Palm Beach. Owed $6.49M and struggling to find replacement builder. 40 apartments abandoned.",
+      "previousProjects": []
     },
     {
       "id": "contact-017",
       "name": null,
-      "role": "Developer", 
+      "role": "Developer",
       "company": "Greaton",
       "type": "developer",
       "email": "",
       "phone": "",
       "linkedBuilder": "probuild-constructions",
-      "linkedProjects": ["pb-001"],
+      "linkedProjects": [
+        "pb-001"
+      ],
       "status": "not_contacted",
-      "notes": "The Ribbon Darling Harbour ($1B). Sydney's tallest residential tower project was under construction at Probuild collapse."
+      "notes": "The Ribbon Darling Harbour ($1B). Sydney's tallest residential tower project was under construction at Probuild collapse.",
+      "previousProjects": []
     },
     {
       "id": "contact-018",
@@ -235,9 +293,12 @@
       "email": "",
       "phone": "",
       "linkedBuilder": "probuild-constructions",
-      "linkedProjects": ["pb-002"], 
+      "linkedProjects": [
+        "pb-002"
+      ],
       "status": "not_contacted",
-      "notes": "Greenland Centre ($400M). Major Sydney CBD development affected by Probuild collapse."
+      "notes": "Greenland Centre ($400M). Major Sydney CBD development affected by Probuild collapse.",
+      "previousProjects": []
     },
     {
       "id": "contact-019",
@@ -248,9 +309,14 @@
       "email": "",
       "phone": "",
       "linkedBuilder": "probuild-constructions",
-      "linkedProjects": ["pb-003", "pb-008", "pb-012"],
-      "status": "not_contacted", 
-      "notes": "Multiple major projects: 443 Queen St Brisbane ($375M), Queen and Collins Melbourne ($200M), 500 Bourke St Melbourne ($150M)."
+      "linkedProjects": [
+        "pb-003",
+        "pb-008",
+        "pb-012"
+      ],
+      "status": "not_contacted",
+      "notes": "Multiple major projects: 443 Queen St Brisbane ($375M), Queen and Collins Melbourne ($200M), 500 Bourke St Melbourne ($150M).",
+      "previousProjects": []
     },
     {
       "id": "contact-020",
@@ -263,20 +329,24 @@
       "linkedBuilder": "stokes-wheeler",
       "linkedProjects": [],
       "status": "not_contacted",
-      "notes": "Secured creditor owed $2.97M by Stokes Wheeler. Bank loans and overdraft facilities secured by company and director properties."
+      "notes": "Secured creditor owed $2.97M by Stokes Wheeler. Bank loans and overdraft facilities secured by company and director properties.",
+      "previousProjects": []
     },
     {
       "id": "contact-021",
       "name": null,
       "role": "Insurance Provider",
-      "company": "QBE Insurance", 
+      "company": "QBE Insurance",
       "type": "other",
       "email": "",
       "phone": "",
       "linkedBuilder": "element-five",
-      "linkedProjects": ["e5-001"],
+      "linkedProjects": [
+        "e5-001"
+      ],
       "status": "not_contacted",
-      "notes": "Insurance claim lodged for Brunswick Yard sabotage damage ($1M+). Deciding whether to continue funding rectification works."
+      "notes": "Insurance claim lodged for Brunswick Yard sabotage damage ($1M+). Deciding whether to continue funding rectification works.",
+      "previousProjects": []
     }
   ]
 }
